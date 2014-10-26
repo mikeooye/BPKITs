@@ -19,5 +19,5 @@
 @property (assign, nonatomic) BOOL hasMore;
 @property (retain, nonatomic) UIColor *color;
 
-- (id)initWithScrollView:(UIScrollView *)scrollView;
+- (id)init;
 @end

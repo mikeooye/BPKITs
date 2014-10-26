@@ -20,4 +20,5 @@
                                 NSStringFromSelector(_cmd)] \
                                     cStringUsingEncoding:NSNonLossyASCIIStringEncoding]
 
+#define LOG_FUNCTION NSLog(@"%s", __bp_PRETTY_FUNCTION__)
 #endif
