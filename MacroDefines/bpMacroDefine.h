@@ -21,4 +21,7 @@
                                     cStringUsingEncoding:NSNonLossyASCIIStringEncoding]
 
 #define LOG_FUNCTION NSLog(@"%s", __bp_PRETTY_FUNCTION__)
+
+#define COMPARE_SYSTEM_VERSION(ver) [[[UIDevice currentDevice] systemVersion] compare:ver options:NSNumericSearch]
+#define VERSION_LATER(ver) (COMPARE_SYSTEM_VERSION(ver) != NSOrderedAscending)
 #endif
