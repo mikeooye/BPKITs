@@ -27,7 +27,7 @@
 
 - (CGFloat)bottom
 {
-    return CGRectGetMaxX(self.frame);
+    return CGRectGetMaxY(self.frame);
 }
 
 - (CGFloat)centerX
@@ -38,5 +38,25 @@
 - (CGFloat)centerY
 {
     return self.center.y;
+}
+
+- (CGFloat)width
+{
+    return CGRectGetWidth(self.frame);
+}
+
+- (CGFloat)height
+{
+    return CGRectGetHeight(self.frame);
+}
+
+- (void)setupFrame:(UIViewSetupFrameBlock)setupFrame
+{
+    if (setupFrame) {
+        CGRect frame = self.frame;
+    
+        setupFrame(self, &frame, [self sizeThatFits:CGSizeMake(CGFLOAT_MAX, CGFLOAT_MAX)]);
+        self.frame = frame;
+    }
 }
 @end

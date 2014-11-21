@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+typedef void(^UIViewSetupFrameBlock)(UIView *view, CGRect *frame, CGSize fitSize);
+
 @interface UIView (bpFrame)
 
 @property (readonly, nonatomic) CGFloat left;
@@ -17,4 +19,9 @@
 
 @property (readonly, nonatomic) CGFloat centerX;
 @property (readonly, nonatomic) CGFloat centerY;
+
+@property (readonly, nonatomic) CGFloat width;
+@property (readonly, nonatomic) CGFloat height;
+
+- (void)setupFrame:(UIViewSetupFrameBlock)setupFrame;
 @end
