@@ -68,7 +68,6 @@
 #pragma mark - dealloc
 - (void)dealloc
 {
-    LOG_FUNCTION;
 }
 
 
