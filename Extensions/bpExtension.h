@@ -10,11 +10,13 @@
 #ifndef BPKITsDemo_bpExtension_h
 #define BPKITsDemo_bpExtension_h
 
+
 #import "CGGeometry+bpExtension.h"
 #import "NSDictionary+bpExtension.h"
 #import "NSNumberFormatter+bpExtension.h"
 #import "UIColor+bpExtension.h"
 #import "UIImage+Resize.h"
 #import "UIView+bpExtension.h"
+#import "NSString+bpExtension.h"
 
 #endif
