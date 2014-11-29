@@ -14,4 +14,5 @@
 #import "Helpers/bpHelper.h"
 #import "ViewControllers/bpViewControllerDefine.h"
 #import "Views/bpViewDefine.h"
+#import "bpAnimation.h"
 #endif
