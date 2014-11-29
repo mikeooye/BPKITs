@@ -10,10 +10,15 @@
 
 @interface UIViewController (bpPresent)
 
-- (void)bpPresentViewController:(UIViewController *)viewController;
+- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size;
 
 - (void)bpDismissViewController;
 
 @property (readonly, nonatomic) UIViewController *bpPresentingViewController;
 @property (readonly, nonatomic) UIViewController *bpPresentedViewController;
+@end
+
+@interface UIViewController (bpTransition)
+
+- (void)transitionToViewController:(UIViewController *)toViewController container:(UIView *)container duration:(NSTimeInterval)duration options:(UIViewAnimationOptions)options;
 @end

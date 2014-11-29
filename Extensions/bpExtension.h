@@ -16,5 +16,6 @@
 #import "UIColor+bpExtension.h"
 #import "UIImage+Resize.h"
 #import "UIView+bpExtension.h"
+#import "UIViewController+bpExtension.h"
 
 #endif

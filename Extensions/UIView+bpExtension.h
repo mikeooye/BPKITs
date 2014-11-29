@@ -25,3 +25,26 @@ typedef void(^UIViewSetupFrameBlock)(UIView *view, CGRect *frame, CGSize fitSize
 
 - (void)setupFrame:(UIViewSetupFrameBlock)setupFrame;
 @end
+
+@interface UIView (bpConstraint)
+
+- (NSLayoutConstraint *)leftConstraint;
+
+- (NSLayoutConstraint *)leadingConstrain;
+
+- (NSLayoutConstraint *)topConstraint;
+
+- (NSLayoutConstraint *)rightConstraint;
+
+- (NSLayoutConstraint *)trailingConstraint;
+
+- (NSLayoutConstraint *)bottomConstraint;
+
+- (NSLayoutConstraint *)widthConstraint;
+
+- (NSLayoutConstraint *)heightConstraint;
+
+- (NSLayoutConstraint *)centerXConstraint;
+
+- (NSLayoutConstraint *)centerYConstraint;
+@end
