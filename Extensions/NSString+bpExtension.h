@@ -16,6 +16,10 @@
 
 + (NSString *)stringWithIntegerValue:(NSInteger)integerValue;   ///< int to string
 + (NSString *)stringWithDoubleValue:(double)doubleValue;        ///< double to string
+
+//check
+- (BOOL)isChinaPhoneFormat;
+- (BOOL)isEmailFormat;
 @end
 
 @interface NSString (bpEmoji)

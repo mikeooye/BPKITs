@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+
 typedef void(^UIViewSetupFrameBlock)(UIView *view, CGRect *frame, CGSize fitSize);
 
 @interface UIView (bpFrame)
@@ -24,4 +25,27 @@ typedef void(^UIViewSetupFrameBlock)(UIView *view, CGRect *frame, CGSize fitSize
 @property (readonly, nonatomic) CGFloat height;
 
 - (void)setupFrame:(UIViewSetupFrameBlock)setupFrame;
+@end
+
+@interface UIView (bpConstraint)
+
+- (NSLayoutConstraint *)leftConstraint;
+
+- (NSLayoutConstraint *)leadingConstrain;
+
+- (NSLayoutConstraint *)topConstraint;
+
+- (NSLayoutConstraint *)rightConstraint;
+
+- (NSLayoutConstraint *)trailingConstraint;
+
+- (NSLayoutConstraint *)bottomConstraint;
+
+- (NSLayoutConstraint *)widthConstraint;
+
+- (NSLayoutConstraint *)heightConstraint;
+
+- (NSLayoutConstraint *)centerXConstraint;
+
+- (NSLayoutConstraint *)centerYConstraint;
 @end

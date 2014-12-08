@@ -18,5 +18,7 @@
 #import "UIImage+Resize.h"
 #import "UIView+bpExtension.h"
 #import "NSString+bpExtension.h"
+#import "UIViewController+bpExtension.h"
+#import "NSString+Hashes.h"
 
 #endif

@@ -8,6 +8,7 @@
 
 #import "UIView+bpExtension.h"
 
+
 @implementation UIView (bpFrame)
 
 - (CGFloat)left
@@ -60,3 +61,69 @@
     }
 }
 @end
+
+@implementation UIView (bpConstraint)
+
+- (NSLayoutConstraint *)constraintWithLayoutAttribute:(NSLayoutAttribute)attribute
+{
+    for (NSLayoutConstraint *constraint in self.constraints) {
+        
+        if (constraint.firstAttribute == attribute) {
+            return constraint;
+        }
+    }
+    return nil;
+}
+
+- (NSLayoutConstraint *)leftConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeLeft];
+}
+
+- (NSLayoutConstraint *)leadingConstrain
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeLeading];
+}
+
+- (NSLayoutConstraint *)topConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeTop];
+}
+
+- (NSLayoutConstraint *)rightConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeRight];
+}
+
+- (NSLayoutConstraint *)trailingConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeTrailing];
+}
+
+- (NSLayoutConstraint *)bottomConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeBottom];
+}
+
+- (NSLayoutConstraint *)widthConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeWidth];
+}
+
+- (NSLayoutConstraint *)heightConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeHeight];
+}
+
+- (NSLayoutConstraint *)centerXConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeCenterX];
+}
+
+- (NSLayoutConstraint *)centerYConstraint
+{
+    return [self constraintWithLayoutAttribute:NSLayoutAttributeCenterY];
+}
+
+@end
+
