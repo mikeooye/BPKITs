@@ -15,13 +15,19 @@
 #define kCustomPresenttingViewControllerKey @"kCustomPresenttingViewControllerKey"
 #define kCustomPresentedViewControllerKey @"kCustomPresentedViewControllerKey"
 
-- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size
+- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size centerOffset:(CGPoint)offset belowView:(UIView *)view
 {
     if (self.bpPresentedViewController == nil) {
         if (viewController) {
             
             [self addChildViewController:viewController];
-            [self.view addSubview:viewController.view];
+            
+            if (view) {
+                [self.view insertSubview:viewController.view belowSubview:view];
+            }else{
+                [self.view addSubview:viewController.view];
+            }
+            
             [viewController willMoveToParentViewController:self];
             
             [viewController.view setTranslatesAutoresizingMaskIntoConstraints:NO];
@@ -29,8 +35,8 @@
             [viewController.view addConstraint:[NSLayoutConstraint constraintWithItem:viewController.view attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:size.width]];
             [viewController.view addConstraint:[NSLayoutConstraint constraintWithItem:viewController.view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:0 multiplier:1 constant:size.height]];
             
-            [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:viewController.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-            [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:viewController.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
+            [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:viewController.view attribute:NSLayoutAttributeCenterX multiplier:1 constant:offset.x]];
+            [self.view addConstraint:[NSLayoutConstraint constraintWithItem:self.view attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:viewController.view attribute:NSLayoutAttributeCenterY multiplier:1 constant:offset.y]];
             
             
             viewController.view.transform = CGAffineTransformMakeTranslation(0, CGRectGetHeight(self.view.frame));
@@ -48,6 +54,16 @@
         
         NSLog(@"目前只能弹出(bpPresent)一个UIViewController");
     }
+}
+
+- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size centerOffset:(CGPoint)offset
+{
+    [self bpPresentViewController:viewController size:size centerOffset:offset belowView:nil];
+}
+
+- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size
+{
+    [self bpPresentViewController:viewController size:size centerOffset:CGPointZero];
 }
 
 - (void)bpDismissViewController

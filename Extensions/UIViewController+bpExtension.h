@@ -11,6 +11,8 @@
 @interface UIViewController (bpPresent)
 
 - (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size;
+- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size centerOffset:(CGPoint)offset;
+- (void)bpPresentViewController:(UIViewController *)viewController size:(CGSize)size centerOffset:(CGPoint)offset belowView:(UIView *)view;
 
 - (void)bpDismissViewController;
 
