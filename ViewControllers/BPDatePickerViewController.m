@@ -7,7 +7,7 @@
 //
 
 #import "BPDatePickerViewController.h"
-#import "BPDateFormatterUtil.h"
+#import "BPDateFormatter.h"
 
 
 @interface BPDatePickerViewController (){
@@ -44,7 +44,6 @@
     if (viewController) {
         self = [super init];
         self.rootViewController = viewController;
-        self.datePickerMode = UIDatePickerModeDate;
         return self;
     }
     return nil;
@@ -55,14 +54,8 @@
     
     _datePicker.minimumDate = self.minimumDate;
     _datePicker.maximumDate = self.maximumDate;
-    
-    if (self.date == nil) {
-        self.date = [NSDate date];
-    }
-    
     _datePicker.date = self.date;
-    _dateLabel.text = [[BPDateFormatterUtil sharedInstance] stringFromDate:self.date dateStyle:BPDateFormatterFullStyle timeStyle:BPDateFormatterNoStyle];
-
+    _dateLabel.text = [BPDateFormatter stringFromDate:self.date fmtStyle:BPDateFormatterStyle_3];
     _datePicker.datePickerMode = self.datePickerMode;
 }
 
@@ -88,7 +81,7 @@
 - (IBAction)datePickerValueChanged:(UIDatePicker *)sender {
     
     self.date = sender.date;
-    _dateLabel.text = [[BPDateFormatterUtil sharedInstance] stringFromDate:self.date dateStyle:BPDateFormatterFullStyle timeStyle:BPDateFormatterNoStyle];
+    _dateLabel.text = [BPDateFormatter stringFromDate:self.date fmtStyle:BPDateFormatterStyle_3];
 }
 
 #pragma mark - Show & Dismiss
@@ -98,10 +91,24 @@
     [self.rootViewController.view addSubview:self.view];
     self.view.frame = self.rootViewController.view.frame;
     [self didMoveToParentViewController:self.rootViewController];
+    
+    CABasicAnimation *opacityAni = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    opacityAni.fromValue = @(0);
+    opacityAni.toValue = @(1);
+    [_backgroundControl.layer addAnimation:opacityAni forKey:@"background_opacity"];
+    
+    CABasicAnimation *transformAni = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    transformAni.fromValue = @(CGRectGetHeight(_containerView.frame));
+    transformAni.toValue = @(0);
+    [_containerView.layer addAnimation:transformAni forKey:@"container_translation"];
 }
 
 - (void)dismiss
 {
+    if (_selectionBlock) {
+        _selectionBlock(nil);
+    }
+    
     [self willMoveToParentViewController:nil];
     [self.view removeFromSuperview];
     [self removeFromParentViewController];

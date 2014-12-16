@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "MBProgressHUD.h"
-#import "ASIHTTPRequest.h"
+
 
 UIKIT_EXTERN NSTimeInterval SHORT_DURATION;
 UIKIT_EXTERN NSTimeInterval LONG_DURATION;
