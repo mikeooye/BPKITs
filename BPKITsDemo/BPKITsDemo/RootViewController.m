@@ -24,5 +24,7 @@
         NSString *title = cell.textLabel.text;
         [(UIViewController *)segue.destinationViewController setTitle:title];
     }
+    
+    
 }
 @end

@@ -8,6 +8,7 @@
 
 #import "BPDatePickerViewController.h"
 #import "BPDateFormatter.h"
+#import "BPKITs.h"
 
 
 @interface BPDatePickerViewController (){
@@ -101,6 +102,7 @@
     transformAni.fromValue = @(CGRectGetHeight(_containerView.frame));
     transformAni.toValue = @(0);
     [_containerView.layer addAnimation:transformAni forKey:@"container_translation"];
+
 }
 
 - (void)dismiss

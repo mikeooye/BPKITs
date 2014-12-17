@@ -24,4 +24,7 @@
 
 #define COMPARE_SYSTEM_VERSION(ver) [[[UIDevice currentDevice] systemVersion] compare:ver options:NSNumericSearch]
 #define VERSION_LATER(ver) (COMPARE_SYSTEM_VERSION(ver) != NSOrderedAscending)
+
+#define IS_IPAD [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
+#define IS_IPHONE [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
 #endif
