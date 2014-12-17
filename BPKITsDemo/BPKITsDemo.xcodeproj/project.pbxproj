@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */; };
 		04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04963DF71A416BA60075EE31 /* BPChangedViewController.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
@@ -55,6 +56,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04904B2A1A41866800A597B8 /* BPKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardHelper.h; sourceTree = "<group>"; };
+		04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardHelper.m; sourceTree = "<group>"; };
 		04963DF51A4168700075EE31 /* BPChanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChanged.h; sourceTree = "<group>"; };
 		04963DF61A416BA60075EE31 /* BPChangedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChangedViewController.h; sourceTree = "<group>"; };
 		04963DF71A416BA60075EE31 /* BPChangedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPChangedViewController.m; sourceTree = "<group>"; };
@@ -230,6 +233,8 @@
 		2812F09D1A3F2E0200375631 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				04904B2A1A41866800A597B8 /* BPKeyboardHelper.h */,
+				04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */,
 				2812F09E1A3F2E0200375631 /* BPDismissWhenTapOutGesture.h */,
 				2812F09F1A3F2E0200375631 /* BPDismissWhenTapOutGesture.m */,
 				2812F0A01A3F2E0200375631 /* bpHelper.h */,
@@ -503,6 +508,7 @@
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
 				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
+				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,

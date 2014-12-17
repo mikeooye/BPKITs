@@ -1,0 +1,28 @@
+//
+//  BPKeyboardHelper.h
+//  TTBeer
+//
+//  Created by Haozhen Li on 14-12-17.
+//  Copyright (c) 2014年 Refineit. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+@interface BPKeyboardHelper : NSObject
+
+/**
+ *  当前实例所在的 UIViewController
+ */
+@property (assign, nonatomic) IBOutlet UIViewController *viewController;
+
+/**
+ *  textFields
+ */
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray * textFields;
+
+/**
+ *  textViews
+ */
+@property (strong, nonatomic) IBOutletCollection(UITextView) NSArray * textViews;
+@end
