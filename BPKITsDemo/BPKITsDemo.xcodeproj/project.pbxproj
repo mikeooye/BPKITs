@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04963DF71A416BA60075EE31 /* BPChangedViewController.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -54,6 +55,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04963DF51A4168700075EE31 /* BPChanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChanged.h; sourceTree = "<group>"; };
+		04963DF61A416BA60075EE31 /* BPChangedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChangedViewController.h; sourceTree = "<group>"; };
+		04963DF71A416BA60075EE31 /* BPChangedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPChangedViewController.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -148,9 +152,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04963DF41A41685C0075EE31 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				04963DF51A4168700075EE31 /* BPChanged.h */,
+			);
+			name = Protocols;
+			path = ../../Protocols;
+			sourceTree = "<group>";
+		};
+		04963DF91A416BA90075EE31 /* BPChanged */ = {
+			isa = PBXGroup;
+			children = (
+				04963DF61A416BA60075EE31 /* BPChangedViewController.h */,
+				04963DF71A416BA60075EE31 /* BPChangedViewController.m */,
+			);
+			name = BPChanged;
+			path = BPChangedViewController;
+			sourceTree = "<group>";
+		};
 		2812F0811A3F2DB300375631 /* KITs */ = {
 			isa = PBXGroup;
 			children = (
+				04963DF41A41685C0075EE31 /* Protocols */,
 				2812F0821A3F2E0200375631 /* Animation */,
 				2812F0861A3F2E0200375631 /* BPKITs.h */,
 				2812F0871A3F2E0200375631 /* Extensions */,
@@ -328,6 +352,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				04963DF91A416BA90075EE31 /* BPChanged */,
 				2812F10B1A3F308300375631 /* DatePicker */,
 				28CC783C1A177FAC0025B9E8 /* Main.storyboard */,
 				28CC783F1A177FAC0025B9E8 /* Images.xcassets */,
@@ -481,6 +506,7 @@
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
+				04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */,
 				2812F0EC1A3F2E0200375631 /* UIView+bpExtension.m in Sources */,
 				2812F0E91A3F2E0200375631 /* NSString+Hashes.m in Sources */,
 				2812F0E61A3F2E0200375631 /* NSDictionary+bpExtension.m in Sources */,
