@@ -28,15 +28,21 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    // 1.创建 DatePickerController 实例
     BPDatePickerViewController *pickerController = [[BPDatePickerViewController alloc] initWithViewController:self.navigationController];
     pickerController.maximumDate = [NSDate date];
     pickerController.date = [BPDateFormatter dateFromString:@"1990-01-01" fmtStyle:BPDateFormatterStyle_2];
     pickerController.datePickerMode = UIDatePickerModeDate;
+    
+    // 2.显示
     [pickerController show];
     
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    // 3.添加选择回调
     [pickerController setSelectionBlock:^(NSDate *selectionDate) {
         
+        // 4.处理回调
         if (selectionDate) {
             cell.textLabel.text = [BPDateFormatter stringFromDate:selectionDate fmtStyle:BPDateFormatterStyle_3];
         }
