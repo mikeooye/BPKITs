@@ -88,7 +88,7 @@
     return [self dateByAddingYear:0 month:month day:0 hour:0 minute:0 second:0];
 }
 
-- (NSDate *)dateByAddingYear:(int)year month:(int)month day:(int)day hour:(int)hour minute:(int)minute second:(int)second
+- (NSDate *)dateByAddingYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second
 {
     NSDateComponents *comp = [[NSCalendar currentCalendar] components:(NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute|NSCalendarUnitSecond) fromDate:self];
     comp.year+=year;

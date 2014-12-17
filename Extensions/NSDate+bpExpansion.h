@@ -32,7 +32,7 @@
 
 - (NSDate *)dateByAddingMonth:(NSInteger)month;
 
-- (NSDate *)dateByAddingYear:(int)year month:(int)month day:(int)day hour:(int)hour minute:(int)minute second:(int)second;
+- (NSDate *)dateByAddingYear:(NSInteger)year month:(NSInteger)month day:(NSInteger)day hour:(NSInteger)hour minute:(NSInteger)minute second:(NSInteger)second;
 
 - (void)test;
 @end
