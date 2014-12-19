@@ -46,7 +46,6 @@
         fmtter = [[NSDateFormatter alloc] init];
         fmtter.dateFormat = fmt;
         fmtter.locale = [NSLocale localeWithLocaleIdentifier:@"zh_CN"];
-        fmtter.timeZone = [NSTimeZone timeZoneForSecondsFromGMT:8];
         [_fmtters setObject:fmtter forKey:fmt];
     }
     return fmtter;

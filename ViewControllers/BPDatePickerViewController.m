@@ -107,9 +107,7 @@
 
 - (void)dismiss
 {
-    if (_selectionBlock) {
-        _selectionBlock(nil);
-    }
+    _selectionBlock = nil;
     
     [self willMoveToParentViewController:nil];
     [self.view removeFromSuperview];
