@@ -22,6 +22,9 @@
     __weak IBOutlet UIButton *_okayButton;
     
     BPDatePickerViewControllerSelectionBlock _selectionBlock;
+    
+    BOOL _showing;
+    BOOL _dismissing;
 }
 
 - (IBAction)backgroundTapped:(id)sender;
@@ -88,6 +91,10 @@
 #pragma mark - Show & Dismiss
 - (void)show
 {
+    if (_showing == YES) {
+        return;
+    }
+    _showing = YES;
     [self.rootViewController addChildViewController:self];
     [self.rootViewController.view addSubview:self.view];
     self.view.frame = self.rootViewController.view.frame;
@@ -96,21 +103,48 @@
     CABasicAnimation *opacityAni = [CABasicAnimation animationWithKeyPath:@"opacity"];
     opacityAni.fromValue = @(0);
     opacityAni.toValue = @(1);
+    opacityAni.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [_backgroundControl.layer addAnimation:opacityAni forKey:@"background_opacity"];
     
     CABasicAnimation *transformAni = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
     transformAni.fromValue = @(CGRectGetHeight(_containerView.frame));
     transformAni.toValue = @(0);
+    transformAni.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
     [_containerView.layer addAnimation:transformAni forKey:@"container_translation"];
-
 }
 
 - (void)dismiss
 {
-    _selectionBlock = nil;
+    if (_dismissing == YES) {
+        return;
+    }
+    _dismissing = YES;
+    CABasicAnimation *opacityAni = [CABasicAnimation animationWithKeyPath:@"opacity"];
+    opacityAni.toValue = @(0);
+    opacityAni.fromValue = @(1);
+    _backgroundControl.layer.opacity = 0;
+    opacityAni.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    [_backgroundControl.layer addAnimation:opacityAni forKey:@"background_opacity"];
     
-    [self willMoveToParentViewController:nil];
-    [self.view removeFromSuperview];
-    [self removeFromParentViewController];
+    CABasicAnimation *transformAni = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
+    transformAni.toValue = @(CGRectGetHeight(_containerView.frame));
+    transformAni.fromValue = @(0);
+    _containerView.layer.transform = CATransform3DMakeTranslation(0, CGRectGetHeight(_containerView.frame), 0);
+    transformAni.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseInEaseOut];
+    
+    __weak typeof(self) weakSelf = self;
+    [transformAni setCompletion:^(BOOL finished) {
+        
+        if (finished) {
+            
+            [weakSelf setValue:nil forKey:@"_selectionBlock"];
+            [weakSelf willMoveToParentViewController:nil];
+            [weakSelf.view removeFromSuperview];
+            [weakSelf removeFromParentViewController];
+        }
+    }];
+    
+    [_containerView.layer addAnimation:transformAni forKey:@"container_translation"];
 }
+
 @end
