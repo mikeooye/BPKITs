@@ -107,6 +107,23 @@
                                             <segue destination="H3e-Ne-Nie" kind="show" id="I1E-Nu-bC0"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="Rgt-8V-RYH" style="IBUITableViewCellStyleDefault" id="CgT-U1-2Pf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CgT-U1-2Pf" id="1be-FB-KcX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="CustomButton" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Rgt-8V-RYH">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="SUS-kW-lOh" kind="show" id="6MQ-gT-lwc"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -347,6 +364,48 @@ Usage：
             <point key="canvasLocation" x="656" y="162"/>
         </scene>
         <!--View Controller-->
+        <scene sceneID="GXx-WT-vj2">
+            <objects>
+                <viewController id="SUS-kW-lOh" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FOa-01-XOb"/>
+                        <viewControllerLayoutGuide type="bottom" id="bPI-vI-3Sa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hJL-Be-YNH">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKI-Kg-zNA" customClass="BPUpdownButton">
+                                <rect key="frame" x="100" y="180" width="120" height="120"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oby-wn-Fzs">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="3DD-nH-Ypj"/>
+                                    <constraint firstAttribute="trailing" secondItem="Oby-wn-Fzs" secondAttribute="trailing" id="ABL-VD-pVb"/>
+                                    <constraint firstItem="Oby-wn-Fzs" firstAttribute="top" secondItem="SKI-Kg-zNA" secondAttribute="top" id="BUg-7c-2Kv"/>
+                                    <constraint firstItem="Oby-wn-Fzs" firstAttribute="leading" secondItem="SKI-Kg-zNA" secondAttribute="leading" id="Kcn-Yx-V97"/>
+                                    <constraint firstAttribute="width" constant="120" id="h9d-3Y-cfH"/>
+                                    <constraint firstAttribute="bottom" secondItem="Oby-wn-Fzs" secondAttribute="bottom" id="y0A-jO-zqQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="SKI-Kg-zNA" secondAttribute="centerY" id="vKC-AN-gXB"/>
+                            <constraint firstAttribute="centerX" secondItem="SKI-Kg-zNA" secondAttribute="centerX" id="ziD-zt-XBZ"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tt2-E9-3Lp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040" y="389"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="cgm-ta-FJT">
             <objects>
                 <viewController automaticallyAdjustsScrollViewInsets="NO" id="Vz2-Xt-fwc" sceneMemberID="viewController">
@@ -463,4 +522,7 @@ Usage：
             <point key="canvasLocation" x="-463" y="-373"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="photo1.jpg" width="1024" height="681"/>
+    </resources>
 </document>

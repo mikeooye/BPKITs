@@ -33,6 +33,7 @@
 		04DC6C6D1A6E17140062A5F6 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C6C1A6E17140062A5F6 /* ImageIO.framework */; };
 		04DC6C6F1A6E171B0062A5F6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C6E1A6E171B0062A5F6 /* AssetsLibrary.framework */; };
 		04DC6C711A6E17250062A5F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C701A6E17250062A5F6 /* QuartzCore.framework */; };
+		04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -118,6 +119,8 @@
 		04DC6C6C1A6E17140062A5F6 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		04DC6C6E1A6E171B0062A5F6 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
 		04DC6C701A6E17250062A5F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		04DC6C731A6E348A0062A5F6 /* BPUpdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUpdownButton.h; sourceTree = "<group>"; };
+		04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUpdownButton.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -415,6 +418,8 @@
 		2812F0D41A3F2E0200375631 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04DC6C731A6E348A0062A5F6 /* BPUpdownButton.h */,
+				04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */,
 				04DC6C2C1A6DF3D00062A5F6 /* UIPlaceholderTextView.h */,
 				04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */,
 				2812F0D51A3F2E0200375631 /* BPButton.h */,
@@ -651,6 +656,7 @@
 				28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */,
 				2812F1061A3F2E0200375631 /* BPTableView.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
+				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,
 				2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */,
 				2812F10A1A3F2E7100375631 /* RootViewController.m in Sources */,
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
