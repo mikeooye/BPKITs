@@ -378,7 +378,7 @@ Usage：
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKI-Kg-zNA" customClass="BPUpdownButton">
                                 <rect key="frame" x="100" y="180" width="120" height="120"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oby-wn-Fzs">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo1.jpg" highlightedImage="photo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Oby-wn-Fzs">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
                                     </imageView>
                                 </subviews>
@@ -391,6 +391,9 @@ Usage：
                                     <constraint firstAttribute="width" constant="120" id="h9d-3Y-cfH"/>
                                     <constraint firstAttribute="bottom" secondItem="Oby-wn-Fzs" secondAttribute="bottom" id="y0A-jO-zqQ"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="imageViews" destination="Oby-wn-Fzs" id="Vcs-v4-87w"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -524,5 +527,6 @@ Usage：
     </scenes>
     <resources>
         <image name="photo1.jpg" width="1024" height="681"/>
+        <image name="photo2.jpg" width="681" height="1024"/>
     </resources>
 </document>

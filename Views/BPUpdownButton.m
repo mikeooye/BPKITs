@@ -33,13 +33,18 @@
 //        [self addSubview:_coverView];
 //    }
     
+    [self.imageViews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        [(UIImageView *)obj setHighlighted:highlighted];
+    }];
+    
     if (highlighted) {
         
 //        [self bringSubviewToFront:_coverView];
         [UIView animateWithDuration:0.1 animations:^{
-            self.alpha = 0.8;
+            self.alpha = 0.75;
 //            _coverView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.18];
         }];
+        
     }else{
         [UIView animateWithDuration:0.1 animations:^{
             self.alpha = 1.0;

@@ -14,4 +14,10 @@
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 
 @property (weak, nonatomic) IBOutlet UIImageView *backgroundImageView;
+
+
+/**
+ *  这里的图片会根据Control的highlighted变化而变化
+ */
+@property (retain, nonatomic) IBOutletCollection(UIImageView) NSArray *imageViews;
 @end
