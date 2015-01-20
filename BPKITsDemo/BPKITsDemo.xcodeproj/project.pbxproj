@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */; };
 		04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04963DF71A416BA60075EE31 /* BPChangedViewController.m */; };
+		04DC6C2E1A6DF3D00062A5F6 /* UIPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -61,6 +62,8 @@
 		04963DF51A4168700075EE31 /* BPChanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChanged.h; sourceTree = "<group>"; };
 		04963DF61A416BA60075EE31 /* BPChangedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChangedViewController.h; sourceTree = "<group>"; };
 		04963DF71A416BA60075EE31 /* BPChangedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPChangedViewController.m; sourceTree = "<group>"; };
+		04DC6C2C1A6DF3D00062A5F6 /* UIPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceholderTextView.h; sourceTree = "<group>"; };
+		04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceholderTextView.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -303,6 +306,8 @@
 		2812F0D41A3F2E0200375631 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				04DC6C2C1A6DF3D00062A5F6 /* UIPlaceholderTextView.h */,
+				04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */,
 				2812F0D51A3F2E0200375631 /* BPButton.h */,
 				2812F0D61A3F2E0200375631 /* BPButton.m */,
 				2812F0D71A3F2E0200375631 /* BPDatePickerView.h */,
@@ -524,6 +529,7 @@
 				2812F0EE1A3F2E0200375631 /* BPDismissWhenTapOutGesture.m in Sources */,
 				2812F1051A3F2E0200375631 /* BPLoadingMoreControl.m in Sources */,
 				2812F1011A3F2E0200375631 /* BPViewController.m in Sources */,
+				04DC6C2E1A6DF3D00062A5F6 /* UIPlaceholderTextView.m in Sources */,
 				2812F0F01A3F2E0200375631 /* WGS84ToGCJ02.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,5 +16,6 @@
 #import "BPRefreshControl.h"
 #import "BPTableView.h"
 #import "BPView.h"
+#import "UIPlaceholderTextView.h"
 
 #endif
