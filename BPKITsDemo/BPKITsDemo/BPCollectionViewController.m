@@ -14,15 +14,20 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    //设置item之间的间距
     _layout.minimumInteritemSpacing = 2;
+    //设置行间距
     _layout.minimumLineSpacing = 6;
 }
 
+//section数量
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView
 {
     return 3;
 }
 
+//每个section中item的数量
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
     if (section == 0) {
@@ -33,12 +38,14 @@
     return 6;
 }
 
+//设置item内容
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     BPCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"cell" forIndexPath:indexPath];
     return cell;
 }
 
+//设置item的size
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     if (indexPath.section == 0) {
@@ -55,6 +62,7 @@
     }
 }
 
+//设置section内边距
 - (UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
     if (section == 0) {
