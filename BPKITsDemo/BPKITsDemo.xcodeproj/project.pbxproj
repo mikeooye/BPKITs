@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */; };
 		04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04963DF71A416BA60075EE31 /* BPChangedViewController.m */; };
+		04CB22381A8097CC00812742 /* BPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB22371A8097CC00812742 /* BPCollectionViewController.m */; };
+		04CB223B1A8097DB00812742 /* BPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB223A1A8097DB00812742 /* BPCollectionViewCell.m */; };
 		04DC6C2E1A6DF3D00062A5F6 /* UIPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */; };
 		04DC6C3E1A6E05CE0062A5F6 /* libMWPhotoBrowser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C3D1A6E04DF0062A5F6 /* libMWPhotoBrowser.a */; };
 		04DC6C401A6E06720062A5F6 /* MWPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04DC6C3F1A6E06720062A5F6 /* MWPhotoBrowser.bundle */; };
@@ -93,6 +95,10 @@
 		04963DF51A4168700075EE31 /* BPChanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChanged.h; sourceTree = "<group>"; };
 		04963DF61A416BA60075EE31 /* BPChangedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChangedViewController.h; sourceTree = "<group>"; };
 		04963DF71A416BA60075EE31 /* BPChangedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPChangedViewController.m; sourceTree = "<group>"; };
+		04CB22361A8097CC00812742 /* BPCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCollectionViewController.h; sourceTree = "<group>"; };
+		04CB22371A8097CC00812742 /* BPCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCollectionViewController.m; sourceTree = "<group>"; };
+		04CB22391A8097DB00812742 /* BPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCollectionViewCell.h; sourceTree = "<group>"; };
+		04CB223A1A8097DB00812742 /* BPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCollectionViewCell.m; sourceTree = "<group>"; };
 		04DC6C2C1A6DF3D00062A5F6 /* UIPlaceholderTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPlaceholderTextView.h; sourceTree = "<group>"; };
 		04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPlaceholderTextView.m; sourceTree = "<group>"; };
 		04DC6C381A6E04DF0062A5F6 /* MWPhotoBrowser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = MWPhotoBrowser.xcodeproj; path = MWPhotoBrowser/MWPhotoBrowser.xcodeproj; sourceTree = "<group>"; };
@@ -237,6 +243,17 @@
 			);
 			name = BPChanged;
 			path = BPChangedViewController;
+			sourceTree = "<group>";
+		};
+		04CB22341A8096F500812742 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				04CB22361A8097CC00812742 /* BPCollectionViewController.h */,
+				04CB22371A8097CC00812742 /* BPCollectionViewController.m */,
+				04CB22391A8097DB00812742 /* BPCollectionViewCell.h */,
+				04CB223A1A8097DB00812742 /* BPCollectionViewCell.m */,
+			);
+			name = CollectionView;
 			sourceTree = "<group>";
 		};
 		04DC6C361A6E04580062A5F6 /* Lib */ = {
@@ -481,6 +498,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				04CB22341A8096F500812742 /* CollectionView */,
 				04DC6C451A6E09850062A5F6 /* BPPhotoBrowser */,
 				04963DF91A416BA90075EE31 /* BPChanged */,
 				2812F10B1A3F308300375631 /* DatePicker */,
@@ -662,8 +680,10 @@
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
+				04CB223B1A8097DB00812742 /* BPCollectionViewCell.m in Sources */,
 				2812F1071A3F2E0200375631 /* BPView.m in Sources */,
 				2812F0FD1A3F2E0200375631 /* MBProgressHUD.m in Sources */,
+				04CB22381A8097CC00812742 /* BPCollectionViewController.m in Sources */,
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
 				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
