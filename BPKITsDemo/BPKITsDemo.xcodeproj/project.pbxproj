@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 042C82D91A906B0200A94ECC /* BPAlertManager.m */; };
+		042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042C82DD1A9081AE00A94ECC /* BPSecureAlertView.m */; };
+		042C82E01A9081BC00A94ECC /* BPSecureAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */; };
+		042C82E31A90A23D00A94ECC /* SecureAlertImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042C82E21A90A23D00A94ECC /* SecureAlertImages.xcassets */; };
 		04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */; };
 		04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04963DF71A416BA60075EE31 /* BPChangedViewController.m */; };
 		04CB22381A8097CC00812742 /* BPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB22371A8097CC00812742 /* BPCollectionViewController.m */; };
@@ -36,6 +40,7 @@
 		04DC6C6F1A6E171B0062A5F6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C6E1A6E171B0062A5F6 /* AssetsLibrary.framework */; };
 		04DC6C711A6E17250062A5F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C701A6E17250062A5F6 /* QuartzCore.framework */; };
 		04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */; };
+		04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E31CF31A84DA0400C05702 /* BPScrollViewController.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -90,6 +95,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		042C82D81A906B0200A94ECC /* BPAlertManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertManager.h; sourceTree = "<group>"; };
+		042C82D91A906B0200A94ECC /* BPAlertManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertManager.m; sourceTree = "<group>"; };
+		042C82DC1A9081AE00A94ECC /* BPSecureAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPSecureAlertView.h; sourceTree = "<group>"; };
+		042C82DD1A9081AE00A94ECC /* BPSecureAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPSecureAlertView.m; sourceTree = "<group>"; };
+		042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPSecureAlertView.xib; sourceTree = "<group>"; };
+		042C82E21A90A23D00A94ECC /* SecureAlertImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SecureAlertImages.xcassets; sourceTree = "<group>"; };
 		04904B2A1A41866800A597B8 /* BPKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardHelper.h; sourceTree = "<group>"; };
 		04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardHelper.m; sourceTree = "<group>"; };
 		04963DF51A4168700075EE31 /* BPChanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChanged.h; sourceTree = "<group>"; };
@@ -127,6 +138,8 @@
 		04DC6C701A6E17250062A5F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04DC6C731A6E348A0062A5F6 /* BPUpdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUpdownButton.h; sourceTree = "<group>"; };
 		04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUpdownButton.m; sourceTree = "<group>"; };
+		04E31CF21A84DA0400C05702 /* BPScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPScrollViewController.h; path = ScrollButtons/BPScrollViewController.h; sourceTree = "<group>"; };
+		04E31CF31A84DA0400C05702 /* BPScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPScrollViewController.m; path = ScrollButtons/BPScrollViewController.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -306,6 +319,15 @@
 			path = Photos;
 			sourceTree = "<group>";
 		};
+		04E31CF01A84D9DD00C05702 /* ScrollButtons */ = {
+			isa = PBXGroup;
+			children = (
+				04E31CF21A84DA0400C05702 /* BPScrollViewController.h */,
+				04E31CF31A84DA0400C05702 /* BPScrollViewController.m */,
+			);
+			name = ScrollButtons;
+			sourceTree = "<group>";
+		};
 		2812F0811A3F2DB300375631 /* KITs */ = {
 			isa = PBXGroup;
 			children = (
@@ -453,6 +475,12 @@
 				2812F0E01A3F2E0200375631 /* BPView.h */,
 				2812F0E11A3F2E0200375631 /* BPView.m */,
 				2812F0E21A3F2E0200375631 /* bpViewDefine.h */,
+				042C82D81A906B0200A94ECC /* BPAlertManager.h */,
+				042C82D91A906B0200A94ECC /* BPAlertManager.m */,
+				042C82E21A90A23D00A94ECC /* SecureAlertImages.xcassets */,
+				042C82DC1A9081AE00A94ECC /* BPSecureAlertView.h */,
+				042C82DD1A9081AE00A94ECC /* BPSecureAlertView.m */,
+				042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */,
 			);
 			name = Views;
 			path = ../../Views;
@@ -498,6 +526,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				04E31CF01A84D9DD00C05702 /* ScrollButtons */,
 				04CB22341A8096F500812742 /* CollectionView */,
 				04DC6C451A6E09850062A5F6 /* BPPhotoBrowser */,
 				04963DF91A416BA90075EE31 /* BPChanged */,
@@ -646,6 +675,8 @@
 				04DC6C651A6E0A6D0062A5F6 /* photo6t.jpg in Resources */,
 				04DC6C691A6E0A6D0062A5F6 /* photo8t.jpg in Resources */,
 				2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */,
+				042C82E31A90A23D00A94ECC /* SecureAlertImages.xcassets in Resources */,
+				042C82E01A9081BC00A94ECC /* BPSecureAlertView.xib in Resources */,
 				04DC6C5C1A6E0A6D0062A5F6 /* photo2.jpg in Resources */,
 				04DC6C5B1A6E0A6D0062A5F6 /* photo1t.jpg in Resources */,
 				04DC6C681A6E0A6D0062A5F6 /* photo8.jpg in Resources */,
@@ -686,11 +717,14 @@
 				04CB22381A8097CC00812742 /* BPCollectionViewController.m in Sources */,
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
+				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
 				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
+				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
+				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
 				04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */,
 				2812F0EC1A3F2E0200375631 /* UIView+bpExtension.m in Sources */,
 				2812F0E91A3F2E0200375631 /* NSString+Hashes.m in Sources */,
