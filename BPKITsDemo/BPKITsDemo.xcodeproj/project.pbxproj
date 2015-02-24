@@ -69,6 +69,8 @@
 		2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1101A3F320300375631 /* BPDatePickerViewController.m */; };
 		2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2812F1111A3F320300375631 /* BPDatePickerViewController.xib */; };
 		2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1151A3F327D00375631 /* BPDateFormatter.m */; };
+		284208671A9C655E00CD1EB0 /* BPRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284208661A9C655E00CD1EB0 /* BPRefreshTableViewController.m */; };
+		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
 		28CC78351A177FAC0025B9E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC78341A177FAC0025B9E8 /* main.m */; };
 		28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC78371A177FAC0025B9E8 /* AppDelegate.m */; };
 		28CC783E1A177FAC0025B9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC783C1A177FAC0025B9E8 /* Main.storyboard */; };
@@ -203,6 +205,10 @@
 		2812F1111A3F320300375631 /* BPDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPDatePickerViewController.xib; sourceTree = "<group>"; };
 		2812F1141A3F327D00375631 /* BPDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDateFormatter.h; sourceTree = "<group>"; };
 		2812F1151A3F327D00375631 /* BPDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDateFormatter.m; sourceTree = "<group>"; };
+		284208651A9C655E00CD1EB0 /* BPRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPRefreshTableViewController.h; path = "Refresh Table/BPRefreshTableViewController.h"; sourceTree = "<group>"; };
+		284208661A9C655E00CD1EB0 /* BPRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPRefreshTableViewController.m; path = "Refresh Table/BPRefreshTableViewController.m"; sourceTree = "<group>"; };
+		284208691A9C6B7300CD1EB0 /* BPLoadingMore2Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLoadingMore2Control.h; sourceTree = "<group>"; };
+		2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLoadingMore2Control.m; sourceTree = "<group>"; };
 		28CC782F1A177FAC0025B9E8 /* BPKITsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BPKITsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CC78331A177FAC0025B9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28CC78341A177FAC0025B9E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -469,6 +475,8 @@
 				2812F0DA1A3F2E0200375631 /* BPLine.m */,
 				2812F0DB1A3F2E0200375631 /* BPLoadingMoreControl.h */,
 				2812F0DC1A3F2E0200375631 /* BPLoadingMoreControl.m */,
+				284208691A9C6B7300CD1EB0 /* BPLoadingMore2Control.h */,
+				2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */,
 				2812F0DD1A3F2E0200375631 /* BPRefreshControl.h */,
 				2812F0DE1A3F2E0200375631 /* BPTableView.h */,
 				2812F0DF1A3F2E0200375631 /* BPTableView.m */,
@@ -493,6 +501,15 @@
 				2812F10D1A3F309500375631 /* DatePickerTableViewController.m */,
 			);
 			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		284208631A9C653D00CD1EB0 /* Refresh Table */ = {
+			isa = PBXGroup;
+			children = (
+				284208651A9C655E00CD1EB0 /* BPRefreshTableViewController.h */,
+				284208661A9C655E00CD1EB0 /* BPRefreshTableViewController.m */,
+			);
+			name = "Refresh Table";
 			sourceTree = "<group>";
 		};
 		28CC78261A177FAC0025B9E8 = {
@@ -526,6 +543,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				284208631A9C653D00CD1EB0 /* Refresh Table */,
 				04E31CF01A84D9DD00C05702 /* ScrollButtons */,
 				04CB22341A8096F500812742 /* CollectionView */,
 				04DC6C451A6E09850062A5F6 /* BPPhotoBrowser */,
@@ -702,6 +720,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2812F1031A3F2E0200375631 /* BPDatePickerView.m in Sources */,
+				284208671A9C655E00CD1EB0 /* BPRefreshTableViewController.m in Sources */,
 				28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */,
 				2812F1061A3F2E0200375631 /* BPTableView.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
@@ -721,6 +740,7 @@
 				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
+				2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -45,7 +45,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0y-NN-wmq">
-                    <rect key="frame" x="8" y="62" width="250" height="15"/>
+                    <rect key="frame" x="8" y="62" width="250" height="14.5"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="Lu3-Jy-atp"/>
                     </constraints>
@@ -54,7 +54,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detail" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HKf-id-Ams">
-                    <rect key="frame" x="8" y="77" width="250" height="29"/>
+                    <rect key="frame" x="8" y="76" width="250" height="29"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="IiN-2Y-G1I"/>
                     </constraints>
@@ -63,7 +63,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bUg-rz-Uvp">
-                    <rect key="frame" x="13" y="116" width="240" height="40"/>
+                    <rect key="frame" x="13" y="115" width="240" height="40"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nka-Tx-u3Z">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="40"/>
@@ -141,8 +141,8 @@
                         <constraint firstAttribute="centerX" secondItem="dMX-MJ-39n" secondAttribute="centerX" constant="60" id="xJl-n6-8oL"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-WS-5HC">
-                    <rect key="frame" x="8" y="164" width="250" height="15"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Yk-WS-5HC">
+                    <rect key="frame" x="8" y="163" width="250" height="15.5"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="greaterThanOrEqual" id="DmD-25-PFS"/>
                     </constraints>

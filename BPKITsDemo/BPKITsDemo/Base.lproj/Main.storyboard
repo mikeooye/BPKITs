@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QWw-4t-e7r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QWw-4t-e7r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -156,6 +156,23 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="YjT-zs-wa2" kind="show" id="NEd-e6-kVf"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="I43-dG-UvT" style="IBUITableViewCellStyleDefault" id="JgO-pD-k0c">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JgO-pD-k0c" id="E3B-LU-Qyx">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Refresh Table" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="I43-dG-UvT">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="fGI-on-gGT" kind="show" id="vRJ-aC-Wfw"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -487,6 +504,53 @@ Usage：
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g3g-9X-AZm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="828.5" y="1018.5"/>
+        </scene>
+        <!--Refresh Table-->
+        <scene sceneID="QHb-60-RLX">
+            <objects>
+                <viewController id="fGI-on-gGT" customClass="BPRefreshTableViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1L-65-NmU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Wkb-M3-jsv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qvc-ix-t27">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bxa-Px-zDX">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="scrollIndicatorInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="44"/>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cq1-tx-Ycy">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="IN3-DC-UCl"/>
+                                    <barButtonItem title="This is a ToolBar" id="Q6a-sY-CdQ"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="xeJ-8t-7Po"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bxa-Px-zDX" firstAttribute="bottom" secondItem="Wkb-M3-jsv" secondAttribute="top" id="I9V-8E-ZoF"/>
+                            <constraint firstAttribute="trailing" secondItem="Cq1-tx-Ycy" secondAttribute="trailing" id="O1h-dy-2vg"/>
+                            <constraint firstItem="Cq1-tx-Ycy" firstAttribute="leading" secondItem="Qvc-ix-t27" secondAttribute="leading" id="ZDK-z4-tJP"/>
+                            <constraint firstItem="Cq1-tx-Ycy" firstAttribute="bottom" secondItem="Wkb-M3-jsv" secondAttribute="top" id="aUd-N1-2Yl"/>
+                            <constraint firstItem="Bxa-Px-zDX" firstAttribute="trailing" secondItem="Cq1-tx-Ycy" secondAttribute="trailing" id="ltl-1g-hcL"/>
+                            <constraint firstItem="Bxa-Px-zDX" firstAttribute="top" secondItem="Qvc-ix-t27" secondAttribute="top" id="tAV-9c-Epi"/>
+                            <constraint firstItem="Bxa-Px-zDX" firstAttribute="leading" secondItem="Cq1-tx-Ycy" secondAttribute="leading" id="xDg-xa-iLB"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Refresh Table" id="ucc-QA-zhZ"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="_tableVIew" destination="Bxa-Px-zDX" id="HSw-2Z-9aT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jZ-4r-syb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1241" y="1068"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GXx-WT-vj2">
