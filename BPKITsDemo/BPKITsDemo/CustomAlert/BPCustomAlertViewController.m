@@ -7,9 +7,14 @@
 //
 
 #import "BPCustomAlertViewController.h"
-#import "BPAlertViewController.h"
+#import "BPAlertController.h"
+#import "BPPopoverController.h"
+#import "BPAlertDefines.h"
 
-@interface BPCustomAlertViewController ()
+@interface BPCustomAlertViewController (){
+    
+    BPPopoverController *_pov;
+}
 
 - (IBAction)showCustomAlert:(id)sender;
 @end
@@ -38,10 +43,50 @@
 
 - (IBAction)showCustomAlert:(id)sender {
     
-    BPAlertViewController *alertView = [self.storyboard instantiateViewControllerWithIdentifier:@"BPAlertViewController"];
-    [alertView showOnViewController:self.navigationController];
-//    alertView.text = @"减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就";
+//    BPAlertViewController *vc = [[BPAlertViewController alloc] init];
+//    vc.view.backgroundColor = [UIColor redColor];
+//    BPPopoverController *popover = [[BPPopoverController alloc] initWithContentViewController:vc];
+//    popover.popoverContentSize = CGSizeMake(300, 100);
+//    [popover presentPopoverOnViewController:self.navigationController animated:YES];
+//    _pov = popover;
     
     
+    BPAlertTitle *title = [[BPAlertTitle alloc] initWithTitle:@"我是一个标题，哈哈哈哈哈哈哈啊哈哈哈哈😄"];
+    BPAlertMessage *message = [[BPAlertMessage alloc] initWithMessage:@"我是一段信息，我这里的内容很重要，请关注我，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈啊哈哈哈"];
+
+    BPAlertController *alertController = [BPAlertController alertControllerWithTitle:title
+                                                                             message:message
+                                                                      preferredStyle:BPAlertControllerStyleAlert];
+    [alertController addAction:[BPAlertAction actionWithTitle:@"ABC"
+                                                        style:BPAlertActionStyleDefault
+                                                      handler:^(BPAlertAction *action) {
+        NSLog(@"%@", action.title);
+    }]];
+    [alertController addAction:[BPAlertAction actionWithTitle:@"ButtonB" style:BPAlertActionStyleDefault handler:^(BPAlertAction *action) {
+        NSLog(@"ButtonB");
+    }]];
+    
+    [alertController addAction:[BPAlertAction actionWithTitle:@"Red" style:BPAlertActionStyleDestructive handler:^(BPAlertAction *action) {
+        
+    }]];
+    
+    [alertController addAction:[BPAlertAction actionWithTitle:@"Cancel" style:BPAlertActionStyleCancel handler:^(BPAlertAction *action) {
+        
+    }]];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"tf 1";
+    }];
+    
+    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"tf 2";
+    }];
+    
+    BPAlertBodyView *redView = [[BPAlertBodyView alloc] init];
+    redView.backgroundColor = [UIColor redColor];
+    redView.preferredSize = CGSizeMake(200, 200);
+    alertController.bodyView = redView;
+    
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 @end

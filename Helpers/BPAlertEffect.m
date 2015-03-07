@@ -8,7 +8,7 @@
 
 #import "BPAlertEffect.h"
 
-#define kAnimationDuration 0.25
+#define kAnimationDuration 0.2
 
 @implementation BPAlertEffect
 
@@ -22,7 +22,7 @@
         
         self.alertBody.transform = CGAffineTransformMakeScale(1.0, 1.0);
         self.alertBody.alpha = 1.0f;
-        self.backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.43];
+        self.backgroundView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.34];
     } completion:completion];
 }
 

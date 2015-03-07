@@ -11,7 +11,7 @@
 #import "BPAlertManager.h"
 #import "BPSecureAlertView.h"
 
-@interface BPScrollViewController ()<BPSecureAlertViewDelegate>{
+@interface BPScrollViewController ()<BPSecureAlertViewDelegate, UIAlertViewDelegate>{
     
     BPAlertManager *_alertManager;
 }
@@ -74,7 +74,7 @@
 
 - (void)makeSystemAlert
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:nil delegate:nil cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
     [alertView show];
 }
 
@@ -99,6 +99,7 @@
     [secureAlert becomeFirstResponder];
     _alertManager = alertManager;
 //    [tf becomeFirstResponder];
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -132,5 +133,15 @@
 - (void)secureAlertViewDidClickClose:(BPSecureAlertView *)secureAlertView
 {
     [_alertManager dismissAnimated:YES];
+}
+
+- (void)willPresentAlertView:(UIAlertView *)alertView
+{
+    
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    
 }
 @end

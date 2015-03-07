@@ -192,6 +192,23 @@
                                             <segue destination="J0a-5h-YI0" kind="show" id="lzF-ZH-VFf"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="9jL-5U-DZp" style="IBUITableViewCellStyleDefault" id="6lt-gJ-H3K">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6lt-gJ-H3K" id="hqU-1Q-fQi">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Image with Color" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9jL-5U-DZp">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sws-V9-Hz3" kind="show" id="1z0-Lm-PRE"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -604,90 +621,50 @@ Usage：
             </objects>
             <point key="canvasLocation" x="499" y="1235"/>
         </scene>
-        <!--Alert View Controller-->
-        <scene sceneID="IVi-yi-y9G">
+        <!--Image With Color-->
+        <scene sceneID="RIC-W1-vrS">
             <objects>
-                <viewController storyboardIdentifier="BPAlertViewController" id="TKG-y4-S2P" customClass="BPAlertViewController" sceneMemberID="viewController">
+                <viewController id="sws-V9-Hz3" customClass="BPImageWithColorViewController" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lL0-xM-Q6K"/>
-                        <viewControllerLayoutGuide type="bottom" id="yqp-QB-sFx"/>
+                        <viewControllerLayoutGuide type="top" id="YTK-TU-qev"/>
+                        <viewControllerLayoutGuide type="bottom" id="WG4-aa-amX"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="RBN-aH-z0X">
+                    <view key="view" contentMode="scaleToFill" id="11g-C1-KfT">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kei-u6-qWE" customClass="UIControl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <action selector="bgTouchDown:" destination="TKG-y4-S2P" eventType="touchDown" id="bUA-po-dzi"/>
-                                </connections>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7a7-cK-vHl">
-                                <rect key="frame" x="12" y="10" width="296" height="548"/>
-                                <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LIg-Cl-NRf">
-                                        <rect key="frame" x="0.0" y="0.0" width="296" height="548"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDm-ag-pF7">
-                                                <rect key="frame" x="8" y="9" width="280" height="1527.5"/>
-                                                <mutableString key="text">减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就减肥了设计费了解到酸辣粉简单来说解放冷冻室就废了就是浪费简单来说解放路口的是家里附近的收垃圾分类的是家乐福简单来说解放冷冻室家乐福几点睡了解放冷冻室减肥了技术的连接代理商可减肥了就是浪费几点睡了解放冷冻室就发来的减肥了空间上当了分Joe我ijfojfdslfj粮食店街飞洛杉矶佛网ijflsd就</mutableString>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="JDm-ag-pF7" firstAttribute="leading" secondItem="LIg-Cl-NRf" secondAttribute="leading" constant="8" id="0Yb-l8-fDS"/>
-                                            <constraint firstAttribute="trailing" secondItem="JDm-ag-pF7" secondAttribute="trailing" constant="8" id="0iW-ZZ-ALi"/>
-                                            <constraint firstAttribute="bottom" secondItem="JDm-ag-pF7" secondAttribute="bottom" id="3T6-8M-ffo"/>
-                                            <constraint firstItem="JDm-ag-pF7" firstAttribute="top" secondItem="LIg-Cl-NRf" secondAttribute="top" constant="9" id="6gS-Ic-fcJ"/>
-                                            <constraint firstItem="JDm-ag-pF7" firstAttribute="height" relation="greaterThanOrEqual" secondItem="LIg-Cl-NRf" secondAttribute="height" id="NR4-Kz-cXF"/>
-                                            <constraint firstItem="JDm-ag-pF7" firstAttribute="width" secondItem="LIg-Cl-NRf" secondAttribute="width" constant="-16" id="e2m-DJ-GQK"/>
-                                        </constraints>
-                                    </scrollView>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="LIg-Cl-NRf" firstAttribute="top" secondItem="7a7-cK-vHl" secondAttribute="top" id="9sE-qS-CLQ"/>
-                                    <constraint firstAttribute="width" constant="296" id="Cfi-Ol-eHh"/>
-                                    <constraint firstAttribute="bottom" secondItem="LIg-Cl-NRf" secondAttribute="bottom" id="I3N-1a-tzc"/>
-                                    <constraint firstAttribute="trailing" secondItem="LIg-Cl-NRf" secondAttribute="trailing" id="WJe-fk-knm"/>
-                                    <constraint firstItem="LIg-Cl-NRf" firstAttribute="leading" secondItem="7a7-cK-vHl" secondAttribute="leading" id="c3w-0E-ed9"/>
-                                    <constraint firstAttribute="height" constant="548" id="i9u-LU-ou4"/>
-                                </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ys9-e5-gcM">
+                                <rect key="frame" x="0.0" y="524" width="320" height="44"/>
+                                <items>
+                                    <barButtonItem title="color" id="45d-5d-U2w">
+                                        <connections>
+                                            <action selector="actionToFillColor:" destination="sws-V9-Hz3" id="5NA-C4-Iax"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="photo5t.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MPx-s6-oBa">
+                                <rect key="frame" x="85" y="184" width="150" height="200"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Kei-u6-qWE" firstAttribute="leading" secondItem="RBN-aH-z0X" secondAttribute="leadingMargin" constant="-16" id="4i0-91-kr9"/>
-                            <constraint firstAttribute="centerY" secondItem="7a7-cK-vHl" secondAttribute="centerY" id="4iW-QH-gXx"/>
-                            <constraint firstAttribute="centerX" secondItem="7a7-cK-vHl" secondAttribute="centerX" id="DZc-2r-sp4"/>
-                            <constraint firstItem="yqp-QB-sFx" firstAttribute="top" secondItem="Kei-u6-qWE" secondAttribute="bottom" id="Y88-zL-v9W"/>
-                            <constraint firstItem="Kei-u6-qWE" firstAttribute="top" secondItem="lL0-xM-Q6K" secondAttribute="bottom" constant="-20" id="iQc-gm-mul"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Kei-u6-qWE" secondAttribute="trailing" constant="-16" id="qTS-A1-tdJ"/>
+                            <constraint firstAttribute="centerY" secondItem="MPx-s6-oBa" secondAttribute="centerY" id="9RE-La-Rjs"/>
+                            <constraint firstItem="WG4-aa-amX" firstAttribute="top" secondItem="Ys9-e5-gcM" secondAttribute="bottom" id="CaU-ny-S2h"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ys9-e5-gcM" secondAttribute="trailing" constant="-16" id="Oz4-Cu-NXA"/>
+                            <constraint firstAttribute="centerX" secondItem="MPx-s6-oBa" secondAttribute="centerX" id="XhI-ue-1iI"/>
+                            <constraint firstItem="Ys9-e5-gcM" firstAttribute="leading" secondItem="11g-C1-KfT" secondAttribute="leadingMargin" constant="-16" id="rfM-wf-oPu"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Image With Color" id="NbX-fe-2lR"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="_label" destination="JDm-ag-pF7" id="Oje-Gs-B2w"/>
-                        <outlet property="effect" destination="P2d-Pf-hzZ" id="6Xd-i2-mds"/>
+                        <outlet property="tmpImageView" destination="MPx-s6-oBa" id="awK-Yg-4oD"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bz5-QQ-AmZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <customObject id="P2d-Pf-hzZ" customClass="BPAlertEffect">
-                    <connections>
-                        <outlet property="alertBody" destination="7a7-cK-vHl" id="C6D-G3-nCg"/>
-                        <outlet property="backgroundView" destination="Kei-u6-qWE" id="DoT-YC-6qT"/>
-                    </connections>
-                </customObject>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PD9-VF-4jo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="922" y="1481"/>
+            <point key="canvasLocation" x="934" y="1502"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GXx-WT-vj2">
@@ -854,5 +831,6 @@ Usage：
     <resources>
         <image name="photo1.jpg" width="1024" height="681"/>
         <image name="photo2.jpg" width="681" height="1024"/>
+        <image name="photo5t.jpg" width="150" height="200"/>
     </resources>
 </document>
