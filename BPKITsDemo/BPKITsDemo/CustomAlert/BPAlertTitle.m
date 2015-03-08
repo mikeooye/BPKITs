@@ -23,22 +23,22 @@
     return self;
 }
 
-- (id)copyWithZone:(NSZone *)zone
-{
-    BPAlertTitle *copy = [[[self class] allocWithZone:zone] init];
-    copy.title = [self.title copyWithZone:zone];
-    return copy;
-}
-
 - (UIView *)viewForTitle
 {
     if (_label != nil) {
         return _label;
     }
     UILabel *label = [[UILabel alloc] init];
-    label.font = [UIFont boldSystemFontOfSize:16];
+    if (self.alertController.preferredStyle == BPAlertControllerStyleAlert) {
+        label.font = [UIFont boldSystemFontOfSize:14];
+        label.textColor = [UIColor blackColor];
+    }else{
+        label.font = [UIFont boldSystemFontOfSize:12];
+        label.textColor = [UIColor lightGrayColor];
+    }
+
     label.backgroundColor = [UIColor clearColor];
-    label.textColor = [UIColor blackColor];
+    
     label.textAlignment = NSTextAlignmentCenter;
     label.numberOfLines = 0;
     label.text = self.title;

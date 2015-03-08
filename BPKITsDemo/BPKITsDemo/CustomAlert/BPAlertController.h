@@ -19,12 +19,13 @@ typedef NS_ENUM(NSInteger, BPAlertControllerStyle) {
 
 @protocol BPAlertItem <NSObject>
 
-@property (assign, readonly) BPAlertController *alertController;
+@property (assign, nonatomic) BPAlertController *alertController;
 @end
 
 
 @protocol BPAlertTitle;
 @protocol BPAlertMessage;
+@protocol BPAlertControllerEffect;
 
 @interface BPAlertController : UIViewController
 
@@ -40,4 +41,6 @@ typedef NS_ENUM(NSInteger, BPAlertControllerStyle) {
 @property (nonatomic, strong) id<BPAlertTitle> alertTitle;
 @property (nonatomic, strong) id<BPAlertMessage> alertMessage;
 @property (nonatomic, readonly) BPAlertControllerStyle preferredStyle;
+
+@property (nonatomic, strong) id<BPAlertControllerEffect> effect;
 @end

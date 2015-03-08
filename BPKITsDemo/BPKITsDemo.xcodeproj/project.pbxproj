@@ -74,6 +74,7 @@
 		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
 		285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */; };
+		289E18C91AABEE5E0000AAAB /* BPActionSheetEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18C81AABEE5E0000AAAB /* BPActionSheetEffect.m */; };
 		28AF06571AAA755600A8935C /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AF06561AAA755600A8935C /* BPPopoverController.m */; };
 		28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */; };
 		28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3E51AAAD6C000A5DE5A /* BPImageWithColorViewController.m */; };
@@ -227,6 +228,9 @@
 		285F87DC1AAB6A6F00297EE6 /* BPAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertAction.h; sourceTree = "<group>"; };
 		285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAction.m; sourceTree = "<group>"; };
 		285F87DF1AAB6A9700297EE6 /* BPAlertDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPAlertDefines.h; sourceTree = "<group>"; };
+		289E18C71AABEE5E0000AAAB /* BPActionSheetEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPActionSheetEffect.h; sourceTree = "<group>"; };
+		289E18C81AABEE5E0000AAAB /* BPActionSheetEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPActionSheetEffect.m; sourceTree = "<group>"; };
+		289E18CB1AABEE900000AAAB /* BPAlertControllerEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertControllerEffect.h; sourceTree = "<group>"; };
 		28AF06551AAA755600A8935C /* BPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverController.h; sourceTree = "<group>"; };
 		28AF06561AAA755600A8935C /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverController.m; sourceTree = "<group>"; };
 		28C6D3DE1AAAC4B100A5DE5A /* UIImage+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+bpExtension.h"; sourceTree = "<group>"; };
@@ -465,8 +469,11 @@
 				2812F1151A3F327D00375631 /* BPDateFormatter.m */,
 				28AF06551AAA755600A8935C /* BPPopoverController.h */,
 				28AF06561AAA755600A8935C /* BPPopoverController.m */,
+				289E18CB1AABEE900000AAAB /* BPAlertControllerEffect.h */,
 				280628E91AA6053E00810879 /* BPAlertEffect.h */,
 				280628EA1AA6053E00810879 /* BPAlertEffect.m */,
+				289E18C71AABEE5E0000AAAB /* BPActionSheetEffect.h */,
+				289E18C81AABEE5E0000AAAB /* BPActionSheetEffect.m */,
 			);
 			name = Helpers;
 			path = ../../Helpers;
@@ -818,6 +825,7 @@
 				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
 				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
+				289E18C91AABEE5E0000AAAB /* BPActionSheetEffect.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,

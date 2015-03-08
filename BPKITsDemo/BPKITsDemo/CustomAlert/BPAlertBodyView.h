@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BPAlertController.h"
 
-@protocol BPAlertBodyView<NSObject>
+@protocol BPAlertBodyView<NSObject, BPAlertItem>
 
 @property (assign, nonatomic) CGSize preferredSize;
 @end
@@ -16,4 +17,5 @@
 @interface BPAlertBodyView : UIView<BPAlertBodyView>
 
 @property (assign, nonatomic) CGSize preferredSize;
+@property (assign, nonatomic) BPAlertController *alertController;
 @end

@@ -11,7 +11,7 @@
 #import "BPAlertController.h"
 
 
-@protocol BPAlertTitle <BPAlertItem, NSCopying>
+@protocol BPAlertTitle <BPAlertItem, NSObject>
 
 - (instancetype)initWithTitle:(NSString *)title;
 @property (nonatomic, copy) NSString *title;
@@ -24,7 +24,7 @@
 
 - (instancetype)initWithTitle:(NSString *)title;
 @property (nonatomic, copy) NSString *title;
-@property (assign, readonly) BPAlertController *alertController;
+@property (assign, nonatomic) BPAlertController *alertController;
 
 - (UIView *)viewForTitle;
 - (CGSize)sizeWithWidth:(CGFloat)width;

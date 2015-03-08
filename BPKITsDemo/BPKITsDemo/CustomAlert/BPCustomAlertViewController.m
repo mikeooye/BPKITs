@@ -17,6 +17,7 @@
 }
 
 - (IBAction)showCustomAlert:(id)sender;
+- (IBAction)showCustomActionSheet:(id)sender;
 @end
 
 @implementation BPCustomAlertViewController
@@ -43,48 +44,52 @@
 
 - (IBAction)showCustomAlert:(id)sender {
     
-//    BPAlertViewController *vc = [[BPAlertViewController alloc] init];
-//    vc.view.backgroundColor = [UIColor redColor];
-//    BPPopoverController *popover = [[BPPopoverController alloc] initWithContentViewController:vc];
-//    popover.popoverContentSize = CGSizeMake(300, 100);
-//    [popover presentPopoverOnViewController:self.navigationController animated:YES];
-//    _pov = popover;
+    [self showCustomAlertWithStyle:BPAlertControllerStyleAlert];
+}
+
+- (IBAction)showCustomActionSheet:(id)sender {
     
-    
+    [self showCustomAlertWithStyle:BPAlertControllerStyleActionSheet];
+}
+
+- (void)showCustomAlertWithStyle:(BPAlertControllerStyle)style
+{
     BPAlertTitle *title = [[BPAlertTitle alloc] initWithTitle:@"我是一个标题，哈哈哈哈哈哈哈啊哈哈哈哈😄"];
     BPAlertMessage *message = [[BPAlertMessage alloc] initWithMessage:@"我是一段信息，我这里的内容很重要，请关注我，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈啊哈哈哈"];
-
+    
     BPAlertController *alertController = [BPAlertController alertControllerWithTitle:title
                                                                              message:message
-                                                                      preferredStyle:BPAlertControllerStyleAlert];
-    [alertController addAction:[BPAlertAction actionWithTitle:@"ABC"
-                                                        style:BPAlertActionStyleDefault
-                                                      handler:^(BPAlertAction *action) {
-        NSLog(@"%@", action.title);
-    }]];
-    [alertController addAction:[BPAlertAction actionWithTitle:@"ButtonB" style:BPAlertActionStyleDefault handler:^(BPAlertAction *action) {
-        NSLog(@"ButtonB");
-    }]];
-    
+                                                                      preferredStyle:style];
+//    [alertController addAction:[BPAlertAction actionWithTitle:@"ABC"
+//                                                        style:BPAlertActionStyleDefault
+//                                                      handler:^(BPAlertAction *action) {
+//                                                          NSLog(@"%@", action.title);
+//                                                      }]];
+//    [alertController addAction:[BPAlertAction actionWithTitle:@"ButtonB" style:BPAlertActionStyleDefault handler:^(BPAlertAction *action) {
+//        NSLog(@"ButtonB");
+//    }]];
+
     [alertController addAction:[BPAlertAction actionWithTitle:@"Red" style:BPAlertActionStyleDestructive handler:^(BPAlertAction *action) {
-        
+
     }]];
-    
+
     [alertController addAction:[BPAlertAction actionWithTitle:@"Cancel" style:BPAlertActionStyleCancel handler:^(BPAlertAction *action) {
-        
+        NSLog(@"Cancel");
     }]];
+//
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.placeholder = @"tf 1";
+//    }];
+//
+//    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//        textField.placeholder = @"tf 2";
+//    }];
     
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"tf 1";
-    }];
+    UIDatePicker *datePicker = [[UIDatePicker alloc] init];
+    datePicker.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
-    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
-        textField.placeholder = @"tf 2";
-    }];
-    
-    BPAlertBodyView *redView = [[BPAlertBodyView alloc] init];
-    redView.backgroundColor = [UIColor redColor];
-    redView.preferredSize = CGSizeMake(200, 200);
+    BPAlertBodyView *redView = [[BPAlertBodyView alloc] initWithFrame:datePicker.bounds];
+    [redView addSubview:datePicker];
     alertController.bodyView = redView;
     
     [self presentViewController:alertController animated:YES completion:nil];

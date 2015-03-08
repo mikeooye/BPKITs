@@ -1,17 +1,15 @@
 //
-//  BPAlertEffect.h
+//  BPAlertControllerEffect.h
 //  BPKITsDemo
 //
-//  Created by LiHaozhen on 15/3/3.
+//  Created by LiHaozhen on 15/3/8.
 //  Copyright (c) 2015年 ihojin. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "BPAlertControllerEffect.h"
 
-@interface BPAlertEffect : NSObject<BPAlertControllerEffect>
-
+@class BPAlertController;
+@protocol BPAlertControllerEffect <NSObject>
 
 @property (assign, nonatomic) IBOutlet UIView *backgroundView;
 @property (assign, nonatomic) IBOutlet UIView *alertBody;
@@ -21,3 +19,5 @@
 
 @property (assign, nonatomic) BPAlertController *alertController;
 @end
+
+#define kAlertControllerEffectDuration 0.25

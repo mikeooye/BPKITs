@@ -10,4 +10,11 @@
 
 @implementation BPAlertBodyView
 
+- (CGSize)preferredSize
+{
+    if (CGSizeEqualToSize(CGSizeZero, _preferredSize)) {
+        _preferredSize = self.bounds.size;
+    }
+    return _preferredSize;
+}
 @end

@@ -1,8 +1,8 @@
 //
-//  BPAlertEffect.h
+//  BPActionSheetEffect.h
 //  BPKITsDemo
 //
-//  Created by LiHaozhen on 15/3/3.
+//  Created by LiHaozhen on 15/3/8.
 //  Copyright (c) 2015年 ihojin. All rights reserved.
 //
 
@@ -10,8 +10,7 @@
 #import <UIKit/UIKit.h>
 #import "BPAlertControllerEffect.h"
 
-@interface BPAlertEffect : NSObject<BPAlertControllerEffect>
-
+@interface BPActionSheetEffect : NSObject<BPAlertControllerEffect>
 
 @property (assign, nonatomic) IBOutlet UIView *backgroundView;
 @property (assign, nonatomic) IBOutlet UIView *alertBody;

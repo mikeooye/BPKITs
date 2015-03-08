@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BPAlertController.h"
 
-@protocol BPAlertMessage <BPAlertItem>
+@protocol BPAlertMessage <BPAlertItem, NSObject>
 
 - (instancetype)initWithMessage:(NSString *)message;
 
@@ -17,11 +17,10 @@
 - (UIView *)viewForMessage;
 - (CGSize)sizeWithWidth:(CGFloat)width;
 
-@property (assign, readonly) BPAlertController *alertController;
 @end
 
 @interface BPAlertMessage : NSObject<BPAlertMessage>
 
-@property (assign, readonly) BPAlertController *alertController;
+@property (assign, nonatomic) BPAlertController *alertController;
 @property (nonatomic, copy) NSString *message;
 @end

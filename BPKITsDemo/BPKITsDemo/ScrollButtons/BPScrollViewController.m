@@ -70,12 +70,52 @@
 //    systemBtn.center = self.view.center;
     [systemBtn addTarget:self action:@selector(makeSystemAlert) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:systemBtn];
+    
+    UIButton *sAc = [UIButton buttonWithType:UIButtonTypeSystem];
+    sAc.frame = CGRectMake(0, 260, 300, 60);
+    [sAc setTitle:@"Show System ActionSheet" forState:UIControlStateNormal];
+    sAc.tintColor = [UIColor blueColor];
+    //    systemBtn.center = self.view.center;
+    [sAc addTarget:self action:@selector(makeSystemActionSheet) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:sAc];
 }
 
 - (void)makeSystemAlert
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert" message:nil delegate:self cancelButtonTitle:@"取消" otherButtonTitles:nil, nil];
-    [alertView show];
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"我是一个title" message:@"我是一个message" preferredStyle:UIAlertControllerStyleAlert];
+    [alert addAction:[UIAlertAction actionWithTitle:@"A" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"D" style:UIAlertActionStyleDestructive handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"C" style:UIAlertActionStyleCancel handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"A2" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+    }]];
+    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+        textField.placeholder = @"this is textfield";
+    }];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+- (void)makeSystemActionSheet
+{
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"我是一个title" message:@"我是一个message" preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"A" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+    }]];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"D" style:UIAlertActionStyleDestructive handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"C" style:UIAlertActionStyleCancel handler:nil]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"A2" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        
+    }]];
+    
+//    [alert addTextFieldWithConfigurationHandler:^(UITextField *textField) {
+//       textField.placeholder = @"this is textfield";
+//    }];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 
 - (void)makeAlert

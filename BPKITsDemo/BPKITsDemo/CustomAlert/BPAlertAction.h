@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BPAlertController.h"
 
 typedef NS_ENUM(NSInteger, BPAlertActionStyle) {
     BPAlertActionStyleDefault = 0,
@@ -17,7 +18,7 @@ typedef NS_ENUM(NSInteger, BPAlertActionStyle) {
 @class BPAlertAction;
 typedef void(^BPAlertActionHandler)(BPAlertAction *action);
 
-@interface BPAlertAction : NSObject
+@interface BPAlertAction : NSObject<BPAlertItem>
 
 + (instancetype)actionWithTitle:(NSString *)title style:(BPAlertActionStyle)style handler:(void (^) (BPAlertAction *action))handler;
 
@@ -26,4 +27,5 @@ typedef void(^BPAlertActionHandler)(BPAlertAction *action);
 @property (nonatomic, getter=isEnabled) BOOL enabled;
 @property (nonatomic, copy) BPAlertActionHandler handler;
 
+@property (assign, nonatomic) BPAlertController *alertController;
 @end

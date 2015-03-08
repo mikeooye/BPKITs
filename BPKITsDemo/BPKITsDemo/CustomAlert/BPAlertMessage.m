@@ -25,9 +25,16 @@
 {
     if (_label == nil) {
         UILabel *label = [[UILabel alloc] init];
-        label.font = [UIFont systemFontOfSize:14];
+        if (self.alertController.preferredStyle == BPAlertControllerStyleAlert) {
+            label.font = [UIFont systemFontOfSize:12];
+            label.textColor = [UIColor blackColor];
+        }else{
+            label.font = [UIFont systemFontOfSize:12];
+            label.textColor = [UIColor lightGrayColor];
+        }
+        
         label.backgroundColor = [UIColor clearColor];
-        label.textColor = [UIColor blackColor];
+        
         label.textAlignment = NSTextAlignmentCenter;
         label.numberOfLines = 0;
         label.text = self.message;
