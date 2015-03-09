@@ -71,6 +71,8 @@
 		2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2812F1111A3F320300375631 /* BPDatePickerViewController.xib */; };
 		2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1151A3F327D00375631 /* BPDateFormatter.m */; };
 		2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2820F0CB1AAC5D3C00E3FFD5 /* BPPlayerControl.m */; };
+		28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */; };
+		28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D801AADDE37002D63A7 /* BPAlertAnimation.m */; };
 		284208671A9C655E00CD1EB0 /* BPRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 284208661A9C655E00CD1EB0 /* BPRefreshTableViewController.m */; };
 		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
@@ -226,6 +228,10 @@
 		2812F1151A3F327D00375631 /* BPDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDateFormatter.m; sourceTree = "<group>"; };
 		2820F0CA1AAC5D3C00E3FFD5 /* BPPlayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerControl.h; sourceTree = "<group>"; };
 		2820F0CB1AAC5D3C00E3FFD5 /* BPPlayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerControl.m; sourceTree = "<group>"; };
+		28261D7B1AADDD4F002D63A7 /* BPBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBaseAnimation.h; sourceTree = "<group>"; };
+		28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBaseAnimation.m; sourceTree = "<group>"; };
+		28261D7F1AADDE37002D63A7 /* BPAlertAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertAnimation.h; sourceTree = "<group>"; };
+		28261D801AADDE37002D63A7 /* BPAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAnimation.m; sourceTree = "<group>"; };
 		284208651A9C655E00CD1EB0 /* BPRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPRefreshTableViewController.h; path = "Refresh Table/BPRefreshTableViewController.h"; sourceTree = "<group>"; };
 		284208661A9C655E00CD1EB0 /* BPRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPRefreshTableViewController.m; path = "Refresh Table/BPRefreshTableViewController.m"; sourceTree = "<group>"; };
 		284208691A9C6B7300CD1EB0 /* BPLoadingMore2Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLoadingMore2Control.h; sourceTree = "<group>"; };
@@ -432,6 +438,10 @@
 				2812F0831A3F2E0200375631 /* bpAnimation.h */,
 				2812F0841A3F2E0200375631 /* BPAnimationCreater.h */,
 				2812F0851A3F2E0200375631 /* BPAnimationCreater.m */,
+				28261D7B1AADDD4F002D63A7 /* BPBaseAnimation.h */,
+				28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */,
+				28261D7F1AADDE37002D63A7 /* BPAlertAnimation.h */,
+				28261D801AADDE37002D63A7 /* BPAlertAnimation.m */,
 			);
 			name = Animation;
 			path = ../../Animation;
@@ -841,6 +851,7 @@
 				289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */,
 				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,
 				2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */,
+				28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */,
 				2812F10A1A3F2E7100375631 /* RootViewController.m in Sources */,
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
 				2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */,
@@ -877,6 +888,7 @@
 				2812F0ED1A3F2E0200375631 /* UIViewController+bpExtension.m in Sources */,
 				28AF06571AAA755600A8935C /* BPPopoverController.m in Sources */,
 				28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */,
+				28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */,
 				2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */,
 				2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */,
 				2812F0E71A3F2E0200375631 /* NSNumberFormatter+bpExtension.m in Sources */,

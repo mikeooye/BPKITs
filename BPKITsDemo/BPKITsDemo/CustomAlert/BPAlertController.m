@@ -14,8 +14,9 @@
 #import "BPAlertDefines.h"
 #import "BPAlertEffect.h"
 #import "BPActionSheetEffect.h"
+#import "BPAlertAnimation.h"
 
-@interface BPAlertController (){
+@interface BPAlertController ()<UIViewControllerTransitioningDelegate>{
     
     NSMutableArray *_actions;
     NSMutableArray *_textFields;
@@ -27,6 +28,8 @@
     
     NSMutableArray *_cancelActions;
     NSMutableArray *_otherActions;
+    
+    BPAlertAnimation *_alertAnimation;
 }
 @end
 
@@ -49,19 +52,35 @@
     [self dismissAnimated];
 }
 
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
+{
+    _alertAnimation.type = BPAnimationTypeDismiss;
+    return _alertAnimation;
+}
+
+- (id<UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
+{
+    _alertAnimation.type = BPAnimationTypePresent;
+    return _alertAnimation;
+}
+
 #pragma mark -
 - (instancetype)init
 {
     self = [super init];
     if (self) {
-        if ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending){
-            self.modalPresentationStyle = UIModalPresentationCurrentContext;
-        }else{
-            self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-        }
+//        if ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending){
+//            self.modalPresentationStyle = UIModalPresentationCurrentContext;
+//        }else{
+//            self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+//        }
         
         self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.34];
+        self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
+        self.transitioningDelegate = self;
+        self.modalPresentationStyle = UIModalPresentationCustom;
+        
+        _alertAnimation = [[BPAlertAnimation alloc] init];
     }
     return self;
 }
@@ -217,11 +236,11 @@
 {
     [super viewWillAppear:animated];
 
-    [self setupBackgroundView];
+//    [self setupBackgroundView];
     [self setupViews];
     
     _effect.alertBody = _alertBody;
-    [self showAnimated];
+//    [self showAnimated];
 }
 
 - (void)viewWillLayoutSubviews
