@@ -7,10 +7,10 @@
 //
 
 #import "BPAlertAnimation.h"
+#import "BPAlertController.h"
 
 @implementation BPAlertAnimation{
     
-    UIView *_coverView;
     NSArray *_constraints;
 }
 
@@ -18,39 +18,43 @@
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIView *containerView = [transitionContext containerView];
-    
+    BPAlertController *modalViewController = nil;
     if (self.type == BPAnimationTypePresent) {
         
-        UIView *modalView = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
-        modalView.userInteractionEnabled = YES;
-        
-        if (_coverView == nil) {
-            _coverView = [[UIView alloc] initWithFrame:containerView.bounds];
-            _coverView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.34];
-            _coverView.alpha = 0;
-        }else _coverView.frame = containerView.bounds;
-        [containerView addSubview:_coverView];
-        [containerView addSubview:modalView];
-        modalView.alpha = 0;
-        modalView.transform = CGAffineTransformMakeScale(1.12, 1.12);
+        modalViewController = (BPAlertController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
+        modalViewController.view.frame = containerView.bounds;
+        modalViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
+        [containerView addSubview:modalViewController.view];
+        modalViewController.view.alpha = 0;
+        if (modalViewController.preferredStyle == BPAlertControllerStyleAlert) {
+            modalViewController.view.transform = CGAffineTransformMakeScale(1.12, 1.12);
+        }else{
+            CGRect rect = modalViewController.alertBody.frame;
+            rect.origin.x = 0;
+            rect.origin.y = CGRectGetHeight(modalViewController.view.frame);
+            rect.size.width = CGRectGetWidth(modalViewController.view.frame);
+            modalViewController.alertBody.frame = rect;
+        }
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-
-            _coverView.alpha = 1;
-            modalView.alpha = 1;
-            modalView.transform = CGAffineTransformIdentity;
+            modalViewController.view.alpha = 1;
+            if (modalViewController.preferredStyle == BPAlertControllerStyleAlert) {
+                modalViewController.view.transform = CGAffineTransformIdentity;
+            }else{
+                modalViewController.alertBody.frame = CGRectOffset(modalViewController.alertBody.frame, 0, -CGRectGetHeight(modalViewController.alertBody.frame));
+            }
         } completion:^(BOOL finished) {
-            [transitionContext completeTransition:YES];
+            [transitionContext completeTransition:finished];
         }];
     }else{
         
-        UIView *modalView = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey].view;
+        modalViewController = (BPAlertController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
-            _coverView.alpha = 0;
-            modalView.alpha = 0;
+            if (modalViewController.preferredStyle == BPAlertControllerStyleActionSheet) {
+                modalViewController.alertBody.frame = CGRectOffset(modalViewController.alertBody.frame, 0, CGRectGetHeight(modalViewController.alertBody.frame));
+            }
+            modalViewController.view.alpha = 0;
         } completion:^(BOOL finished) {
-            [_coverView removeFromSuperview];
-            [modalView removeFromSuperview];
-            [transitionContext completeTransition:YES];
+            [transitionContext completeTransition:finished];
         }];
     }
 }

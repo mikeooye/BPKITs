@@ -25,7 +25,6 @@ typedef NS_ENUM(NSInteger, BPAlertControllerStyle) {
 
 @protocol BPAlertTitle;
 @protocol BPAlertMessage;
-@protocol BPAlertControllerEffect;
 
 @interface BPAlertController : UIViewController
 
@@ -42,5 +41,6 @@ typedef NS_ENUM(NSInteger, BPAlertControllerStyle) {
 @property (nonatomic, strong) id<BPAlertMessage> alertMessage;
 @property (nonatomic, readonly) BPAlertControllerStyle preferredStyle;
 
-@property (nonatomic, strong) id<BPAlertControllerEffect> effect;
+
+@property (nonatomic, readonly) UIView *alertBody;
 @end

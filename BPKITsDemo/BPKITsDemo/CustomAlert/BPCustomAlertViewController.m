@@ -8,12 +8,10 @@
 
 #import "BPCustomAlertViewController.h"
 #import "BPAlertController.h"
-#import "BPPopoverController.h"
 #import "BPAlertDefines.h"
 
 @interface BPCustomAlertViewController (){
     
-    BPPopoverController *_pov;
 }
 
 - (IBAction)showCustomAlert:(id)sender;

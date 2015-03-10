@@ -41,7 +41,6 @@
 		04DC6C711A6E17250062A5F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C701A6E17250062A5F6 /* QuartzCore.framework */; };
 		04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */; };
 		04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E31CF31A84DA0400C05702 /* BPScrollViewController.m */; };
-		280628EB1AA6053E00810879 /* BPAlertEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 280628EA1AA6053E00810879 /* BPAlertEffect.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -77,12 +76,10 @@
 		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
 		285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */; };
-		289E18C91AABEE5E0000AAAB /* BPActionSheetEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18C81AABEE5E0000AAAB /* BPActionSheetEffect.m */; };
 		289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */; };
 		289E18D11AAC2F6B0000AAAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */; };
 		289E18D31AAC2F700000AAAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D21AAC2F700000AAAB /* AVKit.framework */; };
 		289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18D51AAC2F850000AAAB /* BPPlayerView.m */; };
-		28AF06571AAA755600A8935C /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28AF06561AAA755600A8935C /* BPPopoverController.m */; };
 		28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */; };
 		28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3E51AAAD6C000A5DE5A /* BPImageWithColorViewController.m */; };
 		28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3ED1AAAF7C700A5DE5A /* BPAlertButton.m */; };
@@ -161,8 +158,6 @@
 		04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUpdownButton.m; sourceTree = "<group>"; };
 		04E31CF21A84DA0400C05702 /* BPScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPScrollViewController.h; path = ScrollButtons/BPScrollViewController.h; sourceTree = "<group>"; };
 		04E31CF31A84DA0400C05702 /* BPScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPScrollViewController.m; path = ScrollButtons/BPScrollViewController.m; sourceTree = "<group>"; };
-		280628E91AA6053E00810879 /* BPAlertEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertEffect.h; sourceTree = "<group>"; };
-		280628EA1AA6053E00810879 /* BPAlertEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertEffect.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -241,17 +236,12 @@
 		285F87DC1AAB6A6F00297EE6 /* BPAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertAction.h; sourceTree = "<group>"; };
 		285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAction.m; sourceTree = "<group>"; };
 		285F87DF1AAB6A9700297EE6 /* BPAlertDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPAlertDefines.h; sourceTree = "<group>"; };
-		289E18C71AABEE5E0000AAAB /* BPActionSheetEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPActionSheetEffect.h; sourceTree = "<group>"; };
-		289E18C81AABEE5E0000AAAB /* BPActionSheetEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPActionSheetEffect.m; sourceTree = "<group>"; };
-		289E18CB1AABEE900000AAAB /* BPAlertControllerEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertControllerEffect.h; sourceTree = "<group>"; };
 		289E18CD1AAC2EC20000AAAB /* BPPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerViewController.h; sourceTree = "<group>"; };
 		289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerViewController.m; sourceTree = "<group>"; };
 		289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		289E18D21AAC2F700000AAAB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		289E18D41AAC2F850000AAAB /* BPPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerView.h; sourceTree = "<group>"; };
 		289E18D51AAC2F850000AAAB /* BPPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerView.m; sourceTree = "<group>"; };
-		28AF06551AAA755600A8935C /* BPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverController.h; sourceTree = "<group>"; };
-		28AF06561AAA755600A8935C /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverController.m; sourceTree = "<group>"; };
 		28C6D3DE1AAAC4B100A5DE5A /* UIImage+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+bpExtension.h"; sourceTree = "<group>"; };
 		28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+bpExtension.m"; sourceTree = "<group>"; };
 		28C6D3E41AAAD6C000A5DE5A /* BPImageWithColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPImageWithColorViewController.h; path = "Image With Color/BPImageWithColorViewController.h"; sourceTree = "<group>"; };
@@ -492,13 +482,6 @@
 				2812F0A41A3F2E0200375631 /* WGS84ToGCJ02.m */,
 				2812F1141A3F327D00375631 /* BPDateFormatter.h */,
 				2812F1151A3F327D00375631 /* BPDateFormatter.m */,
-				28AF06551AAA755600A8935C /* BPPopoverController.h */,
-				28AF06561AAA755600A8935C /* BPPopoverController.m */,
-				289E18CB1AABEE900000AAAB /* BPAlertControllerEffect.h */,
-				280628E91AA6053E00810879 /* BPAlertEffect.h */,
-				280628EA1AA6053E00810879 /* BPAlertEffect.m */,
-				289E18C71AABEE5E0000AAAB /* BPActionSheetEffect.h */,
-				289E18C81AABEE5E0000AAAB /* BPActionSheetEffect.m */,
 			);
 			name = Helpers;
 			path = ../../Helpers;
@@ -870,12 +853,10 @@
 				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
 				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
-				289E18C91AABEE5E0000AAAB /* BPActionSheetEffect.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
-				280628EB1AA6053E00810879 /* BPAlertEffect.m in Sources */,
 				28C6D3F71AAB4CCA00A5DE5A /* BPAlertBodyView.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
 				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
@@ -886,7 +867,6 @@
 				04DC6C481A6E099A0062A5F6 /* BPPhotoBrowserViewController.m in Sources */,
 				2812F0EB1A3F2E0200375631 /* UIImage+Resize.m in Sources */,
 				2812F0ED1A3F2E0200375631 /* UIViewController+bpExtension.m in Sources */,
-				28AF06571AAA755600A8935C /* BPPopoverController.m in Sources */,
 				28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */,
 				28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */,
 				2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */,

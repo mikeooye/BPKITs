@@ -7,13 +7,10 @@
 //
 
 #import "BPAlertController.h"
-#import "BPAlertEffect.h"
 #import "UIImage+bpExtension.h"
 #import "UIColor+bpExtension.h"
 #import "BPLine.h"
 #import "BPAlertDefines.h"
-#import "BPAlertEffect.h"
-#import "BPActionSheetEffect.h"
 #import "BPAlertAnimation.h"
 
 @interface BPAlertController ()<UIViewControllerTransitioningDelegate>{
@@ -22,14 +19,13 @@
     NSMutableArray *_textFields;
     
     UIControl *_backgroundView;
-    UIScrollView *_alertBody;
-    
-    id<BPAlertControllerEffect> _effect;
     
     NSMutableArray *_cancelActions;
     NSMutableArray *_otherActions;
     
     BPAlertAnimation *_alertAnimation;
+    
+    UIScrollView *_alertBody;
 }
 @end
 
@@ -37,6 +33,10 @@
 @dynamic actions;
 @dynamic textFields;
 
+- (UIView *)alertBody
+{
+    return _alertBody;
+}
 
 - (void)didTapBackgroundView:(UIView *)view
 {
@@ -69,14 +69,9 @@
 {
     self = [super init];
     if (self) {
-//        if ([[[UIDevice currentDevice] systemVersion] compare:@"8.0" options:NSNumericSearch] == NSOrderedAscending){
-//            self.modalPresentationStyle = UIModalPresentationCurrentContext;
-//        }else{
-//            self.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-//        }
         
         self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-        self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0];
+        self.view.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.34];
         self.transitioningDelegate = self;
         self.modalPresentationStyle = UIModalPresentationCustom;
         
@@ -136,6 +131,24 @@
             _alertBody.layer.cornerRadius = 5.0f;
         }
     }
+    
+    [self.view addSubview:_alertBody];
+    _alertBody.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.9];
+    if (self.preferredStyle == BPAlertControllerStyleActionSheet) {
+        UIView *superView = self.view;
+        NSDictionary *views = NSDictionaryOfVariableBindings(_alertBody, superView);
+        _alertBody.translatesAutoresizingMaskIntoConstraints = NO;
+        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_alertBody]|" options:0 metrics:0 views:views]];
+        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_alertBody(200)]|" options:0 metrics:0 views:views]];
+    }else{
+        UIView *superView = self.view;
+        NSDictionary *views = NSDictionaryOfVariableBindings(_alertBody, superView);
+        _alertBody.translatesAutoresizingMaskIntoConstraints = NO;
+        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_alertBody(270)]" options:NSLayoutFormatAlignAllCenterX metrics:0 views:views]];
+        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_alertBody]-20-|" options:0 metrics:0 views:views]];
+        [superView addConstraint:[NSLayoutConstraint constraintWithItem:_alertBody attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:superView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
+    }
+    return;
     
     CGFloat offsetY = 8;
     
@@ -225,7 +238,6 @@
     _alertBody.center = self.view.center;
     
 //    _alertBody.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
-    [self.view addSubview:_alertBody];
 }
 
 - (void)viewDidLoad {
@@ -236,11 +248,10 @@
 {
     [super viewWillAppear:animated];
 
-//    [self setupBackgroundView];
+    [self setupBackgroundView];
     [self setupViews];
     
-    _effect.alertBody = _alertBody;
-//    [self showAnimated];
+    [self showAnimated];
 }
 
 - (void)viewWillLayoutSubviews
@@ -265,12 +276,10 @@
 
 - (void)showAnimated
 {
-    [_effect showWithCompletion:nil];
 }
 
 - (void)dismissAnimated
 {
-    [_effect dismissWithCompletion:nil];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -282,12 +291,6 @@
     controller.alertTitle = title;
     controller.alertMessage = message;
     [controller setValue:@(preferredStyle) forKey:@"_preferredStyle"];
-    
-    if (preferredStyle == BPAlertControllerStyleActionSheet) {
-        controller.effect = [[BPActionSheetEffect alloc] init];
-    }else{
-        controller.effect = [[BPAlertEffect alloc] init];
-    }
     
     return controller;
 }
@@ -315,14 +318,6 @@
     if ([_alertMessage isEqual:alertMessage] == NO) {
         _alertMessage = alertMessage;
         [_alertMessage setAlertController:self];
-    }
-}
-
-- (void)setEffect:(id<BPAlertControllerEffect>)effect
-{
-    if ([effect isEqual:_effect] == NO) {
-        _effect = effect;
-        [_effect setAlertController:self];
     }
 }
 
