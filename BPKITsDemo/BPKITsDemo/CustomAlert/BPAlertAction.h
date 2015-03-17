@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "BPAlertController.h"
 
+@class BPAlertButton;
 typedef NS_ENUM(NSInteger, BPAlertActionStyle) {
     BPAlertActionStyleDefault = 0,
     BPAlertActionStyleCancel,
@@ -28,4 +29,6 @@ typedef void(^BPAlertActionHandler)(BPAlertAction *action);
 @property (nonatomic, copy) BPAlertActionHandler handler;
 
 @property (assign, nonatomic) BPAlertController *alertController;
+
+- (BPAlertButton *)viewForAction;
 @end

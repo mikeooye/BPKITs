@@ -64,7 +64,6 @@
     return _alertAnimation;
 }
 
-#pragma mark -
 - (instancetype)init
 {
     self = [super init];
@@ -95,7 +94,8 @@
 {
     for (NSInteger index=0; index<actions.count; index++) {
             
-        BPAlertButton *btn = [BPAlertButton buttonWithAlertAction:[actions objectAtIndex:index]];
+        BPAlertAction *action = [_actions objectAtIndex:index];
+        BPAlertButton *btn = [action viewForAction];
         [btn addTarget:self action:@selector(alertButtonDidClick:) forControlEvents:UIControlEventTouchUpInside];
         btn.frame = CGRectMake(0, offsetY, width, 44);
         [_alertBody addSubview:btn];
@@ -115,40 +115,12 @@
     line.layer.zPosition = 200;
 }
 
-- (void)setupViews
+- (void)updateViewsLayout
 {
     CGFloat width = 270.0f;
     if (self.preferredStyle == BPAlertControllerStyleActionSheet) {
         width = CGRectGetWidth(self.view.frame);
     }
-    if (_alertBody == nil) {
-        UIScrollView *body = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, width, 200)];
-        body.backgroundColor = [UIColor whiteColor];
-        _alertBody = body;
-        
-        if (_preferredStyle == BPAlertControllerStyleAlert) {
-            _alertBody.clipsToBounds = YES;
-            _alertBody.layer.cornerRadius = 5.0f;
-        }
-    }
-    
-    [self.view addSubview:_alertBody];
-    _alertBody.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.9];
-    if (self.preferredStyle == BPAlertControllerStyleActionSheet) {
-        UIView *superView = self.view;
-        NSDictionary *views = NSDictionaryOfVariableBindings(_alertBody, superView);
-        _alertBody.translatesAutoresizingMaskIntoConstraints = NO;
-        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|[_alertBody]|" options:0 metrics:0 views:views]];
-        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[_alertBody(200)]|" options:0 metrics:0 views:views]];
-    }else{
-        UIView *superView = self.view;
-        NSDictionary *views = NSDictionaryOfVariableBindings(_alertBody, superView);
-        _alertBody.translatesAutoresizingMaskIntoConstraints = NO;
-        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[_alertBody(270)]" options:NSLayoutFormatAlignAllCenterX metrics:0 views:views]];
-        [superView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-20-[_alertBody]-20-|" options:0 metrics:0 views:views]];
-        [superView addConstraint:[NSLayoutConstraint constraintWithItem:_alertBody attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:superView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
-    }
-    return;
     
     CGFloat offsetY = 8;
     
@@ -158,7 +130,6 @@
         titleView.frame = CGRectMake(8, offsetY, width - 16, titleSize.height);
         
         offsetY = CGRectGetMaxY(titleView.frame) + 8;
-        [_alertBody addSubview:titleView];
     }
     
     if (self.alertMessage) {
@@ -167,14 +138,12 @@
         msgView.frame = CGRectMake(8, offsetY, width - 16, messageSize.height);
         
         offsetY = CGRectGetMaxY(msgView.frame) + 8;
-        [_alertBody addSubview:msgView];
     }
     
     for (NSInteger index = 0; index < _textFields.count; index++) {
         CGRect rect = CGRectMake(8, offsetY, width - 16, 30);
         UITextField *tf = [_textFields objectAtIndex:index];
         tf.frame = rect;
-        [_alertBody addSubview:tf];
         offsetY+= 30;
         
         if (index == _textFields.count - 1) {
@@ -189,10 +158,16 @@
         margin = MAX(margin, 8);
         CGRect bodyRect = CGRectMake(margin, offsetY, width - 2 * margin, _bodyView.preferredSize.height);
         _bodyView.frame = bodyRect;
-        [_alertBody addSubview:_bodyView];
+
         offsetY += _bodyView.preferredSize.height + 8;
     }
     
+    [_alertBody.subviews enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
+        
+        if ([obj isKindOfClass:[BPLine class]]) {
+            [obj removeFromSuperview];
+        }
+    }];
     if (self.alertTitle || self.alertMessage) {
         [self addLineWithOffsetY:offsetY width:width margin:0];
     }
@@ -201,11 +176,9 @@
         for (NSInteger index = 0; index < _actions.count; index++) {
             CGFloat btnWidth = width * 0.5;
             CGRect rect = CGRectMake(index * btnWidth, offsetY, btnWidth, 44);
-            BPAlertButton *btn = [BPAlertButton buttonWithAlertAction:[_actions objectAtIndex:index]];
-            [btn addTarget:self action:@selector(alertButtonDidClick:) forControlEvents:UIControlEventTouchUpInside];
+            BPAlertAction *action = [_actions objectAtIndex:index];
+            BPAlertButton *btn = [action viewForAction];
             btn.frame = rect;
-            [_alertBody addSubview:btn];
-            
             if (index == _actions.count - 1) {
                 
                 BPLine *line = [[BPLine alloc] initWithFrame:CGRectMake(btnWidth, offsetY, 1, 44)];
@@ -230,14 +203,78 @@
     
     CGRect frame = _alertBody.frame;
     frame.size.height = offsetY;
-    _alertBody.alwaysBounceVertical = NO;
     _alertBody.contentSize = frame.size;
     
     frame.size.height = MIN(frame.size.height, CGRectGetHeight(self.view.bounds) - 20 * 2);
     _alertBody.frame = frame;
-    _alertBody.center = self.view.center;
     
-//    _alertBody.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin;
+    if (self.preferredStyle == BPAlertControllerStyleAlert) {
+        
+        _alertBody.center = CGPointMake(CGRectGetWidth(self.view.frame) * 0.5, CGRectGetHeight(self.view.frame) * 0.5);
+    }else{
+        
+        frame.size.width = width;
+        frame.origin.y = CGRectGetHeight(self.view.frame) - frame.size.height;
+        _alertBody.frame = frame;
+    }
+}
+
+- (void)setupViews
+{
+    CGFloat width = 270.0f;
+    if (self.preferredStyle == BPAlertControllerStyleActionSheet) {
+        width = CGRectGetWidth(self.view.frame);
+    }
+    if (_alertBody == nil) {
+        UIScrollView *body = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, width, 200)];
+        body.backgroundColor = [UIColor whiteColor];
+        _alertBody = body;
+        
+        if (_preferredStyle == BPAlertControllerStyleAlert) {
+            _alertBody.clipsToBounds = YES;
+            _alertBody.layer.cornerRadius = 5.0f;
+        }else{
+            
+        }
+    }
+    [self.view addSubview:_alertBody];
+
+    if (self.alertTitle) {
+        UIView *titleView = [self.alertTitle viewForTitle];
+        [_alertBody addSubview:titleView];
+    }
+    
+    if (self.alertMessage) {
+        UIView *msgView = [self.alertMessage viewForMessage];
+        [_alertBody addSubview:msgView];
+    }
+    
+    for (NSInteger index = 0; index < _textFields.count; index++) {
+
+        UITextField *tf = [_textFields objectAtIndex:index];
+        [_alertBody addSubview:tf];
+    }
+    
+    if (_bodyView) {
+        [_alertBody addSubview:_bodyView];
+    }
+    
+    if (_actions.count == 2) {
+        for (NSInteger index = 0; index < _actions.count; index++) {
+            
+            BPAlertAction *action = [_actions objectAtIndex:index];
+            BPAlertButton *btn = [action viewForAction];
+            [btn addTarget:self action:@selector(alertButtonDidClick:) forControlEvents:UIControlEventTouchUpInside];
+            [_alertBody addSubview:btn];
+        }
+    }else{
+        
+        [self setupActions:_otherActions withOffsetY:0 width:width];
+        [self setupActions:_cancelActions withOffsetY:0 width:width];
+    }
+    
+    _alertBody.alwaysBounceVertical = NO;
+    [self updateViewsLayout];
 }
 
 - (void)viewDidLoad {
@@ -257,14 +294,8 @@
 - (void)viewWillLayoutSubviews
 {
     [super viewWillLayoutSubviews];
-//    if (_alertBody) {
-//        
-//        CGRect frame = _alertBody.frame;
-//        frame.size.height = MAX(frame.size.height, _alertBody.contentSize.height);
-//        frame.size.height = MIN(frame.size.height, CGRectGetHeight(self.view.bounds) - 20 * 2);
-//        _alertBody.frame = frame;
-//        _alertBody.center = self.view.center;
-//    }
+    
+    [self updateViewsLayout];
 }
 
 - (void)didReceiveMemoryWarning {

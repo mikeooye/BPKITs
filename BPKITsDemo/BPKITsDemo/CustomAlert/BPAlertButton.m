@@ -30,8 +30,8 @@
     if (self = [super init]) {
         _alertAction = action;
         
-        UIImage *normalImg = [UIImage imageFromColor:[UIColor whiteColor]];
-        UIImage *highlightedImg = [UIImage imageFromColor:RGB(240, 240, 240)];
+        UIImage *normalImg = [UIImage imageFromColor:[UIColor colorWithWhite:1.0 alpha:1]];
+        UIImage *highlightedImg = [UIImage imageFromColor:[UIColor colorWithWhite:0.9 alpha:1]];
         
         UIColor *titleColor = RGB(0, 0, 0);
         UIFont *titleFont = [UIFont systemFontOfSize:16];

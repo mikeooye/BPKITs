@@ -52,11 +52,11 @@
 
 - (void)showCustomAlertWithStyle:(BPAlertControllerStyle)style
 {
-    BPAlertTitle *title = [[BPAlertTitle alloc] initWithTitle:@"我是一个标题，哈哈哈哈哈哈哈啊哈哈哈哈😄"];
-    BPAlertMessage *message = [[BPAlertMessage alloc] initWithMessage:@"我是一段信息，我这里的内容很重要，请关注我，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈啊哈哈哈"];
+//    BPAlertTitle *title = [[BPAlertTitle alloc] initWithTitle:@"我是一个标题，哈哈哈哈哈哈哈啊哈哈哈哈😄"];
+//    BPAlertMessage *message = [[BPAlertMessage alloc] initWithMessage:@"我是一段信息，我这里的内容很重要，请关注我，哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈啊哈哈哈哈啊哈哈哈"];
     
-    BPAlertController *alertController = [BPAlertController alertControllerWithTitle:title
-                                                                             message:message
+    BPAlertController *alertController = [BPAlertController alertControllerWithTitle:nil
+                                                                             message:nil
                                                                       preferredStyle:style];
 //    [alertController addAction:[BPAlertAction actionWithTitle:@"ABC"
 //                                                        style:BPAlertActionStyleDefault
@@ -67,13 +67,13 @@
 //        NSLog(@"ButtonB");
 //    }]];
 
-    [alertController addAction:[BPAlertAction actionWithTitle:@"Red" style:BPAlertActionStyleDestructive handler:^(BPAlertAction *action) {
-
-    }]];
-
-    [alertController addAction:[BPAlertAction actionWithTitle:@"Cancel" style:BPAlertActionStyleCancel handler:^(BPAlertAction *action) {
-        NSLog(@"Cancel");
-    }]];
+//    [alertController addAction:[BPAlertAction actionWithTitle:@"Red" style:BPAlertActionStyleDestructive handler:^(BPAlertAction *action) {
+//
+//    }]];
+//
+//    [alertController addAction:[BPAlertAction actionWithTitle:@"Cancel" style:BPAlertActionStyleCancel handler:^(BPAlertAction *action) {
+//        NSLog(@"Cancel");
+//    }]];
 //
 //    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
 //        textField.placeholder = @"tf 1";

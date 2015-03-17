@@ -7,8 +7,12 @@
 //
 
 #import "BPAlertAction.h"
+#import "BPAlertButton.h"
 
-@interface BPAlertAction ()
+@interface BPAlertAction (){
+    
+    BPAlertButton *_alertButton;
+}
 
 @property (nonatomic, assign) BPAlertActionStyle actionStyle;
 @end
@@ -29,4 +33,11 @@
     return _actionStyle;
 }
 
+- (BPAlertButton *)viewForAction
+{
+    if (_alertButton == nil) {
+        _alertButton = [BPAlertButton buttonWithAlertAction:self];
+    }
+    return _alertButton;
+}
 @end
