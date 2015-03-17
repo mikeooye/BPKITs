@@ -9,8 +9,10 @@
 #import "BPCustomAlertViewController.h"
 #import "BPAlertController.h"
 #import "BPAlertDefines.h"
+#import "AreaPickerView.h"
+#import "AreaDataSource.h"
 
-@interface BPCustomAlertViewController (){
+@interface BPCustomAlertViewController ()<AreaDataSourceDelegate>{
     
 }
 
@@ -67,13 +69,13 @@
 //        NSLog(@"ButtonB");
 //    }]];
 
-//    [alertController addAction:[BPAlertAction actionWithTitle:@"Red" style:BPAlertActionStyleDestructive handler:^(BPAlertAction *action) {
-//
-//    }]];
-//
-//    [alertController addAction:[BPAlertAction actionWithTitle:@"Cancel" style:BPAlertActionStyleCancel handler:^(BPAlertAction *action) {
-//        NSLog(@"Cancel");
-//    }]];
+    [alertController addAction:[BPAlertAction actionWithTitle:@"Red" style:BPAlertActionStyleDestructive handler:^(BPAlertAction *action) {
+
+    }]];
+
+    [alertController addAction:[BPAlertAction actionWithTitle:@"Cancel" style:BPAlertActionStyleCancel handler:^(BPAlertAction *action) {
+        NSLog(@"Cancel");
+    }]];
 //
 //    [alertController addTextFieldWithConfigurationHandler:^(UITextField *textField) {
 //        textField.placeholder = @"tf 1";
@@ -83,13 +85,22 @@
 //        textField.placeholder = @"tf 2";
 //    }];
     
-    UIDatePicker *datePicker = [[UIDatePicker alloc] init];
-    datePicker.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+//    UIDatePicker *picker = [[UIDatePicker alloc] init];
+//    picker.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+
+    AreaPickerView *picker = [[AreaPickerView alloc] init];
+    picker.dataSourceDlegate = self;
+    BPAlertBodyView *redView = [[BPAlertBodyView alloc] initWithFrame:picker.bounds];
+    picker.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     
-    BPAlertBodyView *redView = [[BPAlertBodyView alloc] initWithFrame:datePicker.bounds];
-    [redView addSubview:datePicker];
+    [redView addSubview:picker];
     alertController.bodyView = redView;
     
     [self presentViewController:alertController animated:YES completion:nil];
+}
+
+- (void)areaDataSouce:(AreaDataSource *)dataSource didSelectArea:(NSArray *)selectedArea
+{
+    NSLog(@"didselect: %@", [selectedArea componentsJoinedByString:@" "]);
 }
 @end

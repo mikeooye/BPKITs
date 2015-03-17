@@ -168,7 +168,7 @@
             [obj removeFromSuperview];
         }
     }];
-    if (self.alertTitle || self.alertMessage) {
+    if (self.alertTitle || self.alertMessage || _bodyView) {
         [self addLineWithOffsetY:offsetY width:width margin:0];
     }
     

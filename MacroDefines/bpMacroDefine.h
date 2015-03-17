@@ -27,4 +27,8 @@
 
 #define IS_IPAD [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad
 #define IS_IPHONE [[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone
+
+#define VALID_STRING(obj)       ([obj isKindOfClass:[NSString class]] && [obj length] > 0)
+#define VALID_ARRAY(obj)        ([obj isKindOfClass:[NSArray class]] && [obj count] > 0)
+#define VALID_DICTIONARY(obj)   ([obj isKindOfClass:[NSDictionary class]] && [obj count] > 0)
 #endif

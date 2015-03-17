@@ -40,6 +40,10 @@
 		04DC6C6F1A6E171B0062A5F6 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C6E1A6E171B0062A5F6 /* AssetsLibrary.framework */; };
 		04DC6C711A6E17250062A5F6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DC6C701A6E17250062A5F6 /* QuartzCore.framework */; };
 		04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */; };
+		04E09DB41AB7FCCB000EFE6B /* area.json in Resources */ = {isa = PBXBuildFile; fileRef = 04E09DB31AB7FCCB000EFE6B /* area.json */; };
+		04E09DB71AB7FF03000EFE6B /* AreaItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E09DB61AB7FF03000EFE6B /* AreaItem.m */; };
+		04E09DBA1AB7FFBD000EFE6B /* AreaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E09DB91AB7FFBD000EFE6B /* AreaDataSource.m */; };
+		04E09DC01AB80223000EFE6B /* AreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E09DBF1AB80223000EFE6B /* AreaPickerView.m */; };
 		04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E31CF31A84DA0400C05702 /* BPScrollViewController.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
@@ -156,6 +160,13 @@
 		04DC6C701A6E17250062A5F6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		04DC6C731A6E348A0062A5F6 /* BPUpdownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPUpdownButton.h; sourceTree = "<group>"; };
 		04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPUpdownButton.m; sourceTree = "<group>"; };
+		04E09DB31AB7FCCB000EFE6B /* area.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = area.json; sourceTree = "<group>"; };
+		04E09DB51AB7FF03000EFE6B /* AreaItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaItem.h; sourceTree = "<group>"; };
+		04E09DB61AB7FF03000EFE6B /* AreaItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaItem.m; sourceTree = "<group>"; };
+		04E09DB81AB7FFBD000EFE6B /* AreaDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaDataSource.h; sourceTree = "<group>"; };
+		04E09DB91AB7FFBD000EFE6B /* AreaDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaDataSource.m; sourceTree = "<group>"; };
+		04E09DBE1AB80223000EFE6B /* AreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AreaPickerView.h; sourceTree = "<group>"; };
+		04E09DBF1AB80223000EFE6B /* AreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaPickerView.m; sourceTree = "<group>"; };
 		04E31CF21A84DA0400C05702 /* BPScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPScrollViewController.h; path = ScrollButtons/BPScrollViewController.h; sourceTree = "<group>"; };
 		04E31CF31A84DA0400C05702 /* BPScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPScrollViewController.m; path = ScrollButtons/BPScrollViewController.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
@@ -372,6 +383,20 @@
 				04DC6C591A6E0A6D0062A5F6 /* photo8t.jpg */,
 			);
 			path = Photos;
+			sourceTree = "<group>";
+		};
+		04E09DB21AB7FCBF000EFE6B /* AreaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				04E09DB31AB7FCCB000EFE6B /* area.json */,
+				04E09DB51AB7FF03000EFE6B /* AreaItem.h */,
+				04E09DB61AB7FF03000EFE6B /* AreaItem.m */,
+				04E09DB81AB7FFBD000EFE6B /* AreaDataSource.h */,
+				04E09DB91AB7FFBD000EFE6B /* AreaDataSource.m */,
+				04E09DBE1AB80223000EFE6B /* AreaPickerView.h */,
+				04E09DBF1AB80223000EFE6B /* AreaPickerView.m */,
+			);
+			path = AreaPicker;
 			sourceTree = "<group>";
 		};
 		04E31CF01A84D9DD00C05702 /* ScrollButtons */ = {
@@ -645,6 +670,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				04E09DB21AB7FCBF000EFE6B /* AreaPicker */,
 				289E18CC1AAC2DE50000AAAB /* VideoPlayer */,
 				28C6D3E31AAAD69700A5DE5A /* Image with Color */,
 				280628E11AA6034200810879 /* Custom Alert */,
@@ -794,6 +820,7 @@
 				04DC6C631A6E0A6D0062A5F6 /* photo5t.jpg in Resources */,
 				04DC6C621A6E0A6D0062A5F6 /* photo5.jpg in Resources */,
 				04DC6C401A6E06720062A5F6 /* MWPhotoBrowser.bundle in Resources */,
+				04E09DB41AB7FCCB000EFE6B /* area.json in Resources */,
 				04DC6C641A6E0A6D0062A5F6 /* photo6.jpg in Resources */,
 				04DC6C651A6E0A6D0062A5F6 /* photo6t.jpg in Resources */,
 				04DC6C691A6E0A6D0062A5F6 /* photo8t.jpg in Resources */,
@@ -829,6 +856,7 @@
 				285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */,
 				28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */,
 				2812F1061A3F2E0200375631 /* BPTableView.m in Sources */,
+				04E09DC01AB80223000EFE6B /* AreaPickerView.m in Sources */,
 				289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
 				289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */,
@@ -842,6 +870,7 @@
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
 				28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */,
 				28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */,
+				04E09DBA1AB7FFBD000EFE6B /* AreaDataSource.m in Sources */,
 				28C6D3FA1AAB52DF00A5DE5A /* BPAlertTitle.m in Sources */,
 				04CB223B1A8097DB00812742 /* BPCollectionViewCell.m in Sources */,
 				2812F1071A3F2E0200375631 /* BPView.m in Sources */,
@@ -861,6 +890,7 @@
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
 				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
 				04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */,
+				04E09DB71AB7FF03000EFE6B /* AreaItem.m in Sources */,
 				2812F0EC1A3F2E0200375631 /* UIView+bpExtension.m in Sources */,
 				2812F0E91A3F2E0200375631 /* NSString+Hashes.m in Sources */,
 				2812F0E61A3F2E0200375631 /* NSDictionary+bpExtension.m in Sources */,
