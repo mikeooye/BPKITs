@@ -11,8 +11,10 @@
 		042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 042C82DD1A9081AE00A94ECC /* BPSecureAlertView.m */; };
 		042C82E01A9081BC00A94ECC /* BPSecureAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */; };
 		042C82E31A90A23D00A94ECC /* SecureAlertImages.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042C82E21A90A23D00A94ECC /* SecureAlertImages.xcassets */; };
+		04792D391AB95B7C00D59916 /* BPCrasher.m in Sources */ = {isa = PBXBuildFile; fileRef = 04792D381AB95B7C00D59916 /* BPCrasher.m */; };
 		04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */; };
 		04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04963DF71A416BA60075EE31 /* BPChangedViewController.m */; };
+		04A6BBCD1AB943990042E196 /* BPPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04A6BBCC1AB943990042E196 /* BPPageViewController.m */; };
 		04CB22381A8097CC00812742 /* BPCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB22371A8097CC00812742 /* BPCollectionViewController.m */; };
 		04CB223B1A8097DB00812742 /* BPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04CB223A1A8097DB00812742 /* BPCollectionViewCell.m */; };
 		04DC6C2E1A6DF3D00062A5F6 /* UIPlaceholderTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04DC6C2D1A6DF3D00062A5F6 /* UIPlaceholderTextView.m */; };
@@ -123,11 +125,15 @@
 		042C82DD1A9081AE00A94ECC /* BPSecureAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPSecureAlertView.m; sourceTree = "<group>"; };
 		042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPSecureAlertView.xib; sourceTree = "<group>"; };
 		042C82E21A90A23D00A94ECC /* SecureAlertImages.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = SecureAlertImages.xcassets; sourceTree = "<group>"; };
+		04792D371AB95B7C00D59916 /* BPCrasher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCrasher.h; sourceTree = "<group>"; };
+		04792D381AB95B7C00D59916 /* BPCrasher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCrasher.m; sourceTree = "<group>"; };
 		04904B2A1A41866800A597B8 /* BPKeyboardHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardHelper.h; sourceTree = "<group>"; };
 		04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardHelper.m; sourceTree = "<group>"; };
 		04963DF51A4168700075EE31 /* BPChanged.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChanged.h; sourceTree = "<group>"; };
 		04963DF61A416BA60075EE31 /* BPChangedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPChangedViewController.h; sourceTree = "<group>"; };
 		04963DF71A416BA60075EE31 /* BPChangedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPChangedViewController.m; sourceTree = "<group>"; };
+		04A6BBCB1AB943990042E196 /* BPPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPageViewController.h; sourceTree = "<group>"; };
+		04A6BBCC1AB943990042E196 /* BPPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPageViewController.m; sourceTree = "<group>"; };
 		04CB22361A8097CC00812742 /* BPCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCollectionViewController.h; sourceTree = "<group>"; };
 		04CB22371A8097CC00812742 /* BPCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCollectionViewController.m; sourceTree = "<group>"; };
 		04CB22391A8097DB00812742 /* BPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCollectionViewCell.h; sourceTree = "<group>"; };
@@ -324,6 +330,15 @@
 			path = BPChangedViewController;
 			sourceTree = "<group>";
 		};
+		04A6BBC91AB943830042E196 /* PageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				04A6BBCB1AB943990042E196 /* BPPageViewController.h */,
+				04A6BBCC1AB943990042E196 /* BPPageViewController.m */,
+			);
+			path = PageViewController;
+			sourceTree = "<group>";
+		};
 		04CB22341A8096F500812742 /* CollectionView */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +522,8 @@
 				2812F0A41A3F2E0200375631 /* WGS84ToGCJ02.m */,
 				2812F1141A3F327D00375631 /* BPDateFormatter.h */,
 				2812F1151A3F327D00375631 /* BPDateFormatter.m */,
+				04792D371AB95B7C00D59916 /* BPCrasher.h */,
+				04792D381AB95B7C00D59916 /* BPCrasher.m */,
 			);
 			name = Helpers;
 			path = ../../Helpers;
@@ -670,6 +687,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				04A6BBC91AB943830042E196 /* PageViewController */,
 				04E09DB21AB7FCBF000EFE6B /* AreaPicker */,
 				289E18CC1AAC2DE50000AAAB /* VideoPlayer */,
 				28C6D3E31AAAD69700A5DE5A /* Image with Color */,
@@ -876,6 +894,7 @@
 				2812F1071A3F2E0200375631 /* BPView.m in Sources */,
 				2812F0FD1A3F2E0200375631 /* MBProgressHUD.m in Sources */,
 				28C6D3F31AAAF7C700A5DE5A /* BPAlertController.m in Sources */,
+				04A6BBCD1AB943990042E196 /* BPPageViewController.m in Sources */,
 				04CB22381A8097CC00812742 /* BPCollectionViewController.m in Sources */,
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
@@ -890,6 +909,7 @@
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
 				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
 				04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */,
+				04792D391AB95B7C00D59916 /* BPCrasher.m in Sources */,
 				04E09DB71AB7FF03000EFE6B /* AreaItem.m in Sources */,
 				2812F0EC1A3F2E0200375631 /* UIView+bpExtension.m in Sources */,
 				2812F0E91A3F2E0200375631 /* NSString+Hashes.m in Sources */,
