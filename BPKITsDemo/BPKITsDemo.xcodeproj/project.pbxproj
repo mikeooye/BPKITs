@@ -75,6 +75,7 @@
 		2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1101A3F320300375631 /* BPDatePickerViewController.m */; };
 		2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2812F1111A3F320300375631 /* BPDatePickerViewController.xib */; };
 		2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1151A3F327D00375631 /* BPDateFormatter.m */; };
+		28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 28203CC51AB9C34D00D0D4E2 /* BPToast.m */; };
 		2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2820F0CB1AAC5D3C00E3FFD5 /* BPPlayerControl.m */; };
 		28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */; };
 		28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D801AADDE37002D63A7 /* BPAlertAnimation.m */; };
@@ -238,6 +239,8 @@
 		2812F1111A3F320300375631 /* BPDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPDatePickerViewController.xib; sourceTree = "<group>"; };
 		2812F1141A3F327D00375631 /* BPDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDateFormatter.h; sourceTree = "<group>"; };
 		2812F1151A3F327D00375631 /* BPDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDateFormatter.m; sourceTree = "<group>"; };
+		28203CC41AB9C34D00D0D4E2 /* BPToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPToast.h; sourceTree = "<group>"; };
+		28203CC51AB9C34D00D0D4E2 /* BPToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPToast.m; sourceTree = "<group>"; };
 		2820F0CA1AAC5D3C00E3FFD5 /* BPPlayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerControl.h; sourceTree = "<group>"; };
 		2820F0CB1AAC5D3C00E3FFD5 /* BPPlayerControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerControl.m; sourceTree = "<group>"; };
 		28261D7B1AADDD4F002D63A7 /* BPBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBaseAnimation.h; sourceTree = "<group>"; };
@@ -609,6 +612,8 @@
 				042C82DC1A9081AE00A94ECC /* BPSecureAlertView.h */,
 				042C82DD1A9081AE00A94ECC /* BPSecureAlertView.m */,
 				042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */,
+				28203CC41AB9C34D00D0D4E2 /* BPToast.h */,
+				28203CC51AB9C34D00D0D4E2 /* BPToast.m */,
 			);
 			name = Views;
 			path = ../../Views;
@@ -876,6 +881,7 @@
 				2812F1061A3F2E0200375631 /* BPTableView.m in Sources */,
 				04E09DC01AB80223000EFE6B /* AreaPickerView.m in Sources */,
 				289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */,
+				28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
 				289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */,
 				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,

@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "BPChanged.h"
 #import "BPChangedViewController.h"
+#import "BPToast.h"
 
 
 @interface RootViewController ()
@@ -53,4 +54,9 @@
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell.textLabel.text toast];
+}
 @end
