@@ -81,10 +81,7 @@
 }
 //- (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component;
 
-// these methods return either a plain NSString, a NSAttributedString, or a view (e.g UILabel) to display the row for the component.
-// for the view versions, we cache any hidden and thus unused views and pass them back for reuse.
-// If you return back a different object, the old one will be released. the view will be centered in the row rect
-- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UILabel *)view
 {
     AreaItem *item = nil;
     switch (component) {
@@ -107,7 +104,16 @@
         default:
             break;
     }
-    return item.name;
+    NSString *text = item.name;
+    
+    if (view == nil) {
+        CGFloat width = [self pickerView:pickerView widthForComponent:component];
+        view = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, 30)];
+        view.font = [UIFont systemFontOfSize:16];
+        view.textAlignment = NSTextAlignmentCenter;
+    }
+    view.text = text;
+    return view;
 }
 //- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component NS_AVAILABLE_IOS(6_0); // attributed title is favored if both methods are implemented
 //- (UIView *)pickerView:(UIPickerView *)pickerView viewForRow:(NSInteger)row forComponent:(NSInteger)component reusingView:(UIView *)view;
