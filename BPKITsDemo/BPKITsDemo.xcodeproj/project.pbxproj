@@ -100,6 +100,7 @@
 		28CC78401A177FAC0025B9E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CC783F1A177FAC0025B9E8 /* Images.xcassets */; };
 		28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */; };
 		28CC784F1A177FAC0025B9E8 /* BPKITsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */; };
+		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -287,6 +288,8 @@
 		28CC78481A177FAC0025B9E8 /* BPKITsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPKITsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CC784D1A177FAC0025B9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPKITsDemoTests.m; sourceTree = "<group>"; };
+		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
+		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -514,6 +517,8 @@
 		2812F09D1A3F2E0200375631 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */,
+				FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */,
 				04904B2A1A41866800A597B8 /* BPKeyboardHelper.h */,
 				04904B2B1A41866800A597B8 /* BPKeyboardHelper.m */,
 				2812F09E1A3F2E0200375631 /* BPDismissWhenTapOutGesture.h */,
@@ -884,6 +889,7 @@
 				28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
 				289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */,
+				FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */,
 				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,
 				2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */,
 				28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */,
