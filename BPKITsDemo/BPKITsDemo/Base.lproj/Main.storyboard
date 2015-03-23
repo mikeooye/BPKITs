@@ -260,6 +260,23 @@
                                             <segue destination="7L9-NA-mt2" kind="show" id="1gn-We-Bh8"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lrE-wZ-Uiu" style="IBUITableViewCellStyleDefault" id="YZ5-fH-Jc7">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="YZ5-fH-Jc7" id="Egp-wB-NY1">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Popover Controller" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lrE-wZ-Uiu">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="dkv-Jx-5aO" kind="show" id="ccI-kj-Byk"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -876,6 +893,32 @@ Usage：
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hLU-kH-G7Z" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1373" y="1435"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="xep-mW-euE">
+            <objects>
+                <viewController id="dkv-Jx-5aO" customClass="BPPopoverDemoController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="aZb-2d-XvV"/>
+                        <viewControllerLayoutGuide type="bottom" id="KDr-Qh-CFL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1HQ-Pr-HBB">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="dhI-aC-Yda">
+                        <barButtonItem key="rightBarButtonItem" title="Popover" id="geO-NX-j8x">
+                            <connections>
+                                <action selector="popOver:" destination="dkv-Jx-5aO" id="D9L-JT-EMk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iP0-6Y-ika" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1968" y="1302"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="GXx-WT-vj2">

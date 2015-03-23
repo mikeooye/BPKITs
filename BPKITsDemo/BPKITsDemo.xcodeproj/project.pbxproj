@@ -101,6 +101,9 @@
 		28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */; };
 		28CC784F1A177FAC0025B9E8 /* BPKITsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
+		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
+		FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B811ABFA26C00D1A214 /* BPPopoverController.m */; };
+		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -290,6 +293,12 @@
 		28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPKITsDemoTests.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
 		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
+		FD752B7B1ABFA18800D1A214 /* BPPopoverAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverAnimation.h; sourceTree = "<group>"; };
+		FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverAnimation.m; sourceTree = "<group>"; };
+		FD752B801ABFA26C00D1A214 /* BPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverController.h; path = PopoverController/BPPopoverController.h; sourceTree = "<group>"; };
+		FD752B811ABFA26C00D1A214 /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverController.m; path = PopoverController/BPPopoverController.m; sourceTree = "<group>"; };
+		FD752B831ABFACD300D1A214 /* BPPopoverDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverDemoController.h; path = PopoverController/BPPopoverDemoController.h; sourceTree = "<group>"; };
+		FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverDemoController.m; path = PopoverController/BPPopoverDemoController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -478,6 +487,8 @@
 				28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */,
 				28261D7F1AADDE37002D63A7 /* BPAlertAnimation.h */,
 				28261D801AADDE37002D63A7 /* BPAlertAnimation.m */,
+				FD752B7B1ABFA18800D1A214 /* BPPopoverAnimation.h */,
+				FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */,
 			);
 			name = Animation;
 			path = ../../Animation;
@@ -697,6 +708,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FD752B7F1ABFA24000D1A214 /* Popover */,
 				04A6BBC91AB943830042E196 /* PageViewController */,
 				04E09DB21AB7FCBF000EFE6B /* AreaPicker */,
 				289E18CC1AAC2DE50000AAAB /* VideoPlayer */,
@@ -740,6 +752,17 @@
 				28CC784D1A177FAC0025B9E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD752B7F1ABFA24000D1A214 /* Popover */ = {
+			isa = PBXGroup;
+			children = (
+				FD752B801ABFA26C00D1A214 /* BPPopoverController.h */,
+				FD752B811ABFA26C00D1A214 /* BPPopoverController.m */,
+				FD752B831ABFACD300D1A214 /* BPPopoverDemoController.h */,
+				FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */,
+			);
+			name = Popover;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -896,6 +919,7 @@
 				2812F10A1A3F2E7100375631 /* RootViewController.m in Sources */,
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
 				2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */,
+				FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
 				28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */,
@@ -918,6 +942,7 @@
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
 				28C6D3F71AAB4CCA00A5DE5A /* BPAlertBodyView.m in Sources */,
+				FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
 				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
 				04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */,
@@ -938,6 +963,7 @@
 				2812F1051A3F2E0200375631 /* BPLoadingMoreControl.m in Sources */,
 				28C6D3F41AAAF7C700A5DE5A /* BPCustomAlertViewController.m in Sources */,
 				285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */,
+				FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */,
 				2812F1011A3F2E0200375631 /* BPViewController.m in Sources */,
 				04DC6C2E1A6DF3D00062A5F6 /* UIPlaceholderTextView.m in Sources */,
 				2812F0F01A3F2E0200375631 /* WGS84ToGCJ02.m in Sources */,
@@ -1068,7 +1094,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "bf7db46a-ac60-45df-b914-2a77cf00feaf";
+				PROVISIONING_PROFILE = "6cbe090e-090d-4467-a11b-2889e768b4b6";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/BPKITsDemo/Lib/MWPhotoBrowser/**";
 			};
