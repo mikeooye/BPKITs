@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-static NSTimeInterval const kShortToastDuration;
-static NSTimeInterval const kLongToastDuration;
+extern NSTimeInterval const kShortToastDuration;
+extern NSTimeInterval const kLongToastDuration;
 
 @class UILabel;
 @interface BPToast : NSObject{

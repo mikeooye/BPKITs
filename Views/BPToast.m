@@ -9,8 +9,8 @@
 #import "BPToast.h"
 #import <UIKit/UIKit.h>
 
-static NSTimeInterval const kShortToastDuration = 2.5;
-static NSTimeInterval const kLongToastDuration = 4.5;
+NSTimeInterval const kShortToastDuration = 2.5;
+NSTimeInterval const kLongToastDuration = 4.5;
 
 @implementation BPToast
 
@@ -43,13 +43,14 @@ static NSTimeInterval const kLongToastDuration = 4.5;
         label.textColor = [UIColor whiteColor];
         label.layer.cornerRadius = 15;
         label.layer.masksToBounds = YES;
-        
+        label.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleRightMargin|UIViewAutoresizingFlexibleTopMargin;
         _toastLabel = label;
     }
     
     _toastLabel.text = _text;
     
-    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
+//    NSLog(@"windows: %@", [UIApplication sharedApplication].windows);
     CGRect frame;
     frame.size = [_toastLabel sizeThatFits:CGSizeMake(CGRectGetWidth(window.frame) - 60, CGFLOAT_MAX)];
     frame.size.width += 16;
