@@ -10,6 +10,15 @@
 
 @implementation BPPopoverAnimation
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+    }
+    return self;
+}
+
 - (void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext
 {
     UIView *containerView = [transitionContext containerView];
@@ -22,12 +31,13 @@
         modalViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         [containerView addSubview:modalViewController.view];
         modalViewController.view.alpha = 0;
-        modalViewController.view.transform = CGAffineTransformMakeScale(1.12, 1.12);
-        
+        modalViewController.view.transform = CGAffineTransformMakeScale(1.05, 1.05);
+        containerView.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             
             modalViewController.view.alpha = 1;
             modalViewController.view.transform = CGAffineTransformIdentity;
+            containerView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.13];
         } completion:^(BOOL finished) {
             
             [transitionContext completeTransition:finished];
@@ -38,6 +48,7 @@
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
 
             modalViewController.view.alpha = 0;
+            containerView.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
         } completion:^(BOOL finished) {
             
             [transitionContext completeTransition:finished];

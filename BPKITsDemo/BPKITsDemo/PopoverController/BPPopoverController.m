@@ -9,7 +9,7 @@
 #import "BPPopoverController.h"
 #import "BPPopoverAnimation.h"
 
-@interface BPPopoverController ()
+@interface BPPopoverController ()<UIViewControllerTransitioningDelegate>
 
 @end
 
@@ -37,6 +37,7 @@
         self.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
         _popoverAnimation = [[BPPopoverAnimation alloc] init];
         self.contentViewController = viewController;
+        self.transitioningDelegate = self;
     }
     return self;
 }
