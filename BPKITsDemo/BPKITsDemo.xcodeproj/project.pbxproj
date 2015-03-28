@@ -101,6 +101,8 @@
 		28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */; };
 		28CC784F1A177FAC0025B9E8 /* BPKITsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
+		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
+		FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */; };
 		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
 		FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B811ABFA26C00D1A214 /* BPPopoverController.m */; };
 		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
@@ -293,6 +295,10 @@
 		28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPKITsDemoTests.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
 		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
+		FD49CEA01AC662C10026D4AF /* BPPopToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToast.h; sourceTree = "<group>"; };
+		FD49CEA11AC662C10026D4AF /* BPPopToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopToast.m; sourceTree = "<group>"; };
+		FD49CEA51AC665950026D4AF /* BPPopToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToastViewController.h; sourceTree = "<group>"; };
+		FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopToastViewController.m; sourceTree = "<group>"; };
 		FD752B7B1ABFA18800D1A214 /* BPPopoverAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverAnimation.h; sourceTree = "<group>"; };
 		FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverAnimation.m; sourceTree = "<group>"; };
 		FD752B801ABFA26C00D1A214 /* BPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverController.h; path = PopoverController/BPPopoverController.h; sourceTree = "<group>"; };
@@ -630,6 +636,8 @@
 				042C82DF1A9081BC00A94ECC /* BPSecureAlertView.xib */,
 				28203CC41AB9C34D00D0D4E2 /* BPToast.h */,
 				28203CC51AB9C34D00D0D4E2 /* BPToast.m */,
+				FD49CEA01AC662C10026D4AF /* BPPopToast.h */,
+				FD49CEA11AC662C10026D4AF /* BPPopToast.m */,
 			);
 			name = Views;
 			path = ../../Views;
@@ -708,6 +716,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FD49CEA41AC665820026D4AF /* Pop Toast */,
 				FD752B7F1ABFA24000D1A214 /* Popover */,
 				04A6BBC91AB943830042E196 /* PageViewController */,
 				04E09DB21AB7FCBF000EFE6B /* AreaPicker */,
@@ -752,6 +761,15 @@
 				28CC784D1A177FAC0025B9E8 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FD49CEA41AC665820026D4AF /* Pop Toast */ = {
+			isa = PBXGroup;
+			children = (
+				FD49CEA51AC665950026D4AF /* BPPopToastViewController.h */,
+				FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */,
+			);
+			name = "Pop Toast";
 			sourceTree = "<group>";
 		};
 		FD752B7F1ABFA24000D1A214 /* Popover */ = {
@@ -903,6 +921,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2812F1031A3F2E0200375631 /* BPDatePickerView.m in Sources */,
+				FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */,
 				284208671A9C655E00CD1EB0 /* BPRefreshTableViewController.m in Sources */,
 				285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */,
 				28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */,
@@ -920,6 +939,7 @@
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
 				2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */,
 				FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */,
+				FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
 				28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */,

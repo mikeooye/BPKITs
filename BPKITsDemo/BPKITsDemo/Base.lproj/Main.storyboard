@@ -277,6 +277,23 @@
                                             <segue destination="dkv-Jx-5aO" kind="show" id="ccI-kj-Byk"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="fT5-td-8Pg" style="IBUITableViewCellStyleDefault" id="zyc-k4-Mg9">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zyc-k4-Mg9" id="FPp-KQ-jhC">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Pop Toast" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fT5-td-8Pg">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="nS0-vF-Xb4" kind="show" id="qgr-gT-c7u"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1079,6 +1096,40 @@ Usage：
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFr-st-SHj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-675" y="75"/>
+        </scene>
+        <!--Pop Toast View Controller-->
+        <scene sceneID="Iz0-sL-PqV">
+            <objects>
+                <viewController id="nS0-vF-Xb4" customClass="BPPopToastViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SXx-S5-a5H"/>
+                        <viewControllerLayoutGuide type="bottom" id="tvk-kB-Qvu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hZW-Mg-vJK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T20-HJ-6nS">
+                                <rect key="frame" x="126" y="225" width="69" height="30"/>
+                                <state key="normal" title="Pop Toast">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="popToastButtonClicked:" destination="nS0-vF-Xb4" eventType="touchUpInside" id="nJA-uS-ok2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerY" secondItem="T20-HJ-6nS" secondAttribute="centerY" id="NRP-gT-e7e"/>
+                            <constraint firstAttribute="centerX" secondItem="T20-HJ-6nS" secondAttribute="centerX" id="fcJ-Sm-kj6"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U5J-eQ-uTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-692" y="701"/>
         </scene>
     </scenes>
     <resources>
