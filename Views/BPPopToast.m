@@ -44,7 +44,7 @@
         [UIView animateWithDuration:0.5 animations:^{
             
             self.alpha = 0;
-            self.transform = CGAffineTransformMakeTranslation(0, - 1.5 * CGRectGetHeight(self.frame));
+            self.transform = CGAffineTransformMakeTranslation(0, - CGRectGetHeight(self.frame));
         } completion:^(BOOL finished) {
             
             [self removeFromSuperview];
