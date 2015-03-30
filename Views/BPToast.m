@@ -53,7 +53,7 @@ NSTimeInterval const kLongToastDuration = 4.5;
 //    NSLog(@"windows: %@", [UIApplication sharedApplication].windows);
     CGRect frame;
     frame.size = [_toastLabel sizeThatFits:CGSizeMake(CGRectGetWidth(window.frame) - 60, CGFLOAT_MAX)];
-    frame.size.width += 16;
+    frame.size.width += 30;
     frame.size.height += 10;
     frame.size.height = MAX(30, frame.size.height);
     frame.origin = CGPointMake((CGRectGetWidth(window.frame) - CGRectGetWidth(frame)) / 2.0,
