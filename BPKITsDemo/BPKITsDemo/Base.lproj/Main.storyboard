@@ -294,6 +294,23 @@
                                             <segue destination="nS0-vF-Xb4" kind="show" id="qgr-gT-c7u"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="O1u-Zr-a7L" style="IBUITableViewCellStyleDefault" id="A0Q-wK-qjv">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="A0Q-wK-qjv" id="R7Z-kB-Hf0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Button Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="O1u-Zr-a7L">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eYz-Kh-qwh" kind="show" id="gZO-Tw-zvG"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1130,6 +1147,76 @@ Usage：
                 <placeholder placeholderIdentifier="IBFirstResponder" id="U5J-eQ-uTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-692" y="701"/>
+        </scene>
+        <!--Btn Test View Controller-->
+        <scene sceneID="ESW-vj-ksB">
+            <objects>
+                <viewController id="eYz-Kh-qwh" customClass="BPBtnTestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3jZ-cC-TpU"/>
+                        <viewControllerLayoutGuide type="bottom" id="8NK-hc-fYW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Kbg-fI-FrE">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QDE-yh-01o">
+                                <rect key="frame" x="36" y="104" width="248" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="8cp-9b-ZdJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0az-wH-FYZ">
+                                <rect key="frame" x="36" y="204" width="248" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="gTc-lc-Ez6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-nz-JT3">
+                                <rect key="frame" x="36" y="304" width="248" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="36e-ac-KzK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QDE-yh-01o" firstAttribute="leading" secondItem="Kbg-fI-FrE" secondAttribute="leadingMargin" constant="20" id="IMU-Pn-VGd"/>
+                            <constraint firstItem="PWS-nz-JT3" firstAttribute="top" secondItem="0az-wH-FYZ" secondAttribute="bottom" constant="20" id="Idc-kI-4t2"/>
+                            <constraint firstItem="0az-wH-FYZ" firstAttribute="top" secondItem="QDE-yh-01o" secondAttribute="bottom" constant="20" id="Ndv-0w-5Yz"/>
+                            <constraint firstItem="0az-wH-FYZ" firstAttribute="leading" secondItem="Kbg-fI-FrE" secondAttribute="leadingMargin" constant="20" id="TUN-iW-eJF"/>
+                            <constraint firstItem="PWS-nz-JT3" firstAttribute="leading" secondItem="Kbg-fI-FrE" secondAttribute="leadingMargin" constant="20" id="WKk-0A-6Da"/>
+                            <constraint firstItem="QDE-yh-01o" firstAttribute="top" secondItem="3jZ-cC-TpU" secondAttribute="bottom" constant="40" id="gyr-Ny-KhV"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0az-wH-FYZ" secondAttribute="trailing" constant="20" id="tx7-JX-DRR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QDE-yh-01o" secondAttribute="trailing" constant="20" id="uM0-7w-pXd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="PWS-nz-JT3" secondAttribute="trailing" constant="20" id="wHL-FK-xaB"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="_button1" destination="QDE-yh-01o" id="DoH-JU-Rjt"/>
+                        <outlet property="_button2" destination="0az-wH-FYZ" id="AMk-el-7bg"/>
+                        <outlet property="_button3" destination="PWS-nz-JT3" id="vci-Fq-40V"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xj1-DH-cPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1832" y="1595"/>
         </scene>
     </scenes>
     <resources>

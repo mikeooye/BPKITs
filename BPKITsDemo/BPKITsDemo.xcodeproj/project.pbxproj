@@ -106,6 +106,7 @@
 		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
 		FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B811ABFA26C00D1A214 /* BPPopoverController.m */; };
 		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
+		FDD0CE271AC90BD80001A455 /* BPBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -305,6 +306,8 @@
 		FD752B811ABFA26C00D1A214 /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverController.m; path = PopoverController/BPPopoverController.m; sourceTree = "<group>"; };
 		FD752B831ABFACD300D1A214 /* BPPopoverDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverDemoController.h; path = PopoverController/BPPopoverDemoController.h; sourceTree = "<group>"; };
 		FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverDemoController.m; path = PopoverController/BPPopoverDemoController.m; sourceTree = "<group>"; };
+		FDD0CE251AC90BD80001A455 /* BPBtnTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBtnTestViewController.h; sourceTree = "<group>"; };
+		FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBtnTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -716,6 +719,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FDD0CE231AC9030E0001A455 /* ButtonTest */,
 				FD49CEA41AC665820026D4AF /* Pop Toast */,
 				FD752B7F1ABFA24000D1A214 /* Popover */,
 				04A6BBC91AB943830042E196 /* PageViewController */,
@@ -781,6 +785,15 @@
 				FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */,
 			);
 			name = Popover;
+			sourceTree = "<group>";
+		};
+		FDD0CE231AC9030E0001A455 /* ButtonTest */ = {
+			isa = PBXGroup;
+			children = (
+				FDD0CE251AC90BD80001A455 /* BPBtnTestViewController.h */,
+				FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */,
+			);
+			path = ButtonTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -961,6 +974,7 @@
 				2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
+				FDD0CE271AC90BD80001A455 /* BPBtnTestViewController.m in Sources */,
 				28C6D3F71AAB4CCA00A5DE5A /* BPAlertBodyView.m in Sources */,
 				FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
