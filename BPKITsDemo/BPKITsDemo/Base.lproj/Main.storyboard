@@ -1182,36 +1182,35 @@ Usage：
                                     <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PWS-nz-JT3">
-                                <rect key="frame" x="36" y="304" width="248" height="80"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eQZ-3k-13W">
+                                <rect key="frame" x="70" y="300" width="180" height="180"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="80" id="36e-ac-KzK"/>
+                                    <constraint firstAttribute="height" constant="180" id="DlM-NY-naJ"/>
+                                    <constraint firstAttribute="width" constant="180" id="ibd-tN-bPD"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" image="zan_up">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled" image="zan_down"/>
+                                <state key="selected" image="zan_down"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="eQZ-3k-13W" firstAttribute="top" secondItem="0az-wH-FYZ" secondAttribute="bottom" constant="16" id="5fy-Fz-EjN"/>
                             <constraint firstItem="QDE-yh-01o" firstAttribute="leading" secondItem="Kbg-fI-FrE" secondAttribute="leadingMargin" constant="20" id="IMU-Pn-VGd"/>
-                            <constraint firstItem="PWS-nz-JT3" firstAttribute="top" secondItem="0az-wH-FYZ" secondAttribute="bottom" constant="20" id="Idc-kI-4t2"/>
+                            <constraint firstAttribute="centerX" secondItem="eQZ-3k-13W" secondAttribute="centerX" id="KTU-Qz-25y"/>
                             <constraint firstItem="0az-wH-FYZ" firstAttribute="top" secondItem="QDE-yh-01o" secondAttribute="bottom" constant="20" id="Ndv-0w-5Yz"/>
                             <constraint firstItem="0az-wH-FYZ" firstAttribute="leading" secondItem="Kbg-fI-FrE" secondAttribute="leadingMargin" constant="20" id="TUN-iW-eJF"/>
-                            <constraint firstItem="PWS-nz-JT3" firstAttribute="leading" secondItem="Kbg-fI-FrE" secondAttribute="leadingMargin" constant="20" id="WKk-0A-6Da"/>
                             <constraint firstItem="QDE-yh-01o" firstAttribute="top" secondItem="3jZ-cC-TpU" secondAttribute="bottom" constant="40" id="gyr-Ny-KhV"/>
                             <constraint firstAttribute="trailingMargin" secondItem="0az-wH-FYZ" secondAttribute="trailing" constant="20" id="tx7-JX-DRR"/>
                             <constraint firstAttribute="trailingMargin" secondItem="QDE-yh-01o" secondAttribute="trailing" constant="20" id="uM0-7w-pXd"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="PWS-nz-JT3" secondAttribute="trailing" constant="20" id="wHL-FK-xaB"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="_button1" destination="QDE-yh-01o" id="DoH-JU-Rjt"/>
                         <outlet property="_button2" destination="0az-wH-FYZ" id="AMk-el-7bg"/>
-                        <outlet property="_button3" destination="PWS-nz-JT3" id="vci-Fq-40V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xj1-DH-cPG" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1223,5 +1222,7 @@ Usage：
         <image name="photo1.jpg" width="1024" height="681"/>
         <image name="photo2.jpg" width="681" height="1024"/>
         <image name="photo5t.jpg" width="150" height="200"/>
+        <image name="zan_down" width="1024" height="681"/>
+        <image name="zan_up" width="200" height="200"/>
     </resources>
 </document>
