@@ -35,6 +35,8 @@
         
         if (error == nil) {
             id jsonObj = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:&error];
+            
+            NSLog(@"jsonObj: %@", jsonObj);
         }
         
     }];
