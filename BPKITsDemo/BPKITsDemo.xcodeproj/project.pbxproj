@@ -106,6 +106,7 @@
 		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
 		FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B811ABFA26C00D1A214 /* BPPopoverController.m */; };
 		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
+		FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */; };
 		FDD0CE271AC90BD80001A455 /* BPBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -306,6 +307,8 @@
 		FD752B811ABFA26C00D1A214 /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverController.m; path = PopoverController/BPPopoverController.m; sourceTree = "<group>"; };
 		FD752B831ABFACD300D1A214 /* BPPopoverDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverDemoController.h; path = PopoverController/BPPopoverDemoController.h; sourceTree = "<group>"; };
 		FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverDemoController.m; path = PopoverController/BPPopoverDemoController.m; sourceTree = "<group>"; };
+		FDCE3AE51AC923320038B7BE /* BPUrlSessionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPUrlSessionTestViewController.h; path = "URL Session/BPUrlSessionTestViewController.h"; sourceTree = "<group>"; };
+		FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPUrlSessionTestViewController.m; path = "URL Session/BPUrlSessionTestViewController.m"; sourceTree = "<group>"; };
 		FDD0CE251AC90BD80001A455 /* BPBtnTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBtnTestViewController.h; sourceTree = "<group>"; };
 		FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBtnTestViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -719,6 +722,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FDCE3AE31AC923140038B7BE /* URL Session */,
 				FDD0CE231AC9030E0001A455 /* ButtonTest */,
 				FD49CEA41AC665820026D4AF /* Pop Toast */,
 				FD752B7F1ABFA24000D1A214 /* Popover */,
@@ -785,6 +789,15 @@
 				FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */,
 			);
 			name = Popover;
+			sourceTree = "<group>";
+		};
+		FDCE3AE31AC923140038B7BE /* URL Session */ = {
+			isa = PBXGroup;
+			children = (
+				FDCE3AE51AC923320038B7BE /* BPUrlSessionTestViewController.h */,
+				FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */,
+			);
+			name = "URL Session";
 			sourceTree = "<group>";
 		};
 		FDD0CE231AC9030E0001A455 /* ButtonTest */ = {
@@ -943,6 +956,7 @@
 				289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */,
 				28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
+				FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */,
 				289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */,
 				FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */,
 				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,
