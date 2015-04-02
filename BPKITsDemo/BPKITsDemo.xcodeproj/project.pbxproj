@@ -108,6 +108,8 @@
 		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
 		FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */; };
 		FDD0CE271AC90BD80001A455 /* BPBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */; };
+		FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */; };
+		FDFEE1011ACD586F004C35FE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -311,6 +313,9 @@
 		FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPUrlSessionTestViewController.m; path = "URL Session/BPUrlSessionTestViewController.m"; sourceTree = "<group>"; };
 		FDD0CE251AC90BD80001A455 /* BPBtnTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBtnTestViewController.h; sourceTree = "<group>"; };
 		FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBtnTestViewController.m; sourceTree = "<group>"; };
+		FDFEE0FD1ACD580A004C35FE /* IOS8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOS8ViewController.h; sourceTree = "<group>"; };
+		FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOS8ViewController.m; sourceTree = "<group>"; };
+		FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -318,6 +323,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDFEE1011ACD586F004C35FE /* LocalAuthentication.framework in Frameworks */,
 				289E18D31AAC2F700000AAAB /* AVKit.framework in Frameworks */,
 				289E18D11AAC2F6B0000AAAB /* AVFoundation.framework in Frameworks */,
 				04DC6C711A6E17250062A5F6 /* QuartzCore.framework in Frameworks */,
@@ -692,6 +698,7 @@
 		28CC78261A177FAC0025B9E8 = {
 			isa = PBXGroup;
 			children = (
+				FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */,
 				289E18D21AAC2F700000AAAB /* AVKit.framework */,
 				289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */,
 				04DC6C701A6E17250062A5F6 /* QuartzCore.framework */,
@@ -722,6 +729,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FDFEE0FC1ACD57DA004C35FE /* NewInIOS 8 */,
 				FDCE3AE31AC923140038B7BE /* URL Session */,
 				FDD0CE231AC9030E0001A455 /* ButtonTest */,
 				FD49CEA41AC665820026D4AF /* Pop Toast */,
@@ -807,6 +815,16 @@
 				FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */,
 			);
 			path = ButtonTest;
+			sourceTree = "<group>";
+		};
+		FDFEE0FC1ACD57DA004C35FE /* NewInIOS 8 */ = {
+			isa = PBXGroup;
+			children = (
+				FDFEE0FD1ACD580A004C35FE /* IOS8ViewController.h */,
+				FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */,
+			);
+			name = "NewInIOS 8";
+			path = NewInIOS8;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -969,6 +987,7 @@
 				FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
+				FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */,
 				28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */,
 				28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */,
 				04E09DBA1AB7FFBD000EFE6B /* AreaDataSource.m in Sources */,
