@@ -50,7 +50,7 @@ NSTimeInterval const kLongToastDuration = 4.5;
     _toastLabel.text = _text;
     
     UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
-//    NSLog(@"windows: %@", [UIApplication sharedApplication].windows);
+    NSLog(@"windows: %@", [UIApplication sharedApplication].windows);
     CGRect frame;
     frame.size = [_toastLabel sizeThatFits:CGSizeMake(CGRectGetWidth(window.frame) - 60, CGFLOAT_MAX)];
     frame.size.width += 30;
@@ -80,7 +80,11 @@ NSTimeInterval const kLongToastDuration = 4.5;
 + (BPToast *)showToastWithText:(NSString *)text duration:(NSTimeInterval)duration
 {
     BPToast *toast = [[BPToast alloc] initWithText:text];
-    [toast showWithDuration:duration];
+//    [toast showWithDuration:duration];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [toast showWithDuration:duration];
+    });
     return toast;
 }
 
