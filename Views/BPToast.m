@@ -50,7 +50,7 @@ NSTimeInterval const kLongToastDuration = 4.5;
     _toastLabel.text = _text;
     
     UIWindow *window = [[UIApplication sharedApplication].windows lastObject];
-    NSLog(@"windows: %@", [UIApplication sharedApplication].windows);
+//    NSLog(@"windows: %@", [UIApplication sharedApplication].windows);
     CGRect frame;
     frame.size = [_toastLabel sizeThatFits:CGSizeMake(CGRectGetWidth(window.frame) - 60, CGFLOAT_MAX)];
     frame.size.width += 30;

@@ -106,6 +106,8 @@
 		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
 		FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B811ABFA26C00D1A214 /* BPPopoverController.m */; };
 		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
+		FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B92121ACE2EAB00E5A4FA /* NotificationRootViewController.m */; };
+		FD8B92161ACE45A300E5A4FA /* UILocalNotification+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */; };
 		FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */; };
 		FDD0CE271AC90BD80001A455 /* BPBtnTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDD0CE261AC90BD80001A455 /* BPBtnTestViewController.m */; };
 		FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */; };
@@ -309,6 +311,10 @@
 		FD752B811ABFA26C00D1A214 /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverController.m; path = PopoverController/BPPopoverController.m; sourceTree = "<group>"; };
 		FD752B831ABFACD300D1A214 /* BPPopoverDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverDemoController.h; path = PopoverController/BPPopoverDemoController.h; sourceTree = "<group>"; };
 		FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPPopoverDemoController.m; path = PopoverController/BPPopoverDemoController.m; sourceTree = "<group>"; };
+		FD8B92111ACE2EAB00E5A4FA /* NotificationRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationRootViewController.h; sourceTree = "<group>"; };
+		FD8B92121ACE2EAB00E5A4FA /* NotificationRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationRootViewController.m; sourceTree = "<group>"; };
+		FD8B92141ACE45A300E5A4FA /* UILocalNotification+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILocalNotification+bpExtension.h"; sourceTree = "<group>"; };
+		FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILocalNotification+bpExtension.m"; sourceTree = "<group>"; };
 		FDCE3AE51AC923320038B7BE /* BPUrlSessionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPUrlSessionTestViewController.h; path = "URL Session/BPUrlSessionTestViewController.h"; sourceTree = "<group>"; };
 		FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPUrlSessionTestViewController.m; path = "URL Session/BPUrlSessionTestViewController.m"; sourceTree = "<group>"; };
 		FDD0CE251AC90BD80001A455 /* BPBtnTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBtnTestViewController.h; sourceTree = "<group>"; };
@@ -538,6 +544,8 @@
 				2812F09C1A3F2E0200375631 /* UIViewController+bpExtension.m */,
 				28C6D3DE1AAAC4B100A5DE5A /* UIImage+bpExtension.h */,
 				28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */,
+				FD8B92141ACE45A300E5A4FA /* UILocalNotification+bpExtension.h */,
+				FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -729,6 +737,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FD8B920F1ACE2E8500E5A4FA /* Notification */,
 				FDFEE0FC1ACD57DA004C35FE /* NewInIOS 8 */,
 				FDCE3AE31AC923140038B7BE /* URL Session */,
 				FDD0CE231AC9030E0001A455 /* ButtonTest */,
@@ -797,6 +806,15 @@
 				FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */,
 			);
 			name = Popover;
+			sourceTree = "<group>";
+		};
+		FD8B920F1ACE2E8500E5A4FA /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				FD8B92111ACE2EAB00E5A4FA /* NotificationRootViewController.h */,
+				FD8B92121ACE2EAB00E5A4FA /* NotificationRootViewController.m */,
+			);
+			path = Notification;
 			sourceTree = "<group>";
 		};
 		FDCE3AE31AC923140038B7BE /* URL Session */ = {
@@ -986,6 +1004,7 @@
 				FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */,
 				FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
+				FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
 				FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */,
 				28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */,
@@ -1029,6 +1048,7 @@
 				2812F0EE1A3F2E0200375631 /* BPDismissWhenTapOutGesture.m in Sources */,
 				2812F1051A3F2E0200375631 /* BPLoadingMoreControl.m in Sources */,
 				28C6D3F41AAAF7C700A5DE5A /* BPCustomAlertViewController.m in Sources */,
+				FD8B92161ACE45A300E5A4FA /* UILocalNotification+bpExtension.m in Sources */,
 				285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */,
 				FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */,
 				2812F1011A3F2E0200375631 /* BPViewController.m in Sources */,
