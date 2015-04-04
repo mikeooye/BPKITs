@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QWw-4t-e7r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="QWw-4t-e7r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -29,6 +29,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="sxh-YP-kT7" kind="show" id="ekg-kZ-U69"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -1248,6 +1251,23 @@ Usage：
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="AoE-kW-g6c" style="IBUITableViewCellStyleDefault" id="nQ0-OL-5rC">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nQ0-OL-5rC" id="HJN-c7-uXE">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Blur Effect" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="AoE-kW-g6c">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="lAt-sI-1rO" kind="show" id="rWB-XD-cpn"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -1260,7 +1280,44 @@ Usage：
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OQP-mx-Cye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1522.5" y="-1396.5"/>
+            <point key="canvasLocation" x="-1863.5" y="-1600.5"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="OYE-ln-9KV">
+            <objects>
+                <viewController id="lAt-sI-1rO" customClass="BlurViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="INd-Ch-O8q"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y71-2z-PTj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EKO-Rd-53X">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="photo2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="3Gu-Fb-pUa">
+                                <rect key="frame" x="16" y="64" width="288" height="416"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3Gu-Fb-pUa" firstAttribute="top" secondItem="INd-Ch-O8q" secondAttribute="bottom" id="FBH-X8-bH1"/>
+                            <constraint firstItem="Y71-2z-PTj" firstAttribute="top" secondItem="3Gu-Fb-pUa" secondAttribute="bottom" id="QTi-1w-Iwd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3Gu-Fb-pUa" secondAttribute="trailing" id="Yv3-Ro-9r4"/>
+                            <constraint firstItem="3Gu-Fb-pUa" firstAttribute="leading" secondItem="EKO-Rd-53X" secondAttribute="leadingMargin" id="d4D-6r-Hx8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="lrJ-eO-130">
+                        <barButtonItem key="rightBarButtonItem" title="Blur" style="done" id="9lS-2E-k2Y">
+                            <connections>
+                                <action selector="blurAction:" destination="lAt-sI-1rO" id="3ND-Xq-QTv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J2h-7L-Fuj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1203" y="-2453"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="oZV-yC-1IC">

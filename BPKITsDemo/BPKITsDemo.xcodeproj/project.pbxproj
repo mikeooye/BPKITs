@@ -100,6 +100,7 @@
 		28CC78401A177FAC0025B9E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CC783F1A177FAC0025B9E8 /* Images.xcassets */; };
 		28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */; };
 		28CC784F1A177FAC0025B9E8 /* BPKITsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */; };
+		28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B01ACFC54400A6FA2A /* BlurViewController.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
 		FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */; };
@@ -299,6 +300,8 @@
 		28CC78481A177FAC0025B9E8 /* BPKITsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPKITsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CC784D1A177FAC0025B9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPKITsDemoTests.m; sourceTree = "<group>"; };
+		28D717AF1ACFC54400A6FA2A /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurViewController.h; sourceTree = "<group>"; };
+		28D717B01ACFC54400A6FA2A /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurViewController.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
 		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
 		FD49CEA01AC662C10026D4AF /* BPPopToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToast.h; sourceTree = "<group>"; };
@@ -788,6 +791,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		28D717AD1ACFC53000A6FA2A /* Blur */ = {
+			isa = PBXGroup;
+			children = (
+				28D717AF1ACFC54400A6FA2A /* BlurViewController.h */,
+				28D717B01ACFC54400A6FA2A /* BlurViewController.m */,
+			);
+			path = Blur;
+			sourceTree = "<group>";
+		};
 		FD49CEA41AC665820026D4AF /* Pop Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,6 +852,7 @@
 			children = (
 				FDFEE0FD1ACD580A004C35FE /* IOS8ViewController.h */,
 				FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */,
+				28D717AD1ACFC53000A6FA2A /* Blur */,
 			);
 			name = "NewInIOS 8";
 			path = NewInIOS8;
@@ -987,6 +1000,7 @@
 				284208671A9C655E00CD1EB0 /* BPRefreshTableViewController.m in Sources */,
 				285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */,
 				28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */,
+				28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */,
 				2812F1061A3F2E0200375631 /* BPTableView.m in Sources */,
 				04E09DC01AB80223000EFE6B /* AreaPickerView.m in Sources */,
 				289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */,
