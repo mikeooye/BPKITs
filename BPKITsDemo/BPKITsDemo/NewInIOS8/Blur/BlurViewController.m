@@ -55,6 +55,8 @@
     
     [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:nil]];
     
+    alertController.popoverPresentationController.barButtonItem = sender;
+    
     [self presentViewController:alertController animated:YES completion:nil];
 }
 
