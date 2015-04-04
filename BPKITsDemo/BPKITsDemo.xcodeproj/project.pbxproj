@@ -101,6 +101,8 @@
 		28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */; };
 		28CC784F1A177FAC0025B9E8 /* BPKITsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */; };
 		28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B01ACFC54400A6FA2A /* BlurViewController.m */; };
+		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
+		28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
 		FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */; };
@@ -302,6 +304,10 @@
 		28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPKITsDemoTests.m; sourceTree = "<group>"; };
 		28D717AF1ACFC54400A6FA2A /* BlurViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurViewController.h; sourceTree = "<group>"; };
 		28D717B01ACFC54400A6FA2A /* BlurViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurViewController.m; sourceTree = "<group>"; };
+		28D717B31ACFD2BF00A6FA2A /* BPDemoSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDemoSearchController.h; sourceTree = "<group>"; };
+		28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchController.m; sourceTree = "<group>"; };
+		28D717B61ACFD2D300A6FA2A /* BPDemoSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDemoSearchResultsController.h; sourceTree = "<group>"; };
+		28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchResultsController.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
 		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
 		FD49CEA01AC662C10026D4AF /* BPPopToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToast.h; sourceTree = "<group>"; };
@@ -800,6 +806,17 @@
 			path = Blur;
 			sourceTree = "<group>";
 		};
+		28D717B21ACFD2A400A6FA2A /* Search Controller */ = {
+			isa = PBXGroup;
+			children = (
+				28D717B31ACFD2BF00A6FA2A /* BPDemoSearchController.h */,
+				28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */,
+				28D717B61ACFD2D300A6FA2A /* BPDemoSearchResultsController.h */,
+				28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */,
+			);
+			path = "Search Controller";
+			sourceTree = "<group>";
+		};
 		FD49CEA41AC665820026D4AF /* Pop Toast */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,6 +869,7 @@
 			children = (
 				FDFEE0FD1ACD580A004C35FE /* IOS8ViewController.h */,
 				FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */,
+				28D717B21ACFD2A400A6FA2A /* Search Controller */,
 				28D717AD1ACFC53000A6FA2A /* Blur */,
 			);
 			name = "NewInIOS 8";
@@ -1011,6 +1029,7 @@
 				FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */,
 				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,
 				2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */,
+				28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */,
 				28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */,
 				2812F10A1A3F2E7100375631 /* RootViewController.m in Sources */,
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
@@ -1043,6 +1062,7 @@
 				FDD0CE271AC90BD80001A455 /* BPBtnTestViewController.m in Sources */,
 				28C6D3F71AAB4CCA00A5DE5A /* BPAlertBodyView.m in Sources */,
 				FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */,
+				28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
 				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
 				04963DF81A416BA60075EE31 /* BPChangedViewController.m in Sources */,
