@@ -71,7 +71,6 @@
 		2812F1061A3F2E0200375631 /* BPTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0DF1A3F2E0200375631 /* BPTableView.m */; };
 		2812F1071A3F2E0200375631 /* BPView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0E11A3F2E0200375631 /* BPView.m */; };
 		2812F10A1A3F2E7100375631 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1091A3F2E7100375631 /* RootViewController.m */; };
-		2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F10D1A3F309500375631 /* DatePickerTableViewController.m */; };
 		2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1101A3F320300375631 /* BPDatePickerViewController.m */; };
 		2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2812F1111A3F320300375631 /* BPDatePickerViewController.xib */; };
 		2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1151A3F327D00375631 /* BPDateFormatter.m */; };
@@ -83,7 +82,6 @@
 		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
 		285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */; };
-		2865E98F1AD2A74A00E86EA0 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2865E98E1AD2A74A00E86EA0 /* Media.xcassets */; };
 		289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */; };
 		289E18D11AAC2F6B0000AAAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */; };
 		289E18D31AAC2F700000AAAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D21AAC2F700000AAAB /* AVKit.framework */; };
@@ -97,9 +95,6 @@
 		28C6D3FA1AAB52DF00A5DE5A /* BPAlertTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3F91AAB52DF00A5DE5A /* BPAlertTitle.m */; };
 		28CC78351A177FAC0025B9E8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC78341A177FAC0025B9E8 /* main.m */; };
 		28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC78371A177FAC0025B9E8 /* AppDelegate.m */; };
-		28CC783E1A177FAC0025B9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28CC783C1A177FAC0025B9E8 /* Main.storyboard */; };
-		28CC78401A177FAC0025B9E8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28CC783F1A177FAC0025B9E8 /* Images.xcassets */; };
-		28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */; };
 		28CC784F1A177FAC0025B9E8 /* BPKITsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */; };
 		28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B01ACFC54400A6FA2A /* BlurViewController.m */; };
 		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
@@ -107,6 +102,14 @@
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
 		FD49CEA71AC665950026D4AF /* BPPopToastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */; };
+		FD4AE2EA1AD3770700C81117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2E61AD3770700C81117 /* Images.xcassets */; };
+		FD4AE2EB1AD3770700C81117 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2E71AD3770700C81117 /* LaunchScreen.xib */; };
+		FD4AE2EC1AD3770700C81117 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2E81AD3770700C81117 /* Main.storyboard */; };
+		FD4AE2ED1AD3770700C81117 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2E91AD3770700C81117 /* Media.xcassets */; };
+		FD4AE2EF1AD3774B00C81117 /* NewInIOS8.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2EE1AD3774B00C81117 /* NewInIOS8.storyboard */; };
+		FD4AE2F11AD378C600C81117 /* UIKit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2F01AD378C600C81117 /* UIKit.storyboard */; };
+		FD4AE2F71AD3803400C81117 /* DatePickerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4AE2F61AD3803400C81117 /* DatePickerTableViewController.m */; };
+		FD4AE2FB1AD3807F00C81117 /* BPAreaPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4AE2FA1AD3807F00C81117 /* BPAreaPickerViewController.m */; };
 		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
 		FD752B821ABFA26C00D1A214 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B811ABFA26C00D1A214 /* BPPopoverController.m */; };
 		FD752B851ABFACD300D1A214 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B841ABFACD300D1A214 /* BPPopoverDemoController.m */; };
@@ -248,8 +251,6 @@
 		2812F0E21A3F2E0200375631 /* bpViewDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpViewDefine.h; sourceTree = "<group>"; };
 		2812F1081A3F2E7100375631 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		2812F1091A3F2E7100375631 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		2812F10C1A3F309500375631 /* DatePickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerTableViewController.h; sourceTree = "<group>"; };
-		2812F10D1A3F309500375631 /* DatePickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerTableViewController.m; sourceTree = "<group>"; };
 		2812F10F1A3F320300375631 /* BPDatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDatePickerViewController.h; sourceTree = "<group>"; };
 		2812F1101A3F320300375631 /* BPDatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDatePickerViewController.m; sourceTree = "<group>"; };
 		2812F1111A3F320300375631 /* BPDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPDatePickerViewController.xib; sourceTree = "<group>"; };
@@ -272,7 +273,6 @@
 		285F87DC1AAB6A6F00297EE6 /* BPAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertAction.h; sourceTree = "<group>"; };
 		285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAction.m; sourceTree = "<group>"; };
 		285F87DF1AAB6A9700297EE6 /* BPAlertDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPAlertDefines.h; sourceTree = "<group>"; };
-		2865E98E1AD2A74A00E86EA0 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		289E18CD1AAC2EC20000AAAB /* BPPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerViewController.h; sourceTree = "<group>"; };
 		289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerViewController.m; sourceTree = "<group>"; };
 		289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -298,9 +298,6 @@
 		28CC78341A177FAC0025B9E8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		28CC78361A177FAC0025B9E8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		28CC78371A177FAC0025B9E8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		28CC783D1A177FAC0025B9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		28CC783F1A177FAC0025B9E8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		28CC78421A177FAC0025B9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		28CC78481A177FAC0025B9E8 /* BPKITsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BPKITsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28CC784D1A177FAC0025B9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28CC784E1A177FAC0025B9E8 /* BPKITsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BPKITsDemoTests.m; sourceTree = "<group>"; };
@@ -316,6 +313,16 @@
 		FD49CEA11AC662C10026D4AF /* BPPopToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopToast.m; sourceTree = "<group>"; };
 		FD49CEA51AC665950026D4AF /* BPPopToastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToastViewController.h; sourceTree = "<group>"; };
 		FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopToastViewController.m; sourceTree = "<group>"; };
+		FD4AE2E61AD3770700C81117 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FD4AE2E71AD3770700C81117 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		FD4AE2E81AD3770700C81117 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FD4AE2E91AD3770700C81117 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FD4AE2EE1AD3774B00C81117 /* NewInIOS8.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NewInIOS8.storyboard; sourceTree = "<group>"; };
+		FD4AE2F01AD378C600C81117 /* UIKit.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UIKit.storyboard; sourceTree = "<group>"; };
+		FD4AE2F51AD3803400C81117 /* DatePickerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerTableViewController.h; sourceTree = "<group>"; };
+		FD4AE2F61AD3803400C81117 /* DatePickerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerTableViewController.m; sourceTree = "<group>"; };
+		FD4AE2F91AD3807F00C81117 /* BPAreaPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAreaPickerViewController.h; sourceTree = "<group>"; };
+		FD4AE2FA1AD3807F00C81117 /* BPAreaPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAreaPickerViewController.m; sourceTree = "<group>"; };
 		FD752B7B1ABFA18800D1A214 /* BPPopoverAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverAnimation.h; sourceTree = "<group>"; };
 		FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverAnimation.m; sourceTree = "<group>"; };
 		FD752B801ABFA26C00D1A214 /* BPPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPPopoverController.h; path = PopoverController/BPPopoverController.h; sourceTree = "<group>"; };
@@ -674,15 +681,6 @@
 			path = ../../Views;
 			sourceTree = "<group>";
 		};
-		2812F10B1A3F308300375631 /* DatePicker */ = {
-			isa = PBXGroup;
-			children = (
-				2812F10C1A3F309500375631 /* DatePickerTableViewController.h */,
-				2812F10D1A3F309500375631 /* DatePickerTableViewController.m */,
-			);
-			path = DatePicker;
-			sourceTree = "<group>";
-		};
 		284208631A9C653D00CD1EB0 /* Refresh Table */ = {
 			isa = PBXGroup;
 			children = (
@@ -748,6 +746,7 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				FD4AE2F21AD37FF500C81117 /* UIKit */,
 				FD8B920F1ACE2E8500E5A4FA /* Notification */,
 				FDFEE0FC1ACD57DA004C35FE /* NewInIOS 8 */,
 				FDCE3AE31AC923140038B7BE /* URL Session */,
@@ -764,11 +763,7 @@
 				04CB22341A8096F500812742 /* CollectionView */,
 				04DC6C451A6E09850062A5F6 /* BPPhotoBrowser */,
 				04963DF91A416BA90075EE31 /* BPChanged */,
-				2812F10B1A3F308300375631 /* DatePicker */,
-				28CC783C1A177FAC0025B9E8 /* Main.storyboard */,
-				28CC783F1A177FAC0025B9E8 /* Images.xcassets */,
-				2865E98E1AD2A74A00E86EA0 /* Media.xcassets */,
-				28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */,
+				FD4AE2E41AD376D100C81117 /* Resouces */,
 				28CC78321A177FAC0025B9E8 /* Supporting Files */,
 			);
 			path = BPKITsDemo;
@@ -827,6 +822,54 @@
 				FD49CEA61AC665950026D4AF /* BPPopToastViewController.m */,
 			);
 			name = "Pop Toast";
+			sourceTree = "<group>";
+		};
+		FD4AE2E41AD376D100C81117 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AE2E61AD3770700C81117 /* Images.xcassets */,
+				FD4AE2E71AD3770700C81117 /* LaunchScreen.xib */,
+				FD4AE2E81AD3770700C81117 /* Main.storyboard */,
+				FD4AE2EE1AD3774B00C81117 /* NewInIOS8.storyboard */,
+				FD4AE2F01AD378C600C81117 /* UIKit.storyboard */,
+				FD4AE2E91AD3770700C81117 /* Media.xcassets */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		FD4AE2F21AD37FF500C81117 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AE2F31AD3803400C81117 /* PickerView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		FD4AE2F31AD3803400C81117 /* PickerView */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AE2F41AD3803400C81117 /* DatePicker */,
+				FD4AE2F81AD3806100C81117 /* AreaPicker */,
+			);
+			path = PickerView;
+			sourceTree = "<group>";
+		};
+		FD4AE2F41AD3803400C81117 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AE2F51AD3803400C81117 /* DatePickerTableViewController.h */,
+				FD4AE2F61AD3803400C81117 /* DatePickerTableViewController.m */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		FD4AE2F81AD3806100C81117 /* AreaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				FD4AE2F91AD3807F00C81117 /* BPAreaPickerViewController.h */,
+				FD4AE2FA1AD3807F00C81117 /* BPAreaPickerViewController.m */,
+			);
+			path = AreaPicker;
 			sourceTree = "<group>";
 		};
 		FD752B7F1ABFA24000D1A214 /* Popover */ = {
@@ -977,27 +1020,29 @@
 			files = (
 				04DC6C671A6E0A6D0062A5F6 /* photo7t.jpg in Resources */,
 				04DC6C5E1A6E0A6D0062A5F6 /* photo3.jpg in Resources */,
-				28CC783E1A177FAC0025B9E8 /* Main.storyboard in Resources */,
-				28CC78431A177FAC0025B9E8 /* LaunchScreen.xib in Resources */,
 				04DC6C5A1A6E0A6D0062A5F6 /* photo1.jpg in Resources */,
-				2865E98F1AD2A74A00E86EA0 /* Media.xcassets in Resources */,
+				FD4AE2EC1AD3770700C81117 /* Main.storyboard in Resources */,
 				04DC6C5F1A6E0A6D0062A5F6 /* photo3t.jpg in Resources */,
+				FD4AE2ED1AD3770700C81117 /* Media.xcassets in Resources */,
 				04DC6C5D1A6E0A6D0062A5F6 /* photo2t.jpg in Resources */,
 				04DC6C631A6E0A6D0062A5F6 /* photo5t.jpg in Resources */,
 				04DC6C621A6E0A6D0062A5F6 /* photo5.jpg in Resources */,
+				FD4AE2EF1AD3774B00C81117 /* NewInIOS8.storyboard in Resources */,
 				04DC6C401A6E06720062A5F6 /* MWPhotoBrowser.bundle in Resources */,
 				04E09DB41AB7FCCB000EFE6B /* area.json in Resources */,
 				04DC6C641A6E0A6D0062A5F6 /* photo6.jpg in Resources */,
 				04DC6C651A6E0A6D0062A5F6 /* photo6t.jpg in Resources */,
 				04DC6C691A6E0A6D0062A5F6 /* photo8t.jpg in Resources */,
+				FD4AE2F11AD378C600C81117 /* UIKit.storyboard in Resources */,
 				2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */,
 				042C82E31A90A23D00A94ECC /* SecureAlertImages.xcassets in Resources */,
 				042C82E01A9081BC00A94ECC /* BPSecureAlertView.xib in Resources */,
+				FD4AE2EB1AD3770700C81117 /* LaunchScreen.xib in Resources */,
+				FD4AE2EA1AD3770700C81117 /* Images.xcassets in Resources */,
 				04DC6C5C1A6E0A6D0062A5F6 /* photo2.jpg in Resources */,
 				04DC6C5B1A6E0A6D0062A5F6 /* photo1t.jpg in Resources */,
 				04DC6C681A6E0A6D0062A5F6 /* photo8.jpg in Resources */,
 				04DC6C661A6E0A6D0062A5F6 /* photo7.jpg in Resources */,
-				28CC78401A177FAC0025B9E8 /* Images.xcassets in Resources */,
 				04DC6C601A6E0A6D0062A5F6 /* photo4.jpg in Resources */,
 				04DC6C611A6E0A6D0062A5F6 /* photo4t.jpg in Resources */,
 			);
@@ -1044,12 +1089,14 @@
 				FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
 				FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */,
+				FD4AE2FB1AD3807F00C81117 /* BPAreaPickerViewController.m in Sources */,
 				28C6D3E61AAAD6C000A5DE5A /* BPImageWithColorViewController.m in Sources */,
 				28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */,
 				04E09DBA1AB7FFBD000EFE6B /* AreaDataSource.m in Sources */,
 				28C6D3FA1AAB52DF00A5DE5A /* BPAlertTitle.m in Sources */,
 				04CB223B1A8097DB00812742 /* BPCollectionViewCell.m in Sources */,
 				2812F1071A3F2E0200375631 /* BPView.m in Sources */,
+				FD4AE2F71AD3803400C81117 /* DatePickerTableViewController.m in Sources */,
 				2812F0FD1A3F2E0200375631 /* MBProgressHUD.m in Sources */,
 				28C6D3F31AAAF7C700A5DE5A /* BPAlertController.m in Sources */,
 				04A6BBCD1AB943990042E196 /* BPPageViewController.m in Sources */,
@@ -1057,7 +1104,6 @@
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
 				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
-				2812F10E1A3F309500375631 /* DatePickerTableViewController.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */,
@@ -1112,25 +1158,6 @@
 			targetProxy = 28CC78491A177FAC0025B9E8 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		28CC783C1A177FAC0025B9E8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28CC783D1A177FAC0025B9E8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		28CC78411A177FAC0025B9E8 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				28CC78421A177FAC0025B9E8 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		28CC78501A177FAC0025B9E8 /* Debug */ = {

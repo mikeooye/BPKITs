@@ -21,11 +21,11 @@
     __weak IBOutlet UIButton *_cancelButton;
     __weak IBOutlet UIButton *_okayButton;
     
-    BPDatePickerViewControllerSelectionBlock _selectionBlock;
-    
     BOOL _showing;
     BOOL _dismissing;
 }
+
+@property (copy, nonatomic) void (^selectionHandler)(NSDate *date);
 
 - (IBAction)backgroundTapped:(id)sender;
 - (IBAction)didCancel:(id)sender;
@@ -37,9 +37,9 @@
 
 @implementation BPDatePickerViewController
 
-- (void)setSelectionBlock:(BPDatePickerViewControllerSelectionBlock)selection
+- (void)setSelectionHandler:(void (^)(NSDate *))handler
 {
-    _selectionBlock = selection;
+    _selectionHandler = handler;
 }
 
 #pragma mark - UIViewController
@@ -66,18 +66,24 @@
 #pragma mark - Action
 - (IBAction)backgroundTapped:(id)sender {
     
+    if (_selectionHandler) {
+        _selectionHandler(nil);
+    }
     [self dismiss];
 }
 
 - (IBAction)didCancel:(id)sender {
     
+    if (_selectionHandler) {
+        _selectionHandler(nil);
+    }
     [self dismiss];
 }
 
 - (IBAction)didOkay:(id)sender {
     
-    if (_selectionBlock) {
-        _selectionBlock(self.date);
+    if (_selectionHandler) {
+        _selectionHandler(self.date);
     }
     [self dismiss];
 }
@@ -137,7 +143,7 @@
         
         if (finished) {
             
-            [weakSelf setValue:nil forKey:@"_selectionBlock"];
+            [weakSelf setSelectionHandler:nil];
             [weakSelf willMoveToParentViewController:nil];
             [weakSelf.view removeFromSuperview];
             [weakSelf removeFromParentViewController];

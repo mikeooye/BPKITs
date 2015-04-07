@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef void (^BPDatePickerViewControllerSelectionBlock)(NSDate *selectionDate);
-
 @interface BPDatePickerViewController : UIViewController
 
 - (instancetype)initWithViewController:(UIViewController *)viewController;
@@ -22,5 +20,5 @@ typedef void (^BPDatePickerViewControllerSelectionBlock)(NSDate *selectionDate);
 @property (retain, nonatomic) NSDate *date;
 @property (assign, nonatomic) UIDatePickerMode datePickerMode;
 
-- (void)setSelectionBlock:(BPDatePickerViewControllerSelectionBlock)selection;
+- (void)setSelectionHandler:(void(^)(NSDate *newSelectionDate))handler;
 @end

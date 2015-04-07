@@ -28,10 +28,14 @@
         _dataSource = dataSouce;
         
         self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:1];
-        
-        [_dataSource pickerView:self didSelectRow:0 inComponent:0];
     }
     return self;
+}
+
+- (void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+    [_dataSource pickerView:self didSelectRow:0 inComponent:0];
 }
 
 - (void)setDataSourceDlegate:(id<AreaDataSourceDelegate>)dataSourceDlegate

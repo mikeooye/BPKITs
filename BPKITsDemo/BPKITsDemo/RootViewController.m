@@ -58,5 +58,15 @@
 {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     [cell.textLabel.text toast];
+    
+    if ([cell.reuseIdentifier isEqualToString:@"ios8"]) {
+        
+        UIViewController *ios8RootViewController = [[UIStoryboard storyboardWithName:@"NewInIOS8" bundle:nil] instantiateInitialViewController];
+        [self.navigationController pushViewController:ios8RootViewController animated:YES];
+    }else if ([cell.reuseIdentifier isEqualToString:@"uikit"]){
+        
+        UIViewController *uikitRootViewController = [[UIStoryboard storyboardWithName:@"UIKit" bundle:nil] instantiateInitialViewController];
+        [self.navigationController pushViewController:uikitRootViewController animated:YES];
+    }
 }
 @end
