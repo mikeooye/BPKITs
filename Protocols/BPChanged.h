@@ -8,17 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void (^BPChangedBlock)(id obj, BOOL isChnaged);
-
 @protocol BPChanged <NSObject>
-
-/**
- *  变化状态
- */
-@property (readonly, nonatomic) BOOL isChnaged;
 
 /**
  *  变化回调
  */
-@property (copy, nonatomic) BPChangedBlock changedBlock;
+@property (copy, nonatomic) void (^changedHandler)(BOOL isChanged, id obj);
 @end

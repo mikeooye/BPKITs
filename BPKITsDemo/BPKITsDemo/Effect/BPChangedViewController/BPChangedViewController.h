@@ -14,9 +14,8 @@
  */
 @interface BPChangedViewController : UITableViewController<BPChanged>  ///< 2.遵循协议规范
 
-@property (readonly, nonatomic) BOOL isChnaged;  ///< 3.变化状态，默认是NO
 
-@property (copy, nonatomic) BPChangedBlock changedBlock; ///< 4.变化回调
+@property (copy, nonatomic) void (^changedHandler)(BOOL isChanged, id obj);
 
 @property (assign, nonatomic) NSUInteger number;
 @end

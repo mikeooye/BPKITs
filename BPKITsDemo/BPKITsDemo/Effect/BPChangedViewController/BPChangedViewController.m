@@ -11,6 +11,7 @@
 @implementation BPChangedViewController{
     
     __weak IBOutlet UILabel *_textLabel;
+    BOOL _isChanged;
 }
 
 - (void)viewDidLoad
@@ -30,7 +31,7 @@
     cell.textLabel.text = [NSString stringWithFormat:@"%lu", (unsigned long)self.number];
     
     // 5. 标记数据已发生变化
-    _isChnaged = YES;
+    _isChanged = YES;
     
     //取消tableView的选中状态
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
@@ -41,9 +42,9 @@
     [super viewDidDisappear:animated];
     
     // 6. 判断是否设置变化回调
-    if (self.changedBlock) {
+    if (self.changedHandler) {
         //如果已设置，将变化的数据和状态通过回调返回
-        self.changedBlock(@(self.number), self.isChnaged);
+        self.changedHandler(_isChanged, @(self.number));
     }
 }
 @end

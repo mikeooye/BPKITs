@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
+#import "BPDateFormatter.h"
 
 @interface BPKITsDemoTests : XCTestCase
 
@@ -27,7 +28,36 @@
 
 - (void)testExample {
     // This is an example of a functional test case.
-    XCTAssert(YES, @"Pass");
+
+    NSDate *testDate = [BPDateFormatter dateFromString:@"2015-04-07 12:37:30" fmtStyle:BPDateFormatterStyleDefault];
+    
+    NSCalendarUnit unit = (NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitHour|NSCalendarUnitMinute);
+    NSDateComponents *comp = [[NSCalendar currentCalendar] components:unit fromDate:[NSDate date]];
+    comp.hour = 12;
+    comp.minute = 20;
+    NSDate *date1220 = [[NSCalendar currentCalendar] dateFromComponents:comp];
+    
+    comp.minute = 40;
+    NSDate *date1240 = [[NSCalendar currentCalendar] dateFromComponents:comp];
+    
+    comp.hour = 13;
+    comp.minute = 0;
+    NSDate *date1300 = [[NSCalendar currentCalendar] dateFromComponents:comp];
+    
+    BOOL found = NO;
+    NSDate *offsetDate = testDate;
+    do {
+        NSLog(@"offsetDate: %@", [BPDateFormatter stringFromDate:offsetDate fmtStyle:BPDateFormatterStyleDefault]);
+        if (([offsetDate timeIntervalSinceDate:date1220] < 5 * 60 && [offsetDate timeIntervalSinceDate:date1220] > 0) ||
+            ([offsetDate timeIntervalSinceDate:date1240] < 5 * 60 && [offsetDate timeIntervalSinceDate:date1240] > 0) ||
+            ([offsetDate timeIntervalSinceDate:date1300] < 5 * 60 && [offsetDate timeIntervalSinceDate:date1300] > 0)) {
+            found = YES;
+            break;
+        }
+        
+        offsetDate = [NSDate dateWithTimeInterval:5 * 60 sinceDate:offsetDate];
+        
+    } while (found == NO);
 }
 
 - (void)testPerformanceExample {

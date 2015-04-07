@@ -102,3 +102,12 @@ NSTimeInterval const kLongToastDuration = 4.5;
 }
 
 @end
+
+@implementation UITableViewCell (BPToast)
+
+- (void)textToast
+{
+    NSString *text = self.textLabel.text;
+    [text toast];
+}
+@end

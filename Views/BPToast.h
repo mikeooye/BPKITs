@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 extern NSTimeInterval const kShortToastDuration;
 extern NSTimeInterval const kLongToastDuration;
@@ -29,4 +30,9 @@ extern NSTimeInterval const kLongToastDuration;
 @interface NSString (BPToast)
 
 - (void)toast;
+@end
+
+@interface UITableViewCell (BPToast)
+
+- (void)textToast;
 @end

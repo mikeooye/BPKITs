@@ -31,26 +31,6 @@
         //将文字设置为下一页面的标题
         UIViewController *destinationViewController = segue.destinationViewController;
         [destinationViewController setTitle:title];
-        
-        //如果目标页面已实现 <BPCahnged> 协议
-        if ([destinationViewController conformsToProtocol:@protocol(BPChanged)]) {
-            
-            //如果目标页面是 BPChangedViewController
-            if ([destinationViewController isKindOfClass:[BPChangedViewController class]]) {
-                
-                //强转
-                BPChangedViewController *chagnedViewController = (BPChangedViewController *)destinationViewController;
-                
-                //设置监听回调
-                [chagnedViewController setChangedBlock:^(NSNumber *obj, BOOL isChanged){
-                    
-                    if (isChanged == YES) {
-                        //如果发生变化，将新的数值显示在cell的detailTextLabel上
-                        cell.detailTextLabel.text = [obj stringValue];
-                    }
-                }];
-            }
-        }
     }
 }
 
@@ -67,6 +47,10 @@
         
         UIViewController *uikitRootViewController = [[UIStoryboard storyboardWithName:@"UIKit" bundle:nil] instantiateInitialViewController];
         [self.navigationController pushViewController:uikitRootViewController animated:YES];
+    }else if ([cell.reuseIdentifier isEqualToString:@"effect"]){
+        
+        UIViewController *effectRootViewController = [[UIStoryboard storyboardWithName:@"Effect" bundle:nil] instantiateInitialViewController];
+        [self.navigationController pushViewController:effectRootViewController animated:YES];
     }
 }
 @end
