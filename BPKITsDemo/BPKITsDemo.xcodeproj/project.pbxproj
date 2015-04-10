@@ -120,6 +120,8 @@
 		FD8B92161ACE45A300E5A4FA /* UILocalNotification+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */; };
 		FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */; };
 		FDEC012F1AD77CCC00BF01B2 /* BPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEC012E1AD77CCC00BF01B2 /* BPTimer.m */; };
+		FDEC01351AD77E3400BF01B2 /* BPTimerForCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEC01341AD77E3400BF01B2 /* BPTimerForCellViewController.m */; };
+		FDEC01391AD7808000BF01B2 /* BPTimerForSecondsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEC01381AD7808000BF01B2 /* BPTimerForSecondsViewController.m */; };
 		FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */; };
 		FDFEE1011ACD586F004C35FE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
@@ -345,6 +347,10 @@
 		FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPUrlSessionTestViewController.m; path = "URL Session/BPUrlSessionTestViewController.m"; sourceTree = "<group>"; };
 		FDEC012D1AD77CCC00BF01B2 /* BPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTimer.h; sourceTree = "<group>"; };
 		FDEC012E1AD77CCC00BF01B2 /* BPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTimer.m; sourceTree = "<group>"; };
+		FDEC01331AD77E3400BF01B2 /* BPTimerForCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTimerForCellViewController.h; sourceTree = "<group>"; };
+		FDEC01341AD77E3400BF01B2 /* BPTimerForCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTimerForCellViewController.m; sourceTree = "<group>"; };
+		FDEC01371AD7808000BF01B2 /* BPTimerForSecondsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTimerForSecondsViewController.h; sourceTree = "<group>"; };
+		FDEC01381AD7808000BF01B2 /* BPTimerForSecondsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTimerForSecondsViewController.m; sourceTree = "<group>"; };
 		FDFEE0FD1ACD580A004C35FE /* IOS8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOS8ViewController.h; sourceTree = "<group>"; };
 		FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOS8ViewController.m; sourceTree = "<group>"; };
 		FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -800,6 +806,7 @@
 				FD4AE3041AD3C52B00C81117 /* BPChangedViewController */,
 				FD4AE3071AD3C52B00C81117 /* Image With Color */,
 				FD4AE30A1AD3C52B00C81117 /* PopToast */,
+				FDEC01311AD77E1600BF01B2 /* Timer */,
 			);
 			path = Effect;
 			sourceTree = "<group>";
@@ -944,6 +951,33 @@
 				FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */,
 			);
 			name = "URL Session";
+			sourceTree = "<group>";
+		};
+		FDEC01311AD77E1600BF01B2 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC01361AD7806E00BF01B2 /* TimerForSeconds */,
+				FDEC01321AD77E1600BF01B2 /* TimerForCell */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		FDEC01321AD77E1600BF01B2 /* TimerForCell */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC01331AD77E3400BF01B2 /* BPTimerForCellViewController.h */,
+				FDEC01341AD77E3400BF01B2 /* BPTimerForCellViewController.m */,
+			);
+			path = TimerForCell;
+			sourceTree = "<group>";
+		};
+		FDEC01361AD7806E00BF01B2 /* TimerForSeconds */ = {
+			isa = PBXGroup;
+			children = (
+				FDEC01371AD7808000BF01B2 /* BPTimerForSecondsViewController.h */,
+				FDEC01381AD7808000BF01B2 /* BPTimerForSecondsViewController.m */,
+			);
+			path = TimerForSeconds;
 			sourceTree = "<group>";
 		};
 		FDFEE0FC1ACD57DA004C35FE /* NewInIOS 8 */ = {
@@ -1143,6 +1177,7 @@
 				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
+				FDEC01351AD77E3400BF01B2 /* BPTimerForCellViewController.m in Sources */,
 				2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */,
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
@@ -1158,6 +1193,7 @@
 				2812F0EC1A3F2E0200375631 /* UIView+bpExtension.m in Sources */,
 				2812F0E91A3F2E0200375631 /* NSString+Hashes.m in Sources */,
 				2812F0E61A3F2E0200375631 /* NSDictionary+bpExtension.m in Sources */,
+				FDEC01391AD7808000BF01B2 /* BPTimerForSecondsViewController.m in Sources */,
 				2812F0EB1A3F2E0200375631 /* UIImage+Resize.m in Sources */,
 				2812F0ED1A3F2E0200375631 /* UIViewController+bpExtension.m in Sources */,
 				28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */,
