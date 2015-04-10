@@ -119,6 +119,7 @@
 		FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B92121ACE2EAB00E5A4FA /* NotificationRootViewController.m */; };
 		FD8B92161ACE45A300E5A4FA /* UILocalNotification+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */; };
 		FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */; };
+		FDEC012F1AD77CCC00BF01B2 /* BPTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = FDEC012E1AD77CCC00BF01B2 /* BPTimer.m */; };
 		FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */; };
 		FDFEE1011ACD586F004C35FE /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */; };
 /* End PBXBuildFile section */
@@ -342,6 +343,8 @@
 		FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILocalNotification+bpExtension.m"; sourceTree = "<group>"; };
 		FDCE3AE51AC923320038B7BE /* BPUrlSessionTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPUrlSessionTestViewController.h; path = "URL Session/BPUrlSessionTestViewController.h"; sourceTree = "<group>"; };
 		FDCE3AE61AC923320038B7BE /* BPUrlSessionTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPUrlSessionTestViewController.m; path = "URL Session/BPUrlSessionTestViewController.m"; sourceTree = "<group>"; };
+		FDEC012D1AD77CCC00BF01B2 /* BPTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTimer.h; sourceTree = "<group>"; };
+		FDEC012E1AD77CCC00BF01B2 /* BPTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTimer.m; sourceTree = "<group>"; };
 		FDFEE0FD1ACD580A004C35FE /* IOS8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOS8ViewController.h; sourceTree = "<group>"; };
 		FDFEE0FE1ACD580A004C35FE /* IOS8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IOS8ViewController.m; sourceTree = "<group>"; };
 		FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
@@ -514,6 +517,8 @@
 		2812F09D1A3F2E0200375631 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FDEC012D1AD77CCC00BF01B2 /* BPTimer.h */,
+				FDEC012E1AD77CCC00BF01B2 /* BPTimer.m */,
 				FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */,
 				FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */,
 				04904B2A1A41866800A597B8 /* BPKeyboardHelper.h */,
@@ -1119,6 +1124,7 @@
 				FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */,
 				2812F0E81A3F2E0200375631 /* NSString+bpExtension.m in Sources */,
 				FDFEE0FF1ACD580A004C35FE /* IOS8ViewController.m in Sources */,
+				FDEC012F1AD77CCC00BF01B2 /* BPTimer.m in Sources */,
 				FD4AE2FB1AD3807F00C81117 /* BPAreaPickerViewController.m in Sources */,
 				28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */,
 				FD4AE3351AD3C67200C81117 /* BPPhotoBrowserViewController.m in Sources */,
