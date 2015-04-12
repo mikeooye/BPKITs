@@ -51,6 +51,10 @@
         
         UIViewController *effectRootViewController = [[UIStoryboard storyboardWithName:@"Effect" bundle:nil] instantiateInitialViewController];
         [self.navigationController pushViewController:effectRootViewController animated:YES];
+    }else if ([cell.reuseIdentifier isEqualToString:@"util"]){
+        
+        UIViewController *utilRootViewController = [[UIStoryboard storyboardWithName:@"Util" bundle:nil] instantiateInitialViewController];
+        [self.navigationController pushViewController:utilRootViewController animated:YES];
     }
 }
 @end

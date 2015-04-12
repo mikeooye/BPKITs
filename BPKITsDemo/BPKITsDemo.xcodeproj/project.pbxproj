@@ -26,6 +26,12 @@
 		04E09DBA1AB7FFBD000EFE6B /* AreaDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E09DB91AB7FFBD000EFE6B /* AreaDataSource.m */; };
 		04E09DC01AB80223000EFE6B /* AreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E09DBF1AB80223000EFE6B /* AreaPickerView.m */; };
 		04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04E31CF31A84DA0400C05702 /* BPScrollViewController.m */; };
+		2802F9461ADA8279001E229D /* QRCodeDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F9451ADA8279001E229D /* QRCodeDemoViewController.m */; };
+		2802F9491ADA8379001E229D /* QRCodeCaptureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F9481ADA8379001E229D /* QRCodeCaptureViewController.m */; };
+		2802F94B1ADA84B9001E229D /* beep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2802F94A1ADA84B9001E229D /* beep.mp3 */; };
+		2802F94D1ADA963D001E229D /* qrcode_found.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2802F94C1ADA963D001E229D /* qrcode_found.wav */; };
+		2802F9551ADABB13001E229D /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F9541ADABB13001E229D /* AVCamPreviewView.m */; };
+		2802F9581ADABDA2001E229D /* BPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F9571ADABDA2001E229D /* BPNavigationController.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -58,6 +64,7 @@
 		28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */; };
 		28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D801AADDE37002D63A7 /* BPAlertAnimation.m */; };
 		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
+		284CB8EA1ADA7D05009B33BD /* Util.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284CB8E91ADA7D05009B33BD /* Util.storyboard */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
 		285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */; };
 		289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */; };
@@ -174,6 +181,16 @@
 		04E09DBF1AB80223000EFE6B /* AreaPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AreaPickerView.m; sourceTree = "<group>"; };
 		04E31CF21A84DA0400C05702 /* BPScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BPScrollViewController.h; path = ScrollButtons/BPScrollViewController.h; sourceTree = "<group>"; };
 		04E31CF31A84DA0400C05702 /* BPScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BPScrollViewController.m; path = ScrollButtons/BPScrollViewController.m; sourceTree = "<group>"; };
+		2802F9441ADA8279001E229D /* QRCodeDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeDemoViewController.h; sourceTree = "<group>"; };
+		2802F9451ADA8279001E229D /* QRCodeDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeDemoViewController.m; sourceTree = "<group>"; };
+		2802F9471ADA8379001E229D /* QRCodeCaptureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeCaptureViewController.h; sourceTree = "<group>"; };
+		2802F9481ADA8379001E229D /* QRCodeCaptureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeCaptureViewController.m; sourceTree = "<group>"; };
+		2802F94A1ADA84B9001E229D /* beep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = beep.mp3; sourceTree = "<group>"; };
+		2802F94C1ADA963D001E229D /* qrcode_found.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = qrcode_found.wav; sourceTree = "<group>"; };
+		2802F9531ADABB13001E229D /* AVCamPreviewView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVCamPreviewView.h; sourceTree = "<group>"; };
+		2802F9541ADABB13001E229D /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
+		2802F9561ADABDA2001E229D /* BPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPNavigationController.h; sourceTree = "<group>"; };
+		2802F9571ADABDA2001E229D /* BPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPNavigationController.m; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -245,6 +262,7 @@
 		28261D801AADDE37002D63A7 /* BPAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAnimation.m; sourceTree = "<group>"; };
 		284208691A9C6B7300CD1EB0 /* BPLoadingMore2Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLoadingMore2Control.h; sourceTree = "<group>"; };
 		2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLoadingMore2Control.m; sourceTree = "<group>"; };
+		284CB8E91ADA7D05009B33BD /* Util.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Util.storyboard; sourceTree = "<group>"; };
 		285F87D81AAB673100297EE6 /* BPAlertMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertMessage.h; sourceTree = "<group>"; };
 		285F87D91AAB673100297EE6 /* BPAlertMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertMessage.m; sourceTree = "<group>"; };
 		285F87DC1AAB6A6F00297EE6 /* BPAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertAction.h; sourceTree = "<group>"; };
@@ -429,6 +447,19 @@
 				04E31CF31A84DA0400C05702 /* BPScrollViewController.m */,
 			);
 			name = ScrollButtons;
+			sourceTree = "<group>";
+		};
+		2802F9431ADA8279001E229D /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				2802F9441ADA8279001E229D /* QRCodeDemoViewController.h */,
+				2802F9451ADA8279001E229D /* QRCodeDemoViewController.m */,
+				2802F9471ADA8379001E229D /* QRCodeCaptureViewController.h */,
+				2802F9481ADA8379001E229D /* QRCodeCaptureViewController.m */,
+				2802F9531ADABB13001E229D /* AVCamPreviewView.h */,
+				2802F9541ADABB13001E229D /* AVCamPreviewView.m */,
+			);
+			path = QRCode;
 			sourceTree = "<group>";
 		};
 		280628E11AA6034200810879 /* Custom Alert */ = {
@@ -636,6 +667,28 @@
 			path = ../../Views;
 			sourceTree = "<group>";
 		};
+		284CB8DF1ADA791C009B33BD /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */,
+				289E18D21AAC2F700000AAAB /* AVKit.framework */,
+				289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */,
+				04DC6C701A6E17250062A5F6 /* QuartzCore.framework */,
+				04DC6C6E1A6E171B0062A5F6 /* AssetsLibrary.framework */,
+				04DC6C6C1A6E17140062A5F6 /* ImageIO.framework */,
+				04DC6C6A1A6E170D0062A5F6 /* MessageUI.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		284CB8E61ADA7C88009B33BD /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2802F9431ADA8279001E229D /* QRCode */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
 		289E18CC1AAC2DE50000AAAB /* VideoPlayer */ = {
 			isa = PBXGroup;
 			children = (
@@ -652,13 +705,7 @@
 		28CC78261A177FAC0025B9E8 = {
 			isa = PBXGroup;
 			children = (
-				FDFEE1001ACD586F004C35FE /* LocalAuthentication.framework */,
-				289E18D21AAC2F700000AAAB /* AVKit.framework */,
-				289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */,
-				04DC6C701A6E17250062A5F6 /* QuartzCore.framework */,
-				04DC6C6E1A6E171B0062A5F6 /* AssetsLibrary.framework */,
-				04DC6C6C1A6E17140062A5F6 /* ImageIO.framework */,
-				04DC6C6A1A6E170D0062A5F6 /* MessageUI.framework */,
+				284CB8DF1ADA791C009B33BD /* Framework */,
 				28CC78311A177FAC0025B9E8 /* BPKITsDemo */,
 				28CC784B1A177FAC0025B9E8 /* BPKITsDemoTests */,
 				28CC78301A177FAC0025B9E8 /* Products */,
@@ -683,6 +730,9 @@
 				28CC78371A177FAC0025B9E8 /* AppDelegate.m */,
 				2812F1081A3F2E7100375631 /* RootViewController.h */,
 				2812F1091A3F2E7100375631 /* RootViewController.m */,
+				2802F9561ADABDA2001E229D /* BPNavigationController.h */,
+				2802F9571ADABDA2001E229D /* BPNavigationController.m */,
+				284CB8E61ADA7C88009B33BD /* Util */,
 				FD4AE2FE1AD3B52100C81117 /* Effect */,
 				FD4AE2F21AD37FF500C81117 /* UIKit */,
 				FD8B920F1ACE2E8500E5A4FA /* Notification */,
@@ -747,6 +797,8 @@
 		FD4AE2E41AD376D100C81117 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				2802F94C1ADA963D001E229D /* qrcode_found.wav */,
+				2802F94A1ADA84B9001E229D /* beep.mp3 */,
 				FD4AE2E61AD3770700C81117 /* Images.xcassets */,
 				FD4AE2FC1AD3AAE900C81117 /* Effect.storyboard */,
 				FD4AE2E71AD3770700C81117 /* LaunchScreen.xib */,
@@ -754,6 +806,7 @@
 				FD4AE2EE1AD3774B00C81117 /* NewInIOS8.storyboard */,
 				FD4AE2F01AD378C600C81117 /* UIKit.storyboard */,
 				FD4AE2E91AD3770700C81117 /* Media.xcassets */,
+				284CB8E91ADA7D05009B33BD /* Util.storyboard */,
 			);
 			path = Resouces;
 			sourceTree = "<group>";
@@ -1100,6 +1153,7 @@
 				FD4AE3401AD3C67200C81117 /* photo6.jpg in Resources */,
 				FD4AE2F11AD378C600C81117 /* UIKit.storyboard in Resources */,
 				FD4AE33D1AD3C67200C81117 /* photo4t.jpg in Resources */,
+				284CB8EA1ADA7D05009B33BD /* Util.storyboard in Resources */,
 				FD4AE3451AD3C67200C81117 /* photo8t.jpg in Resources */,
 				2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */,
 				FD4AE2FD1AD3AAE900C81117 /* Effect.storyboard in Resources */,
@@ -1113,6 +1167,8 @@
 				FD4AE33C1AD3C67200C81117 /* photo4.jpg in Resources */,
 				FD4AE3421AD3C67200C81117 /* photo7.jpg in Resources */,
 				FD4AE33B1AD3C67200C81117 /* photo3t.jpg in Resources */,
+				2802F94B1ADA84B9001E229D /* beep.mp3 in Resources */,
+				2802F94D1ADA963D001E229D /* qrcode_found.wav in Resources */,
 				FD4AE2EB1AD3770700C81117 /* LaunchScreen.xib in Resources */,
 				FD4AE2EA1AD3770700C81117 /* Images.xcassets in Resources */,
 				FD4AE33F1AD3C67200C81117 /* photo5t.jpg in Resources */,
@@ -1146,6 +1202,7 @@
 				FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */,
 				FD4AE30E1AD3C52B00C81117 /* BPImageWithColorViewController.m in Sources */,
 				289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */,
+				2802F9581ADABDA2001E229D /* BPNavigationController.m in Sources */,
 				FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */,
 				04DC6C751A6E348A0062A5F6 /* BPUpdownButton.m in Sources */,
 				2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */,
@@ -1168,6 +1225,7 @@
 				28C6D3FA1AAB52DF00A5DE5A /* BPAlertTitle.m in Sources */,
 				2812F1071A3F2E0200375631 /* BPView.m in Sources */,
 				FD4AE2F71AD3803400C81117 /* DatePickerTableViewController.m in Sources */,
+				2802F9491ADA8379001E229D /* QRCodeCaptureViewController.m in Sources */,
 				2812F0FD1A3F2E0200375631 /* MBProgressHUD.m in Sources */,
 				28C6D3F31AAAF7C700A5DE5A /* BPAlertController.m in Sources */,
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
@@ -1182,6 +1240,7 @@
 				2812F0EF1A3F2E0200375631 /* BPSoundEffectPlayer.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
 				28C6D3F71AAB4CCA00A5DE5A /* BPAlertBodyView.m in Sources */,
+				2802F9551ADABB13001E229D /* AVCamPreviewView.m in Sources */,
 				28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */,
 				2812F0FE1A3F2E0200375631 /* MBProgressHUDHelper.m in Sources */,
 				04E31CF41A84DA0400C05702 /* BPScrollViewController.m in Sources */,
@@ -1192,6 +1251,7 @@
 				04E09DB71AB7FF03000EFE6B /* AreaItem.m in Sources */,
 				2812F0EC1A3F2E0200375631 /* UIView+bpExtension.m in Sources */,
 				2812F0E91A3F2E0200375631 /* NSString+Hashes.m in Sources */,
+				2802F9461ADA8279001E229D /* QRCodeDemoViewController.m in Sources */,
 				2812F0E61A3F2E0200375631 /* NSDictionary+bpExtension.m in Sources */,
 				FDEC01391AD7808000BF01B2 /* BPTimerForSecondsViewController.m in Sources */,
 				2812F0EB1A3F2E0200375631 /* UIImage+Resize.m in Sources */,
@@ -1321,7 +1381,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "6cbe090e-090d-4467-a11b-2889e768b4b6";
+				PROVISIONING_PROFILE = "6b40ee35-94f5-4e60-8847-25c42365e6fb";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/BPKITsDemo/Lib/MWPhotoBrowser/**";
 			};
