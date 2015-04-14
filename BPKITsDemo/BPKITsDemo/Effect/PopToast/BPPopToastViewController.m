@@ -19,6 +19,6 @@
     tapCount++;
     
     NSString *countText = [NSString stringWithFormat:@"%ld", (long)tapCount];
-    [countText popToastAtRect:CGRectOffset(sender.frame, 0, -CGRectGetHeight(sender.frame)) inView:self.view];
+    [countText popToastAtRect:CGRectMake(8, 0, CGRectGetWidth(self.view.frame) - 8 * 2, 120) inView:self.navigationController.view];
 }
 @end
