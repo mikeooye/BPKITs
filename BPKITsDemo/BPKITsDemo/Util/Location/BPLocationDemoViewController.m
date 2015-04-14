@@ -89,7 +89,7 @@
                           if (placemark && placemark.addressDictionary) {
                               
                               NSString *preText = wkSelf.textView.text;
-                              NSString *text = [preText stringByAppendingString:placemark.formattedAddress];
+                              NSString *text = [preText stringByAppendingString:[placemark formattedAddressWithCountryName:NO]];
                               [wkSelf.textView setText:text];
                           }
                       }

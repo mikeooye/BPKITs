@@ -11,9 +11,9 @@
 
 @implementation CLPlacemark (bpExtension)
 
-- (NSString *)formattedAddress
+- (NSString *)formattedAddressWithCountryName:(BOOL)withCountryName
 {
-    NSString *address = ABCreateStringWithAddressDictionary(self.addressDictionary, YES);
+    NSString *address = ABCreateStringWithAddressDictionary(self.addressDictionary, withCountryName);
     return [address stringByReplacingOccurrencesOfString:@"\n" withString:@""];
 }
 @end

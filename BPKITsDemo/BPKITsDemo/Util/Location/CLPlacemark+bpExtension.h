@@ -10,5 +10,5 @@
 
 @interface CLPlacemark (bpExtension)
 
-- (NSString *)formattedAddress;
+- (NSString *)formattedAddressWithCountryName:(BOOL)withCountryName;
 @end
