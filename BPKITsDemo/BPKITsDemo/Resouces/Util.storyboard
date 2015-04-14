@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ksr-M2-TUG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="ksr-M2-TUG">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
         <!--QR Code-->
@@ -47,6 +47,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fuA-0a-DGW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1318" y="277"/>
+        </scene>
+        <!--Location-->
+        <scene sceneID="VIP-dm-E9h">
+            <objects>
+                <viewController title="Location" id="KJx-4y-kOk" customClass="BPLocationDemoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="r62-lK-dew"/>
+                        <viewControllerLayoutGuide type="bottom" id="s5g-E4-fb4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="SHg-uS-1JY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjl-yU-wyn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Yjl-yU-wyn" secondAttribute="trailing" id="DZJ-nZ-Adi"/>
+                            <constraint firstItem="Yjl-yU-wyn" firstAttribute="leading" secondItem="SHg-uS-1JY" secondAttribute="leading" id="Emn-cz-NIo"/>
+                            <constraint firstItem="Yjl-yU-wyn" firstAttribute="bottom" secondItem="s5g-E4-fb4" secondAttribute="top" id="hv1-TR-A0k"/>
+                            <constraint firstItem="Yjl-yU-wyn" firstAttribute="top" secondItem="SHg-uS-1JY" secondAttribute="top" id="rGV-bk-Znv"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="textView" destination="Yjl-yU-wyn" id="kiX-uG-kgR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dTM-l9-iSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1758" y="665"/>
         </scene>
         <!--Code Capture View Controller-->
         <scene sceneID="Ryo-5X-wG1">
@@ -174,6 +210,23 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <segue destination="Rzx-nM-etI" kind="show" id="qwI-mc-i6m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="UgN-dE-fl9" style="IBUITableViewCellStyleDefault" id="LzF-YW-jTQ">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LzF-YW-jTQ" id="WqG-Oz-vFC">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UgN-dE-fl9">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="KJx-4y-kOk" kind="show" id="kR1-Zq-Vda"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>

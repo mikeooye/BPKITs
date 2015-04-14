@@ -34,6 +34,10 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>我们需要根据地理位置获取相关信息，请允许我们在应用程序的使用期间可以使用位置服务</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>我们需要根据地理位置获取相关信息，请允许始终可以使用位置服务</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
