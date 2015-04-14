@@ -34,10 +34,11 @@
 {
     NSArray *cells = [self.tableView visibleCells];
     
+    __weak typeof(self) wkSelf = self;
     [cells enumerateObjectsUsingBlock:^(UITableViewCell * cell, NSUInteger idx, BOOL *stop) {
         
-        
-        cell.textLabel.text = [_dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:idx * 3600]];
+        NSIndexPath *indexPath = [wkSelf.tableView indexPathForCell:cell];
+        cell.textLabel.text = [wkSelf.dateFormatter stringFromDate:[NSDate dateWithTimeIntervalSinceNow:indexPath.row * 3600]];
     }];
 }
 @end
