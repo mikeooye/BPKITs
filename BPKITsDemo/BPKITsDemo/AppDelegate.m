@@ -7,9 +7,11 @@
 //
 
 #import "AppDelegate.h"
+#import "UIApplication+bpNetworkStatus.h"
 
 @interface AppDelegate ()
 
+@property (assign, nonatomic) BPNetworkStatus status;
 @end
 
 @implementation AppDelegate
@@ -17,9 +19,44 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerFired) userInfo:nil repeats:YES];
     return YES;
 }
 
+- (void)timerFired
+{
+    BPNetworkStatus status = [[UIApplication sharedApplication] networkStatus];
+    
+    if (self.status != status) {
+        self.status = status;
+        switch (status) {
+            case BPNetworkStatus_None:
+                NSLog(@"无网络");
+                break;
+            case BPNetworkStatus_2G:{
+                NSLog(@"2G");
+                break;
+            }
+            case BPNetworkStatus_3G:
+                NSLog(@"3G");
+                break;
+            case BPNetworkStatus_4G:
+                NSLog(@"4G");
+                break;
+            case BPNetworkStatus_LTE:
+                NSLog(@"LTE");
+                break;
+            case BPNetworkStatus_WIFI:{
+                NSLog(@"WIFI");
+                break;
+            }
+            default:
+                break;
+        }
+    }
+    
+}
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
