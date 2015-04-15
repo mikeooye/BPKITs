@@ -121,6 +121,7 @@
 		FD4AE3461AD3C67200C81117 /* BPRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4AE3311AD3C67200C81117 /* BPRefreshTableViewController.m */; };
 		FD4AE3531AD3C6D500C81117 /* BPPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4AE3501AD3C6D500C81117 /* BPPopoverController.m */; };
 		FD4AE3541AD3C6D500C81117 /* BPPopoverDemoController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD4AE3521AD3C6D500C81117 /* BPPopoverDemoController.m */; };
+		FD5C99D51ADE6D3500BE35E9 /* BPDeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD5C99D41ADE6D3500BE35E9 /* BPDeviceViewController.m */; };
 		FD6533C01AD53A65006BE0AF /* BPRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = FD6533BF1AD53A65006BE0AF /* BPRectangle.m */; };
 		FD752B7D1ABFA18800D1A214 /* BPPopoverAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = FD752B7C1ABFA18800D1A214 /* BPPopoverAnimation.m */; };
 		FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FD8B92121ACE2EAB00E5A4FA /* NotificationRootViewController.m */; };
@@ -375,6 +376,8 @@
 		FD4AE3501AD3C6D500C81117 /* BPPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverController.m; sourceTree = "<group>"; };
 		FD4AE3511AD3C6D500C81117 /* BPPopoverDemoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverDemoController.h; sourceTree = "<group>"; };
 		FD4AE3521AD3C6D500C81117 /* BPPopoverDemoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPopoverDemoController.m; sourceTree = "<group>"; };
+		FD5C99D31ADE6D3500BE35E9 /* BPDeviceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDeviceViewController.h; sourceTree = "<group>"; };
+		FD5C99D41ADE6D3500BE35E9 /* BPDeviceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDeviceViewController.m; sourceTree = "<group>"; };
 		FD6533BE1AD53A65006BE0AF /* BPRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPRectangle.h; sourceTree = "<group>"; };
 		FD6533BF1AD53A65006BE0AF /* BPRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPRectangle.m; sourceTree = "<group>"; };
 		FD752B7B1ABFA18800D1A214 /* BPPopoverAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopoverAnimation.h; sourceTree = "<group>"; };
@@ -755,6 +758,7 @@
 		284CB8E61ADA7C88009B33BD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				FD5C99D11ADE6D2B00BE35E9 /* Device */,
 				FD9E21801ADCBDB800E5078E /* Location */,
 				2802F9431ADA8279001E229D /* QRCode */,
 			);
@@ -1058,6 +1062,15 @@
 				FD4AE3521AD3C6D500C81117 /* BPPopoverDemoController.m */,
 			);
 			path = Popover;
+			sourceTree = "<group>";
+		};
+		FD5C99D11ADE6D2B00BE35E9 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				FD5C99D31ADE6D3500BE35E9 /* BPDeviceViewController.h */,
+				FD5C99D41ADE6D3500BE35E9 /* BPDeviceViewController.m */,
+			);
+			path = Device;
 			sourceTree = "<group>";
 		};
 		FD8B920F1ACE2E8500E5A4FA /* Notification */ = {
@@ -1414,6 +1427,7 @@
 				2812F0E61A3F2E0200375631 /* NSDictionary+bpExtension.m in Sources */,
 				FD9E21C41ADCE85200E5078E /* UIRefreshControl+AFNetworking.m in Sources */,
 				FD9E21BA1ADCE85200E5078E /* AFURLConnectionOperation.m in Sources */,
+				FD5C99D51ADE6D3500BE35E9 /* BPDeviceViewController.m in Sources */,
 				FDEC01391AD7808000BF01B2 /* BPTimerForSecondsViewController.m in Sources */,
 				2812F0EB1A3F2E0200375631 /* UIImage+Resize.m in Sources */,
 				2812F0ED1A3F2E0200375631 /* UIViewController+bpExtension.m in Sources */,
