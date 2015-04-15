@@ -20,5 +20,7 @@ typedef NS_ENUM(NSInteger, BPNetworkStatus) {
 
 @interface UIApplication (bpNetworkStatus)
 
-- (BPNetworkStatus)networkStatus;
+- (BPNetworkStatus)currentNetworkStatus;
+
+- (NSString *)currentNetworkStatusDescription;
 @end

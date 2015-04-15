@@ -26,36 +26,13 @@
 
 - (void)timerFired
 {
-    BPNetworkStatus status = [[UIApplication sharedApplication] networkStatus];
+    BPNetworkStatus status = [[UIApplication sharedApplication] currentNetworkStatus];
     
     if (self.status != status) {
         self.status = status;
-        switch (status) {
-            case BPNetworkStatus_None:
-                NSLog(@"无网络");
-                break;
-            case BPNetworkStatus_2G:{
-                NSLog(@"2G");
-                break;
-            }
-            case BPNetworkStatus_3G:
-                NSLog(@"3G");
-                break;
-            case BPNetworkStatus_4G:
-                NSLog(@"4G");
-                break;
-            case BPNetworkStatus_LTE:
-                NSLog(@"LTE");
-                break;
-            case BPNetworkStatus_WIFI:{
-                NSLog(@"WIFI");
-                break;
-            }
-            default:
-                break;
-        }
+     
+        NSLog(@"%@", [[UIApplication sharedApplication] currentNetworkStatusDescription]);
     }
-    
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

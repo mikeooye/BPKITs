@@ -10,7 +10,7 @@
 
 @implementation UIApplication (bpNetworkStatus)
 
-- (BPNetworkStatus)networkStatus
+- (BPNetworkStatus)currentNetworkStatus
 {
     NSArray *subviews = [[[self valueForKey:@"statusBar"] valueForKey:@"foregroundView"]    subviews];
     NSNumber *dataNetworkItemView = nil;
@@ -22,5 +22,18 @@
         }
     }
     return [[dataNetworkItemView valueForKey:@"dataNetworkType"] integerValue];
+}
+
+- (NSString *)currentNetworkStatusDescription
+{
+    switch (self.currentNetworkStatus) {
+        case BPNetworkStatus_None:  return @"无网络";
+        case BPNetworkStatus_2G:    return @"2G";
+        case BPNetworkStatus_3G:    return @"3G";
+        case BPNetworkStatus_4G:    return @"4G";
+        case BPNetworkStatus_LTE:   return @"LTE";
+        case BPNetworkStatus_WIFI:  return @"WIFI";
+        default:                    return @"未知";
+    }
 }
 @end
