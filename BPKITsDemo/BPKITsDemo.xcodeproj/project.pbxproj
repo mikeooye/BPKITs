@@ -32,6 +32,7 @@
 		2802F94D1ADA963D001E229D /* qrcode_found.wav in Resources */ = {isa = PBXBuildFile; fileRef = 2802F94C1ADA963D001E229D /* qrcode_found.wav */; };
 		2802F9551ADABB13001E229D /* AVCamPreviewView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F9541ADABB13001E229D /* AVCamPreviewView.m */; };
 		2802F9581ADABDA2001E229D /* BPNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F9571ADABDA2001E229D /* BPNavigationController.m */; };
+		2802F95D1ADE939B001E229D /* UIApplication+bpNetworkStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 2802F95C1ADE939B001E229D /* UIApplication+bpNetworkStatus.m */; };
 		2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F0851A3F2E0200375631 /* BPAnimationCreater.m */; };
 		2812F0E41A3F2E0200375631 /* CGGeometry+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */; };
 		2812F0E51A3F2E0200375631 /* NSDate+bpExpansion.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F08C1A3F2E0200375631 /* NSDate+bpExpansion.m */; };
@@ -213,6 +214,8 @@
 		2802F9541ADABB13001E229D /* AVCamPreviewView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVCamPreviewView.m; sourceTree = "<group>"; };
 		2802F9561ADABDA2001E229D /* BPNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPNavigationController.h; sourceTree = "<group>"; };
 		2802F9571ADABDA2001E229D /* BPNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPNavigationController.m; sourceTree = "<group>"; };
+		2802F95B1ADE939B001E229D /* UIApplication+bpNetworkStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+bpNetworkStatus.h"; sourceTree = "<group>"; };
+		2802F95C1ADE939B001E229D /* UIApplication+bpNetworkStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+bpNetworkStatus.m"; sourceTree = "<group>"; };
 		2812F0831A3F2E0200375631 /* bpAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bpAnimation.h; sourceTree = "<group>"; };
 		2812F0841A3F2E0200375631 /* BPAnimationCreater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAnimationCreater.h; sourceTree = "<group>"; };
 		2812F0851A3F2E0200375631 /* BPAnimationCreater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAnimationCreater.m; sourceTree = "<group>"; };
@@ -615,6 +618,8 @@
 				28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */,
 				FD8B92141ACE45A300E5A4FA /* UILocalNotification+bpExtension.h */,
 				FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */,
+				2802F95B1ADE939B001E229D /* UIApplication+bpNetworkStatus.h */,
+				2802F95C1ADE939B001E229D /* UIApplication+bpNetworkStatus.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -1335,6 +1340,7 @@
 			files = (
 				2812F1031A3F2E0200375631 /* BPDatePickerView.m in Sources */,
 				FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */,
+				2802F95D1ADE939B001E229D /* UIApplication+bpNetworkStatus.m in Sources */,
 				285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */,
 				28CC78381A177FAC0025B9E8 /* AppDelegate.m in Sources */,
 				28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */,
