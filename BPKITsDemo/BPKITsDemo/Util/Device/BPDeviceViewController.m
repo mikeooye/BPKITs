@@ -9,6 +9,7 @@
 #import "BPDeviceViewController.h"
 #include <sys/sysctl.h>
 #include <sys/types.h>
+#import "UIDevice+bpExtension.h"
 
 @implementation BPDeviceViewController{
     
@@ -44,7 +45,7 @@
     
     curDevice.batteryMonitoringEnabled = YES;
     _batteryLevelCell.detailTextLabel.text = [self batteryFormatString];
-    _platformCell.detailTextLabel.text = [self platformString];
+    _platformCell.detailTextLabel.text = [[UIDevice currentDevice] platform];
 }
 
 - (NSString *)batteryFormatString
@@ -54,19 +55,6 @@
         return [NSString stringWithFormat:@"%.0f%%", device.batteryLevel * 100];
     }
     return @"Unknown";
-}
-
-
-- (NSString *)platformString
-{
-    size_t size;
-    sysctlbyname("hw.machine", NULL, &size, NULL, 0);
-    char *machine = (char *)malloc(size);
-    sysctlbyname("hw.machine", machine, &size, NULL, 0);
-    NSString *platform = [NSString stringWithCString:machine encoding:NSUTF8StringEncoding];
-
-    free(machine);
-    return platform;
 }
 
 - (void)dealloc

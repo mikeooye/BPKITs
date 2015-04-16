@@ -84,6 +84,7 @@
 		28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B01ACFC54400A6FA2A /* BlurViewController.m */; };
 		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
 		28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */; };
+		F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
 		FD4AE2EA1AD3770700C81117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2E61AD3770700C81117 /* Images.xcassets */; };
@@ -326,6 +327,8 @@
 		28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchController.m; sourceTree = "<group>"; };
 		28D717B61ACFD2D300A6FA2A /* BPDemoSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDemoSearchResultsController.h; sourceTree = "<group>"; };
 		28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchResultsController.m; sourceTree = "<group>"; };
+		F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+bpExtension.h"; sourceTree = "<group>"; };
+		F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+bpExtension.m"; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
 		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
 		FD49CEA01AC662C10026D4AF /* BPPopToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToast.h; sourceTree = "<group>"; };
@@ -623,6 +626,8 @@
 				FD8B92151ACE45A300E5A4FA /* UILocalNotification+bpExtension.m */,
 				2802F95B1ADE939B001E229D /* UIApplication+bpNetworkStatus.h */,
 				2802F95C1ADE939B001E229D /* UIApplication+bpNetworkStatus.m */,
+				F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */,
+				F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -1364,6 +1369,7 @@
 				FD9E21BD1ADCE85200E5078E /* AFURLSessionManager.m in Sources */,
 				FD9E21BC1ADCE85200E5078E /* AFURLResponseSerialization.m in Sources */,
 				28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */,
+				F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
 				FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */,
 				FD4AE30E1AD3C52B00C81117 /* BPImageWithColorViewController.m in Sources */,
