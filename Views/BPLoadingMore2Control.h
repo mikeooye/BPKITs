@@ -9,23 +9,24 @@
 #import <UIKit/UIKit.h>
 #import "BPRefreshControl.h"
 
-//@protocol BPLoadingMore2ControlDelegate;
+typedef NS_ENUM(NSInteger, BPLoadingMoreType) {
+    
+    BPLoadingMoreRemixType,
+    BPLoadingMoreClickType,
+    BPLoadingMoreDragType,
+};
 
 @interface BPLoadingMore2Control : UIControl<BPRefreshControl>
 
+- (instancetype)initWithType:(BPLoadingMoreType)type
+                                target:(id)target
+                                action:(SEL)action;
+
 @property (assign, nonatomic, readonly) BOOL refreshing;
 @property (assign, nonatomic) BOOL hasMore;
+@property (assign, readonly) BPLoadingMoreType type;
 
 - (void)beginRefreshing;
 - (void)endRefreshing;
 
-//- (id)initWithDelegate:(id<BPLoadingMore2ControlDelegate>) delegate;
-
 @end
-
-//@protocol BPLoadingMore2ControlDelegate <NSObject>
-//
-//- (BOOL)loadingMoreControlShouldLoading:(BPLoadingMore2Control *)control;;
-//
-//- (void)loadingMoreControlDidLoading:(BPLoadingMore2Control *)control;
-//@end

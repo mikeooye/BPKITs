@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _tableVIew.contentInset = UIEdgeInsetsMake(0, 0, 44, 0);
+    _tableVIew.contentInset = UIEdgeInsetsMake(0, 0, 88, 0);
     [_tableVIew registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
     _tableVIew.delegate = self;
     _tableVIew.dataSource = self;
@@ -31,8 +31,9 @@
     _rowCount = 20;
     
     
-    BPLoadingMore2Control *control = [[BPLoadingMore2Control alloc] init];
-    [control addTarget:self action:@selector(tableDidLoadingMore) forControlEvents:UIControlEventValueChanged];
+    BPLoadingMore2Control *control = [[BPLoadingMore2Control alloc] initWithType:BPLoadingMoreDragType
+                                                                          target:self
+                                                                          action:@selector(tableDidLoadingMore)];
     [_tableVIew addSubview:control];
     
     _loadingMoreControl = control;

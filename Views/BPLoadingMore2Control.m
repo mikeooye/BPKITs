@@ -8,10 +8,11 @@
 
 #import "BPLoadingMore2Control.h"
 
-#define kContentSizeKey @"contentSize"
-#define kContentOffsetKey @"contentOffset"
-#define kContentInsets  @"contentInset"
-#define kBoundsKey  @"bounds"
+#define kContentSizeKey     @"contentSize"
+#define kContentOffsetKey   @"contentOffset"
+#define kContentInsets      @"contentInset"
+#define kBoundsKey          @"bounds"
+
 
 static NSString * kScrollContext;
 
@@ -27,8 +28,8 @@ static NSString * kScrollContext;
     UIActivityIndicatorView *_indicatorView;
 }
 
-//@property (assign, nonatomic) id<BPLoadingMore2ControlDelegate> delegate;
 @property (assign, nonatomic) UIScrollView *scrollView;
+@property (weak, nonatomic) NSTimer *timer;
 @end
 
 @implementation BPLoadingMore2Control
@@ -40,15 +41,8 @@ static NSString * kScrollContext;
     
     if ([keyPath isEqualToString:kContentOffsetKey]) {
         
-        CGPoint newOffset = [newValue CGPointValue];
+        [self scrollViewDidScroll:_scrollView];
         
-        if (newOffset.y + _scrollBoundsSize.height >= _scrollContentSize.height) {
-
-//            self.refreshing = YES;
-        }else{
-            
-//            self.refreshing = NO;
-        }
     }else if ([keyPath isEqualToString:kContentSizeKey]){
         
         if (_ignoreContentSize == NO) {
@@ -70,23 +64,108 @@ static NSString * kScrollContext;
     }
 }
 
+- (void)addObserverWithKeyPaths:(NSArray *)keypaths
+{
+    for (NSString *aPath in keypaths) {
+        
+        [_scrollView addObserver:self forKeyPath:aPath options:NSKeyValueObservingOptionNew context:&kScrollContext];
+    }
+}
+
+- (void)removeObserverWithKeyPaths:(NSArray *)keypaths
+{
+    for (NSString *aPath in keypaths) {
+        
+        [_scrollView removeObserver:self forKeyPath:aPath context:&kScrollContext];
+    }
+}
+
 - (void)addScrollObserver
 {
-    [_scrollView addObserver:self forKeyPath:kContentSizeKey options:NSKeyValueObservingOptionNew context:&kScrollContext];
-    [_scrollView addObserver:self forKeyPath:kContentOffsetKey options:NSKeyValueObservingOptionNew context:&kScrollContext];
-    [_scrollView addObserver:self forKeyPath:kBoundsKey options:NSKeyValueObservingOptionNew context:&kScrollContext];
-    [_scrollView addObserver:self forKeyPath:kContentInsets options:NSKeyValueObservingOptionNew context:&kScrollContext];
+    [self addObserverWithKeyPaths:@[
+                                    kContentSizeKey,
+                                    kContentOffsetKey,
+                                    kContentInsets,
+                                    kBoundsKey
+                                    ]
+     ];
 }
 
 - (void)removeScrollObserver
 {
-    [_scrollView removeObserver:self forKeyPath:kContentOffsetKey];
-    [_scrollView removeObserver:self forKeyPath:kContentSizeKey];
-    [_scrollView removeObserver:self forKeyPath:kBoundsKey];
-    [_scrollView removeObserver:self forKeyPath:kContentInsets];
+    [self removeObserverWithKeyPaths:@[
+                                       kContentSizeKey,
+                                       kContentOffsetKey,
+                                       kContentInsets,
+                                       kBoundsKey
+                                       ]
+     ];
+}
+
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    CGPoint offset = scrollView.contentOffset;
+    float yOffset = offset.y + _scrollBoundsSize.height;
+    float realBottom = _scrollContentSize.height + _scrollView.contentInset.bottom;
+    
+//    NSLog(@"\ndraging: %d\ntracking = %d\ndecelerating = %d\n", self.scrollView.isDragging, self.scrollView.isTracking, self.scrollView.isDecelerating);
+    if (self.scrollView.isDragging == YES && self.scrollView.isDecelerating == NO) {
+        
+        if (self.type != BPLoadingMoreClickType &&
+            self.timer == nil) {
+            
+            if (yOffset >= realBottom + 40) {
+                
+                NSTimer *aTimer = [NSTimer scheduledTimerWithTimeInterval:0.2 target:self selector:@selector(loadButtonDidClicked:) userInfo:nil repeats:NO];
+                [[NSRunLoop currentRunLoop] addTimer:aTimer forMode:NSRunLoopCommonModes];
+                self.timer = aTimer;
+            }
+        }
+    }
+    
+    if (yOffset > realBottom) {
+        
+        [_loadBtn setTitle:@"上拉加载更多" forState:UIControlStateNormal];
+    }else{
+        [self updateLoadingButtonTitle];
+    }
+}
+
+- (void)updateLoadingButtonTitle
+{
+    switch (self.type) {
+        case BPLoadingMoreRemixType:
+        case BPLoadingMoreClickType:
+            [_loadBtn setTitle:@"点击加载更多" forState:UIControlStateNormal];
+            break;
+        case BPLoadingMoreDragType:
+            [_loadBtn setTitle:@"上拉加载更多" forState:UIControlStateNormal];
+            break;
+            
+        default:
+            break;
+    }
 }
 
 #pragma mark - Life Cycle
+
+- (instancetype)initWithType:(BPLoadingMoreType)type
+                      target:(id)target
+                      action:(SEL)action
+{
+    if (self = [self init]) {
+        _type = type;
+        
+        if (self.type != BPLoadingMoreDragType) {
+            
+            [_loadBtn addTarget:self action:@selector(loadButtonDidClicked:) forControlEvents:UIControlEventTouchUpInside];
+        }
+        [self updateLoadingButtonTitle];
+        [self addTarget:target action:action forControlEvents:UIControlEventValueChanged];
+    }
+    return self;
+}
 
 - (instancetype)initWithFrame:(CGRect)frame
 {
@@ -98,11 +177,6 @@ static NSString * kScrollContext;
         _loadBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [_loadBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
         _loadBtn.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
-        [_loadBtn setTitle:@"点击加载更多"
-                  forState:UIControlStateNormal];
-        [_loadBtn addTarget:self action:@selector(loadButtonDidClicked:) forControlEvents:UIControlEventTouchUpInside];
-        //        _loadBtn.layer.borderColor = [[UIColor blackColor] colorWithAlphaComponent:0.33].CGColor;
-        //        _loadBtn.layer.borderWidth = 1.0f;
         [self addSubview:_loadBtn];
         
         
@@ -210,7 +284,7 @@ static NSString * kScrollContext;
 //    }
     
     [self setRefreshing:YES];
-    [btn setHidden:YES];
+    [_loadBtn setHidden:YES];
     [_indicatorView setHidden:NO];
     [_indicatorView startAnimating];
 }
