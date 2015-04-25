@@ -85,6 +85,7 @@
 		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
 		28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */; };
 		F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */; };
+		F6FAEF1D1AEB8A250004FFC4 /* BPBarItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
 		FD4AE2EA1AD3770700C81117 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD4AE2E61AD3770700C81117 /* Images.xcassets */; };
@@ -329,6 +330,8 @@
 		28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchResultsController.m; sourceTree = "<group>"; };
 		F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+bpExtension.h"; sourceTree = "<group>"; };
 		F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+bpExtension.m"; sourceTree = "<group>"; };
+		F6FAEF1B1AEB8A250004FFC4 /* BPBarItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBarItemButton.h; sourceTree = "<group>"; };
+		F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBarItemButton.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
 		FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPKeyboardManager.m; sourceTree = "<group>"; };
 		FD49CEA01AC662C10026D4AF /* BPPopToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPopToast.h; sourceTree = "<group>"; };
@@ -712,6 +715,8 @@
 		2812F0D41A3F2E0200375631 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F6FAEF1B1AEB8A250004FFC4 /* BPBarItemButton.h */,
+				F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */,
 				04DC6C731A6E348A0062A5F6 /* BPUpdownButton.h */,
 				04DC6C741A6E348A0062A5F6 /* BPUpdownButton.m */,
 				04DC6C2C1A6DF3D00062A5F6 /* UIPlaceholderTextView.h */,
@@ -1410,6 +1415,7 @@
 				FD4AE3331AD3C67200C81117 /* BPCollectionViewCell.m in Sources */,
 				FD9E21C01ADCE85200E5078E /* UIAlertView+AFNetworking.m in Sources */,
 				FD9E21BF1ADCE85200E5078E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
+				F6FAEF1D1AEB8A250004FFC4 /* BPBarItemButton.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
 				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,

@@ -761,6 +761,23 @@
                                             <segue destination="RFV-YO-veY" kind="show" id="7Pu-6u-Ul1"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="3Kb-Yc-34S" style="IBUITableViewCellStyleDefault" id="SMf-lI-GkS">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SMf-lI-GkS" id="KDM-fw-cvD">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="BarItem Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3Kb-Yc-34S">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="TX6-Wv-m9e" kind="show" id="fuy-u9-6yy"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -845,6 +862,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UFb-st-sWs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1701" y="1678"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="S6b-ei-Wb9">
+            <objects>
+                <viewController id="TX6-Wv-m9e" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dEW-d3-C02"/>
+                        <viewControllerLayoutGuide type="bottom" id="QH7-wI-SzL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="C7s-21-aB6">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNi-3a-PWw" customClass="BPBarItemButton">
+                                <rect key="frame" x="110" y="190" width="100" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="Button" image="check_image">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sp4-DF-rOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2094" y="1678"/>
         </scene>
         <!--TableView-->
         <scene sceneID="llX-Oa-r37">
@@ -1077,6 +1123,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="check_image" width="44" height="44"/>
         <image name="photo1.jpg" width="1024" height="681"/>
         <image name="photo2.jpg" width="681" height="1024"/>
         <image name="zan_up" width="200" height="200"/>
