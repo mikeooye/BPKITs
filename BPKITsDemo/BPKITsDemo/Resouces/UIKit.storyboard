@@ -36,6 +36,27 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection id="r6E-kq-Ylm">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="331-3N-Jez" style="IBUITableViewCellStyleDefault" id="7Po-ey-nEd">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Po-ey-nEd" id="jB4-cn-2wX">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="String size" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="331-3N-Jez">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oFE-5Y-1fL" kind="show" id="Gv9-fR-bQT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                             <tableViewSection id="zYK-xf-fCB">
                                 <cells>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="4LX-9K-itg" style="IBUITableViewCellStyleDefault" id="7yG-R1-VKt">
@@ -531,6 +552,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kJd-nJ-B1F" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1614" y="71"/>
+        </scene>
+        <!--String size-->
+        <scene sceneID="50D-wk-8vX">
+            <objects>
+                <viewController title="String size" id="oFE-5Y-1fL" customClass="StringSizeViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dY6-Wp-vlq"/>
+                        <viewControllerLayoutGuide type="bottom" id="8Go-U5-tbo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PkA-8z-mt5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U66-xN-CQZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1791" y="685"/>
         </scene>
         <!--PhotoBrowser-->
         <scene sceneID="fjn-fM-tI6">

@@ -85,6 +85,8 @@
 		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
 		28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */; };
 		F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */; };
+		F6DD03241AEE2C8400AB4F4E /* StringSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */; };
+		F6DD03271AEE489200AB4F4E /* NSString+bpSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */; };
 		F6FAEF1D1AEB8A250004FFC4 /* BPBarItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
@@ -330,6 +332,10 @@
 		28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchResultsController.m; sourceTree = "<group>"; };
 		F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+bpExtension.h"; sourceTree = "<group>"; };
 		F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+bpExtension.m"; sourceTree = "<group>"; };
+		F6DD03221AEE2C8400AB4F4E /* StringSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringSizeViewController.h; sourceTree = "<group>"; };
+		F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringSizeViewController.m; sourceTree = "<group>"; };
+		F6DD03251AEE489200AB4F4E /* NSString+bpSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+bpSize.h"; sourceTree = "<group>"; };
+		F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+bpSize.m"; sourceTree = "<group>"; };
 		F6FAEF1B1AEB8A250004FFC4 /* BPBarItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBarItemButton.h; sourceTree = "<group>"; };
 		F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBarItemButton.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
@@ -631,6 +637,8 @@
 				2802F95C1ADE939B001E229D /* UIApplication+bpNetworkStatus.m */,
 				F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */,
 				F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */,
+				F6DD03251AEE489200AB4F4E /* NSString+bpSize.h */,
+				F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -885,6 +893,15 @@
 			path = "Search Controller";
 			sourceTree = "<group>";
 		};
+		F6DD03201AEE2C7400AB4F4E /* String size */ = {
+			isa = PBXGroup;
+			children = (
+				F6DD03221AEE2C8400AB4F4E /* StringSizeViewController.h */,
+				F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */,
+			);
+			path = "String size";
+			sourceTree = "<group>";
+		};
 		FD4AE2E41AD376D100C81117 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
@@ -905,6 +922,7 @@
 		FD4AE2F21AD37FF500C81117 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				F6DD03201AEE2C7400AB4F4E /* String size */,
 				FD4AE3471AD3C6B500C81117 /* Popover */,
 				FD4AE3101AD3C67200C81117 /* Button */,
 				FD4AE3141AD3C67200C81117 /* CollectionView */,
@@ -1361,6 +1379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6DD03271AEE489200AB4F4E /* NSString+bpSize.m in Sources */,
 				2812F1031A3F2E0200375631 /* BPDatePickerView.m in Sources */,
 				FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */,
 				2802F95D1ADE939B001E229D /* UIApplication+bpNetworkStatus.m in Sources */,
@@ -1457,6 +1476,7 @@
 				2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */,
 				2812F0E71A3F2E0200375631 /* NSNumberFormatter+bpExtension.m in Sources */,
 				FD9E21BE1ADCE85200E5078E /* AFNetworkActivityIndicatorManager.m in Sources */,
+				F6DD03241AEE2C8400AB4F4E /* StringSizeViewController.m in Sources */,
 				FD9E21B51ADCE85200E5078E /* AFHTTPRequestOperation.m in Sources */,
 				2812F0EE1A3F2E0200375631 /* BPDismissWhenTapOutGesture.m in Sources */,
 				2812F1051A3F2E0200375631 /* BPLoadingMoreControl.m in Sources */,
