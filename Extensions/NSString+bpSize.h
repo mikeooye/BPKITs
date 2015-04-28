@@ -11,5 +11,9 @@
 
 @interface NSString (bpSize)
 
-- (CGSize)bpSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
+- (CGSize)bp_sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size;
+
+- (CGSize)bp_sizeWithFont:(UIFont *)font;
+
+- (void)bp_drawAtPoint:(CGPoint)point withFont:(UIFont *)font;
 @end

@@ -10,7 +10,7 @@
 
 @implementation NSString (bpSize)
 
--(CGSize)bpSizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size
+-(CGSize)bp_sizeWithFont:(UIFont *)font constrainedToSize:(CGSize)size
 {
     CGRect rect;
     NSDictionary *attributes = @{NSFontAttributeName: font};
@@ -19,5 +19,16 @@
                            attributes:attributes
                               context:nil];
     return rect.size;
+}
+
+- (CGSize)bp_sizeWithFont:(UIFont *)font
+{
+    NSDictionary *attributes = @{NSFontAttributeName: font};
+    return [self sizeWithAttributes:attributes];
+}
+
+- (void)bp_drawAtPoint:(CGPoint)point withFont:(UIFont *)font
+{
+    [self drawAtPoint:point withAttributes:@{NSFontAttributeName: font}];
 }
 @end

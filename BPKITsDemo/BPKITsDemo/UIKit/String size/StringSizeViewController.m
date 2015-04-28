@@ -30,7 +30,7 @@
     
     NSString *text = @"哈哈哈放假啊法律框架离开就发来的萨科技伐啦防雷接地阿什利副科级多少了空间发了多少空间阿芙拉科技的拉萨科技放到了深刻就阿里看见离开积分多少了空间啦科技发达了空间";
     _textLabel.text = text;
-    CGSize size = [text bpSizeWithFont:_textLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.view.frame), CGFLOAT_MAX)];
+    CGSize size = [text bp_sizeWithFont:_textLabel.font constrainedToSize:CGSizeMake(CGRectGetWidth(self.view.frame), CGFLOAT_MAX)];
     _textLabel.frame = CGRectMake(0, 80, size.width, size.height);
     
     self.view.backgroundColor = [UIColor colorWithWhite:0.7 alpha:1];
