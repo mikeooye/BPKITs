@@ -8,6 +8,7 @@
 
 #import "BPPopoverDemoController.h"
 #import "BPPopoverController.h"
+#import "BPBlurView.h"
 
 @interface BPPopoverDemoController ()
 - (IBAction)popOver:(id)sender;
@@ -42,14 +43,19 @@
     UIViewController *vc = [[UIViewController alloc] init];
     vc.view.layer.cornerRadius = 5.0f;
     vc.view.layer.masksToBounds = YES;
-    vc.view.backgroundColor = [[UIColor yellowColor] colorWithAlphaComponent:0.9];
+    BPBlurView *blurView = [[BPBlurView alloc] initWithFrame:vc.view.bounds];
+    blurView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    [vc.view insertSubview:blurView atIndex:0];
+    blurView.color = [[UIColor yellowColor] colorWithAlphaComponent:0.3];
+    blurView.alpha = 0.99;
+    vc.view.backgroundColor = [UIColor clearColor];
     [vc.view addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tap:)]];
 //    UIToolbar *toolBar = [[UIToolbar alloc] init];
 //    toolBar.frame = vc.view.bounds;
 //    [vc.view insertSubview:toolBar atIndex:0];
 //    toolBar.barStyle = UIBarStyleDefault;
 //    toolBar.tintColor = [UIColor whiteColor];
-    vc.preferredContentSize = CGSizeMake(CGRectGetWidth(self.view.frame) - 40, CGRectGetHeight(self.view.frame) - 60);
+    vc.preferredContentSize = CGSizeMake(300, 200);
     BPPopoverController *pop = [[BPPopoverController alloc] initWithContentViewController:vc];
     [self presentViewController:pop animated:YES completion:nil];
     

@@ -31,7 +31,10 @@
         modalViewController.view.autoresizingMask = UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth;
         [containerView addSubview:modalViewController.view];
         modalViewController.view.alpha = 0;
-        modalViewController.view.transform = CGAffineTransformMakeScale(1.05, 1.05);
+
+        CGFloat width = CGRectGetWidth(modalViewController.view.frame);
+        CGFloat scaleFactor = (width + 30) / width;
+        modalViewController.view.transform = CGAffineTransformMakeScale(scaleFactor, scaleFactor);
         containerView.backgroundColor = [UIColor colorWithWhite:0 alpha:0];
         [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
             

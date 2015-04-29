@@ -72,6 +72,7 @@
 		289E18D11AAC2F6B0000AAAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */; };
 		289E18D31AAC2F700000AAAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D21AAC2F700000AAAB /* AVKit.framework */; };
 		289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18D51AAC2F850000AAAB /* BPPlayerView.m */; };
+		289F61851AF128C600C8CD93 /* BPBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F61841AF128C600C8CD93 /* BPBlurView.m */; };
 		28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */; };
 		28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3ED1AAAF7C700A5DE5A /* BPAlertButton.m */; };
 		28C6D3F31AAAF7C700A5DE5A /* BPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3EF1AAAF7C700A5DE5A /* BPAlertController.m */; };
@@ -304,6 +305,8 @@
 		289E18D21AAC2F700000AAAB /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		289E18D41AAC2F850000AAAB /* BPPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerView.h; sourceTree = "<group>"; };
 		289E18D51AAC2F850000AAAB /* BPPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerView.m; sourceTree = "<group>"; };
+		289F61831AF128C600C8CD93 /* BPBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBlurView.h; sourceTree = "<group>"; };
+		289F61841AF128C600C8CD93 /* BPBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBlurView.m; sourceTree = "<group>"; };
 		28C6D3DE1AAAC4B100A5DE5A /* UIImage+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+bpExtension.h"; sourceTree = "<group>"; };
 		28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+bpExtension.m"; sourceTree = "<group>"; };
 		28C6D3EC1AAAF7C700A5DE5A /* BPAlertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertButton.h; sourceTree = "<group>"; };
@@ -757,6 +760,8 @@
 				FD49CEA11AC662C10026D4AF /* BPPopToast.m */,
 				FD6533BE1AD53A65006BE0AF /* BPRectangle.h */,
 				FD6533BF1AD53A65006BE0AF /* BPRectangle.m */,
+				289F61831AF128C600C8CD93 /* BPBlurView.h */,
+				289F61841AF128C600C8CD93 /* BPBlurView.m */,
 			);
 			name = Views;
 			path = ../../Views;
@@ -1478,6 +1483,7 @@
 				FD9E21BE1ADCE85200E5078E /* AFNetworkActivityIndicatorManager.m in Sources */,
 				F6DD03241AEE2C8400AB4F4E /* StringSizeViewController.m in Sources */,
 				FD9E21B51ADCE85200E5078E /* AFHTTPRequestOperation.m in Sources */,
+				289F61851AF128C600C8CD93 /* BPBlurView.m in Sources */,
 				2812F0EE1A3F2E0200375631 /* BPDismissWhenTapOutGesture.m in Sources */,
 				2812F1051A3F2E0200375631 /* BPLoadingMoreControl.m in Sources */,
 				FD4AE3341AD3C67200C81117 /* BPCollectionViewController.m in Sources */,
