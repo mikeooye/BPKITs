@@ -10,29 +10,27 @@
 
 @implementation BPBarItemButton
 
-- (CGRect)imageRectForContentRect:(CGRect)contentRect
+- (void)layoutSubviews
 {
+    [super layoutSubviews];
     
-    CGRect frame = [super imageRectForContentRect:contentRect];
-    CGRect titleFrame = [super titleRectForContentRect:contentRect];
+    CGRect bounds = self.bounds;
+    CGRect imgRect = [self imageRectForContentRect:bounds];
+    CGRect titleRect = [self titleRectForContentRect:CGRectMake(0, 0, imgRect.size.width + bounds.size.width, bounds.size.height)];
     
-    frame = CGRectOffset(frame, CGRectGetWidth(titleFrame) * 0.5, -CGRectGetHeight(titleFrame) * 0.5);
-    return frame;
+    
+    imgRect = CGRectMake((CGRectGetWidth(bounds) - CGRectGetWidth(imgRect)) * 0.5,
+                         (CGRectGetHeight(bounds) - CGRectGetHeight(imgRect) - CGRectGetHeight(titleRect)) * 0.5,
+                         imgRect.size.width,
+                         imgRect.size.height);
+    
+    titleRect = CGRectMake((CGRectGetWidth(bounds) - CGRectGetWidth(titleRect)) * 0.5,
+                           CGRectGetMaxY(imgRect),
+                           titleRect.size.width,
+                           titleRect.size.height);
+    
+    [self.imageView setFrame:imgRect];
+    [self.titleLabel setFrame:titleRect];
 }
 
-- (CGRect)titleRectForContentRect:(CGRect)contentRect
-{
-    CGRect frame = [super titleRectForContentRect:contentRect];
-    CGRect imageRect = [super imageRectForContentRect:contentRect];
-    frame = CGRectOffset(frame, -CGRectGetWidth(imageRect) * 0.5, CGRectGetHeight(imageRect) * 0.5);
-    frame.origin.x = contentRect.origin.x;
-    frame.size.width = contentRect.size.width;
-    return frame;
-}
-
-- (void)drawRect:(CGRect)rect
-{
-    [super drawRect:rect];
-    self.titleLabel.textAlignment = NSTextAlignmentCenter;
-}
 @end
