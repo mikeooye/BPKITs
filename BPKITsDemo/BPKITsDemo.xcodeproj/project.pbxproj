@@ -84,6 +84,8 @@
 		28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B01ACFC54400A6FA2A /* BlurViewController.m */; };
 		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
 		28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */; };
+		F606DA2C1AF0857D003D3AF7 /* UIView+bpUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */; };
+		F606DA301AF08596003D3AF7 /* BPDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F606DA2F1AF08596003D3AF7 /* BPDismissButton.m */; };
 		F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */; };
 		F6DD03241AEE2C8400AB4F4E /* StringSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */; };
 		F6DD03271AEE489200AB4F4E /* NSString+bpSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */; };
@@ -330,6 +332,10 @@
 		28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchController.m; sourceTree = "<group>"; };
 		28D717B61ACFD2D300A6FA2A /* BPDemoSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDemoSearchResultsController.h; sourceTree = "<group>"; };
 		28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchResultsController.m; sourceTree = "<group>"; };
+		F606DA2A1AF0857D003D3AF7 /* UIView+bpUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+bpUIViewController.h"; sourceTree = "<group>"; };
+		F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+bpUIViewController.m"; sourceTree = "<group>"; };
+		F606DA2E1AF08596003D3AF7 /* BPDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDismissButton.h; sourceTree = "<group>"; };
+		F606DA2F1AF08596003D3AF7 /* BPDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDismissButton.m; sourceTree = "<group>"; };
 		F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+bpExtension.h"; sourceTree = "<group>"; };
 		F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+bpExtension.m"; sourceTree = "<group>"; };
 		F6DD03221AEE2C8400AB4F4E /* StringSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringSizeViewController.h; sourceTree = "<group>"; };
@@ -608,6 +614,8 @@
 		2812F0871A3F2E0200375631 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F606DA2A1AF0857D003D3AF7 /* UIView+bpUIViewController.h */,
+				F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */,
 				2812F0881A3F2E0200375631 /* bpExtension.h */,
 				2812F0891A3F2E0200375631 /* CGGeometry+bpExtension.h */,
 				2812F08A1A3F2E0200375631 /* CGGeometry+bpExtension.m */,
@@ -723,6 +731,8 @@
 		2812F0D41A3F2E0200375631 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F606DA2E1AF08596003D3AF7 /* BPDismissButton.h */,
+				F606DA2F1AF08596003D3AF7 /* BPDismissButton.m */,
 				F6FAEF1B1AEB8A250004FFC4 /* BPBarItemButton.h */,
 				F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */,
 				04DC6C731A6E348A0062A5F6 /* BPUpdownButton.h */,
@@ -1433,6 +1443,8 @@
 				FD6533C01AD53A65006BE0AF /* BPRectangle.m in Sources */,
 				FD4AE3331AD3C67200C81117 /* BPCollectionViewCell.m in Sources */,
 				FD9E21C01ADCE85200E5078E /* UIAlertView+AFNetworking.m in Sources */,
+				F606DA301AF08596003D3AF7 /* BPDismissButton.m in Sources */,
+				F606DA2C1AF0857D003D3AF7 /* UIView+bpUIViewController.m in Sources */,
 				FD9E21BF1ADCE85200E5078E /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				F6FAEF1D1AEB8A250004FFC4 /* BPBarItemButton.m in Sources */,
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,

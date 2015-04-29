@@ -818,6 +818,23 @@
                                             <segue destination="TX6-Wv-m9e" kind="show" id="fuy-u9-6yy"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="UtO-kx-FQs" style="IBUITableViewCellStyleDefault" id="MEU-Uv-PQf">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MEU-Uv-PQf" id="UnR-Sc-EJs">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Dismiss Button" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="UtO-kx-FQs">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="08j-Pq-qD1" kind="show" id="wF3-Al-jzs"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -931,6 +948,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sp4-DF-rOo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2094" y="1678"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XQJ-O4-xe2">
+            <objects>
+                <viewController id="08j-Pq-qD1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XXi-r3-qi9"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZIV-VL-RlH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WxG-Nl-SAI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVM-Pk-Ar2" customClass="BPDismissButton">
+                                <rect key="frame" x="120" y="140" width="80" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="FPl-PB-0eF"/>
+                                    <constraint firstAttribute="width" constant="80" id="oFY-Me-QqF"/>
+                                </constraints>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="selected">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C0d-I3-Bth">
+                                <rect key="frame" x="16" y="188" width="288" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="qJw-nz-Iau"/>
+                                </constraints>
+                                <string key="text">说明：可以返回上级页面的Button
+使用：拖进一个Button，在右上角“Identity inspector”中，修改Class - &gt;BPDismissButton即可</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="rVM-Pk-Ar2" secondAttribute="centerX" id="1OE-6r-414"/>
+                            <constraint firstItem="C0d-I3-Bth" firstAttribute="top" secondItem="rVM-Pk-Ar2" secondAttribute="bottom" constant="8" id="KmA-zo-1Q2"/>
+                            <constraint firstAttribute="centerY" secondItem="rVM-Pk-Ar2" secondAttribute="centerY" constant="80" id="ezv-UD-b4e"/>
+                            <constraint firstItem="C0d-I3-Bth" firstAttribute="trailing" secondItem="WxG-Nl-SAI" secondAttribute="trailingMargin" id="hy8-FN-pwe"/>
+                            <constraint firstItem="C0d-I3-Bth" firstAttribute="leading" secondItem="WxG-Nl-SAI" secondAttribute="leadingMargin" id="lDZ-7F-9pR"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sxn-py-job" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2524" y="1678"/>
         </scene>
         <!--TableView-->
         <scene sceneID="llX-Oa-r37">
