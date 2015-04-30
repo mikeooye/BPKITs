@@ -73,6 +73,7 @@
 		289E18D31AAC2F700000AAAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D21AAC2F700000AAAB /* AVKit.framework */; };
 		289E18D61AAC2F850000AAAB /* BPPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18D51AAC2F850000AAAB /* BPPlayerView.m */; };
 		289F61851AF128C600C8CD93 /* BPBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F61841AF128C600C8CD93 /* BPBlurView.m */; };
+		289F618C1AF2848F00C8CD93 /* BPTableHeaderStillObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 289F618B1AF2848F00C8CD93 /* BPTableHeaderStillObject.m */; };
 		28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */; };
 		28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3ED1AAAF7C700A5DE5A /* BPAlertButton.m */; };
 		28C6D3F31AAAF7C700A5DE5A /* BPAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C6D3EF1AAAF7C700A5DE5A /* BPAlertController.m */; };
@@ -309,6 +310,8 @@
 		289E18D51AAC2F850000AAAB /* BPPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerView.m; sourceTree = "<group>"; };
 		289F61831AF128C600C8CD93 /* BPBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBlurView.h; sourceTree = "<group>"; };
 		289F61841AF128C600C8CD93 /* BPBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBlurView.m; sourceTree = "<group>"; };
+		289F618A1AF2848F00C8CD93 /* BPTableHeaderStillObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPTableHeaderStillObject.h; sourceTree = "<group>"; };
+		289F618B1AF2848F00C8CD93 /* BPTableHeaderStillObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPTableHeaderStillObject.m; sourceTree = "<group>"; };
 		28C6D3DE1AAAC4B100A5DE5A /* UIImage+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+bpExtension.h"; sourceTree = "<group>"; };
 		28C6D3DF1AAAC4B100A5DE5A /* UIImage+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+bpExtension.m"; sourceTree = "<group>"; };
 		28C6D3EC1AAAF7C700A5DE5A /* BPAlertButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertButton.h; sourceTree = "<group>"; };
@@ -675,6 +678,8 @@
 				2812F1151A3F327D00375631 /* BPDateFormatter.m */,
 				04792D371AB95B7C00D59916 /* BPCrasher.h */,
 				04792D381AB95B7C00D59916 /* BPCrasher.m */,
+				289F618A1AF2848F00C8CD93 /* BPTableHeaderStillObject.h */,
+				289F618B1AF2848F00C8CD93 /* BPTableHeaderStillObject.m */,
 			);
 			name = Helpers;
 			path = ../../Helpers;
@@ -1455,6 +1460,7 @@
 				2812F0EA1A3F2E0200375631 /* UIColor+bpExtension.m in Sources */,
 				042C82DE1A9081AE00A94ECC /* BPSecureAlertView.m in Sources */,
 				04904B2C1A41866800A597B8 /* BPKeyboardHelper.m in Sources */,
+				289F618C1AF2848F00C8CD93 /* BPTableHeaderStillObject.m in Sources */,
 				FD9E21B91ADCE85200E5078E /* AFSecurityPolicy.m in Sources */,
 				2812F1041A3F2E0200375631 /* BPLine.m in Sources */,
 				FDEC01351AD77E3400BF01B2 /* BPTimerForCellViewController.m in Sources */,
