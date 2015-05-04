@@ -76,16 +76,29 @@
 - (void)locationManager:(CLLocationManager *)manager
        didFailWithError:(NSError *)error
 {
-    if (error.code != kCLErrorLocationUnknown && !self.errorAlertView) {
-
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"错误"
-                                                        message:error.localizedDescription
+    NSString *title = @"错误";
+    NSString *msg = nil;
+    switch (error.code) {
+        case kCLErrorDenied:
+            msg = @"请到\"设置-隐私-定位服务\"中，允许\"爱看4G\"使用位置服务";
+            break;
+        default:
+            if (error != kCLErrorLocationUnknown) {
+                msg = error.localizedDescription;
+            }
+            break;
+    }
+    
+    if (msg && !self.errorAlertView) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+                                                        message:msg
                                                        delegate:nil
                                               cancelButtonTitle:@"确定"
                                               otherButtonTitles: nil];
         [alert show];
         self.errorAlertView = alert;
     }
+    
     if (self.locateCallback) {
         self.locateCallback(nil, error);
     }
