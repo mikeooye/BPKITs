@@ -42,6 +42,13 @@
         if ([[UIApplication sharedApplication] canOpenURL:url]) {
             [[UIApplication sharedApplication] openURL:url];
         }
+    }else{
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"还是未设置App ID"
+                                                            message:nil
+                                                           delegate:nil
+                                                  cancelButtonTitle:@"确定"
+                                                  otherButtonTitles: nil];
+        [alertView show];
     }
 }
 @end
