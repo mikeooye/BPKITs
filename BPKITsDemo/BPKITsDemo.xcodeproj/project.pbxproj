@@ -92,6 +92,7 @@
 		F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */; };
 		F6DD03241AEE2C8400AB4F4E /* StringSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */; };
 		F6DD03271AEE489200AB4F4E /* NSString+bpSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */; };
+		F6E93B7E1AF85FD4005FCC06 /* BPAppHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E93B7D1AF85FD4005FCC06 /* BPAppHelper.m */; };
 		F6FAEF1D1AEB8A250004FFC4 /* BPBarItemButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */; };
 		FD37616A1ABE74D700AE6142 /* BPKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD3761691ABE74D700AE6142 /* BPKeyboardManager.m */; };
 		FD49CEA21AC662C10026D4AF /* BPPopToast.m in Sources */ = {isa = PBXBuildFile; fileRef = FD49CEA11AC662C10026D4AF /* BPPopToast.m */; };
@@ -351,6 +352,8 @@
 		F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringSizeViewController.m; sourceTree = "<group>"; };
 		F6DD03251AEE489200AB4F4E /* NSString+bpSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+bpSize.h"; sourceTree = "<group>"; };
 		F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+bpSize.m"; sourceTree = "<group>"; };
+		F6E93B7C1AF85FD4005FCC06 /* BPAppHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAppHelper.h; sourceTree = "<group>"; };
+		F6E93B7D1AF85FD4005FCC06 /* BPAppHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAppHelper.m; sourceTree = "<group>"; };
 		F6FAEF1B1AEB8A250004FFC4 /* BPBarItemButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPBarItemButton.h; sourceTree = "<group>"; };
 		F6FAEF1C1AEB8A250004FFC4 /* BPBarItemButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPBarItemButton.m; sourceTree = "<group>"; };
 		FD3761681ABE74D700AE6142 /* BPKeyboardManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPKeyboardManager.h; sourceTree = "<group>"; };
@@ -683,6 +686,8 @@
 				04792D381AB95B7C00D59916 /* BPCrasher.m */,
 				289F618A1AF2848F00C8CD93 /* BPTableHeaderStillObject.h */,
 				289F618B1AF2848F00C8CD93 /* BPTableHeaderStillObject.m */,
+				F6E93B7C1AF85FD4005FCC06 /* BPAppHelper.h */,
+				F6E93B7D1AF85FD4005FCC06 /* BPAppHelper.m */,
 			);
 			name = Helpers;
 			path = ../../Helpers;
@@ -1419,6 +1424,7 @@
 				FD9E21BC1ADCE85200E5078E /* AFURLResponseSerialization.m in Sources */,
 				28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */,
 				F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */,
+				F6E93B7E1AF85FD4005FCC06 /* BPAppHelper.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
 				FDCE3AE71AC923320038B7BE /* BPUrlSessionTestViewController.m in Sources */,
 				FD4AE30E1AD3C52B00C81117 /* BPImageWithColorViewController.m in Sources */,
