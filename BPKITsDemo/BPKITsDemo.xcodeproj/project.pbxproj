@@ -89,6 +89,7 @@
 		F60379AF1AF73868005EA32E /* BPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F60379AE1AF73868005EA32E /* BPLocationManager.m */; };
 		F606DA2C1AF0857D003D3AF7 /* UIView+bpUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */; };
 		F606DA301AF08596003D3AF7 /* BPDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F606DA2F1AF08596003D3AF7 /* BPDismissButton.m */; };
+		F67CC3591AF9E2E700A82C42 /* NSString+bpRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = F67CC3581AF9E2E700A82C42 /* NSString+bpRegex.m */; };
 		F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */; };
 		F6DD03241AEE2C8400AB4F4E /* StringSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03231AEE2C8400AB4F4E /* StringSizeViewController.m */; };
 		F6DD03271AEE489200AB4F4E /* NSString+bpSize.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */; };
@@ -346,6 +347,8 @@
 		F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+bpUIViewController.m"; sourceTree = "<group>"; };
 		F606DA2E1AF08596003D3AF7 /* BPDismissButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDismissButton.h; sourceTree = "<group>"; };
 		F606DA2F1AF08596003D3AF7 /* BPDismissButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDismissButton.m; sourceTree = "<group>"; };
+		F67CC3571AF9E2E700A82C42 /* NSString+bpRegex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+bpRegex.h"; sourceTree = "<group>"; };
+		F67CC3581AF9E2E700A82C42 /* NSString+bpRegex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+bpRegex.m"; sourceTree = "<group>"; };
 		F6D9C9F81ADF78FF00C59673 /* UIDevice+bpExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+bpExtension.h"; sourceTree = "<group>"; };
 		F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+bpExtension.m"; sourceTree = "<group>"; };
 		F6DD03221AEE2C8400AB4F4E /* StringSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringSizeViewController.h; sourceTree = "<group>"; };
@@ -659,6 +662,8 @@
 				F6D9C9F91ADF78FF00C59673 /* UIDevice+bpExtension.m */,
 				F6DD03251AEE489200AB4F4E /* NSString+bpSize.h */,
 				F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */,
+				F67CC3571AF9E2E700A82C42 /* NSString+bpRegex.h */,
+				F67CC3581AF9E2E700A82C42 /* NSString+bpRegex.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -1480,6 +1485,7 @@
 				FD9E21C51ADCE85200E5078E /* UIWebView+AFNetworking.m in Sources */,
 				F60379AF1AF73868005EA32E /* BPLocationManager.m in Sources */,
 				042C82DA1A906B0200A94ECC /* BPAlertManager.m in Sources */,
+				F67CC3591AF9E2E700A82C42 /* NSString+bpRegex.m in Sources */,
 				28C6D3F71AAB4CCA00A5DE5A /* BPAlertBodyView.m in Sources */,
 				2802F9551ADABB13001E229D /* AVCamPreviewView.m in Sources */,
 				28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */,

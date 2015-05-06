@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "BPDateFormatter.h"
+#import "NSString+bpRegex.h"
 
 @interface BPKITsDemoTests : XCTestCase
 
@@ -58,6 +59,18 @@
         offsetDate = [NSDate dateWithTimeInterval:5 * 60 sinceDate:offsetDate];
         
     } while (found == NO);
+}
+
+- (void)testHostPortValidate
+{
+    NSString *text = @"x192.168.1.010:880d";
+    NSLog(@"test ip: %@", [text validHostPort]);
+    NSString *text2 = @"192.168.1:880d";
+    NSLog(@"test2 ip: %@", [text2 validHostPort]);
+    NSString *text3 = @"x192.168.1a.010:880";
+    NSLog(@"test3 ip: %@", [text3 validHostPort]);
+    NSString *text4 = @"x192.168.1.010:880";
+    NSLog(@"test4 ip: %@", [text4 validHostPort]);
 }
 
 - (void)testPerformanceExample {
