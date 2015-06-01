@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 #import "BPDateFormatter.h"
+#import "NSString+bpExtension.h"
 
 @interface BPKITsDemoTests : XCTestCase
 
@@ -58,6 +59,12 @@
         offsetDate = [NSDate dateWithTimeInterval:5 * 60 sinceDate:offsetDate];
         
     } while (found == NO);
+}
+
+- (void)testSpellLetters
+{
+    NSString *name = @"李豪珍";
+    [name spellString];
 }
 
 - (void)testPerformanceExample {
