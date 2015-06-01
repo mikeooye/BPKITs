@@ -13,8 +13,11 @@
 - (NSString *)spellString
 {
     NSMutableString *ms = [[self stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] mutableCopy];
-    CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformMandarinLatin, NO);
-    CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformStripDiacritics, NO);
+    CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformMandarinLatin, NO);     //中国拼音
+    CFStringTransform((__bridge CFMutableStringRef)ms, 0, kCFStringTransformStripDiacritics, NO);   //剥除重音
+//    Test 李豪珍
+//    MandarinLatin=lǐ háo zhēn
+//    StripDiacritics=li hao zhen
     return ms;
 }
 
