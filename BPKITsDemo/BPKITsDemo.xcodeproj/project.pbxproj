@@ -60,6 +60,7 @@
 		2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1101A3F320300375631 /* BPDatePickerViewController.m */; };
 		2812F1131A3F320300375631 /* BPDatePickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2812F1111A3F320300375631 /* BPDatePickerViewController.xib */; };
 		2812F1161A3F327D00375631 /* BPDateFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2812F1151A3F327D00375631 /* BPDateFormatter.m */; };
+		281DE5DB1B1D73AE00AA3659 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281DE5DA1B1D73AE00AA3659 /* CoreMotion.framework */; };
 		28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 28203CC51AB9C34D00D0D4E2 /* BPToast.m */; };
 		2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2820F0CB1AAC5D3C00E3FFD5 /* BPPlayerControl.m */; };
 		28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */; };
@@ -86,6 +87,8 @@
 		28D717B11ACFC54400A6FA2A /* BlurViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B01ACFC54400A6FA2A /* BlurViewController.m */; };
 		28D717B51ACFD2BF00A6FA2A /* BPDemoSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */; };
 		28D717B81ACFD2D300A6FA2A /* BPDemoSearchResultsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */; };
+		28FDA0891B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDA0881B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.m */; };
+		28FDA08D1B1EE9D300518164 /* BPCollectionSectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 28FDA08C1B1EE9D300518164 /* BPCollectionSectionReusableView.m */; };
 		F60379AF1AF73868005EA32E /* BPLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F60379AE1AF73868005EA32E /* BPLocationManager.m */; };
 		F606DA2C1AF0857D003D3AF7 /* UIView+bpUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */; };
 		F606DA301AF08596003D3AF7 /* BPDismissButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F606DA2F1AF08596003D3AF7 /* BPDismissButton.m */; };
@@ -289,6 +292,7 @@
 		2812F1111A3F320300375631 /* BPDatePickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BPDatePickerViewController.xib; sourceTree = "<group>"; };
 		2812F1141A3F327D00375631 /* BPDateFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDateFormatter.h; sourceTree = "<group>"; };
 		2812F1151A3F327D00375631 /* BPDateFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDateFormatter.m; sourceTree = "<group>"; };
+		281DE5DA1B1D73AE00AA3659 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 		28203CC41AB9C34D00D0D4E2 /* BPToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPToast.h; sourceTree = "<group>"; };
 		28203CC51AB9C34D00D0D4E2 /* BPToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPToast.m; sourceTree = "<group>"; };
 		2820F0CA1AAC5D3C00E3FFD5 /* BPPlayerControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerControl.h; sourceTree = "<group>"; };
@@ -341,6 +345,10 @@
 		28D717B41ACFD2BF00A6FA2A /* BPDemoSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchController.m; sourceTree = "<group>"; };
 		28D717B61ACFD2D300A6FA2A /* BPDemoSearchResultsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPDemoSearchResultsController.h; sourceTree = "<group>"; };
 		28D717B71ACFD2D300A6FA2A /* BPDemoSearchResultsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPDemoSearchResultsController.m; sourceTree = "<group>"; };
+		28FDA0871B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCollectionViewSectionFlowLayout.h; sourceTree = "<group>"; };
+		28FDA0881B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCollectionViewSectionFlowLayout.m; sourceTree = "<group>"; };
+		28FDA08B1B1EE9D300518164 /* BPCollectionSectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPCollectionSectionReusableView.h; sourceTree = "<group>"; };
+		28FDA08C1B1EE9D300518164 /* BPCollectionSectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPCollectionSectionReusableView.m; sourceTree = "<group>"; };
 		F60379AD1AF73868005EA32E /* BPLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLocationManager.h; sourceTree = "<group>"; };
 		F60379AE1AF73868005EA32E /* BPLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLocationManager.m; sourceTree = "<group>"; };
 		F606DA2A1AF0857D003D3AF7 /* UIView+bpUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+bpUIViewController.h"; sourceTree = "<group>"; };
@@ -484,6 +492,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				281DE5DB1B1D73AE00AA3659 /* CoreMotion.framework in Frameworks */,
 				FD9E218A1ADCE17100E5078E /* AddressBookUI.framework in Frameworks */,
 				FD9E217F1ADCBD3A00E5078E /* CoreLocation.framework in Frameworks */,
 				FDFEE1011ACD586F004C35FE /* LocalAuthentication.framework in Frameworks */,
@@ -837,6 +846,7 @@
 		28CC78261A177FAC0025B9E8 = {
 			isa = PBXGroup;
 			children = (
+				281DE5DA1B1D73AE00AA3659 /* CoreMotion.framework */,
 				284CB8DF1ADA791C009B33BD /* Framework */,
 				28CC78311A177FAC0025B9E8 /* BPKITsDemo */,
 				28CC784B1A177FAC0025B9E8 /* BPKITsDemoTests */,
@@ -1057,6 +1067,10 @@
 				FD4AE3161AD3C67200C81117 /* BPCollectionViewCell.m */,
 				FD4AE3171AD3C67200C81117 /* BPCollectionViewController.h */,
 				FD4AE3181AD3C67200C81117 /* BPCollectionViewController.m */,
+				28FDA0871B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.h */,
+				28FDA0881B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.m */,
+				28FDA08B1B1EE9D300518164 /* BPCollectionSectionReusableView.h */,
+				28FDA08C1B1EE9D300518164 /* BPCollectionSectionReusableView.m */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -1428,6 +1442,7 @@
 				FD9E21BD1ADCE85200E5078E /* AFURLSessionManager.m in Sources */,
 				FD9E21BC1ADCE85200E5078E /* AFURLResponseSerialization.m in Sources */,
 				28203CC61AB9C34D00D0D4E2 /* BPToast.m in Sources */,
+				28FDA08D1B1EE9D300518164 /* BPCollectionSectionReusableView.m in Sources */,
 				F6D9C9FA1ADF78FF00C59673 /* UIDevice+bpExtension.m in Sources */,
 				F6E93B7E1AF85FD4005FCC06 /* BPAppHelper.m in Sources */,
 				2812F1021A3F2E0200375631 /* BPButton.m in Sources */,
@@ -1452,6 +1467,7 @@
 				FDEC012F1AD77CCC00BF01B2 /* BPTimer.m in Sources */,
 				FD4AE2FB1AD3807F00C81117 /* BPAreaPickerViewController.m in Sources */,
 				28C6D3F21AAAF7C700A5DE5A /* BPAlertButton.m in Sources */,
+				28FDA0891B1EE9A900518164 /* BPCollectionViewSectionFlowLayout.m in Sources */,
 				FD9E21BB1ADCE85200E5078E /* AFURLRequestSerialization.m in Sources */,
 				FD4AE3351AD3C67200C81117 /* BPPhotoBrowserViewController.m in Sources */,
 				FD4AE3461AD3C67200C81117 /* BPRefreshTableViewController.m in Sources */,
