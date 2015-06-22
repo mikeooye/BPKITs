@@ -68,6 +68,16 @@
     [name spellString];
 }
 
+- (void)testRemoveLastPathExtension
+{
+    NSString *version = @"10.6.4.18";
+    NSString *dest = [version stringByRemoveLastpath];
+    
+    NSString *version2 = @"2.0.3";
+    NSString *dest2 = [version2 stringByRemoveLastpath];
+    
+}
+
 - (void)testHostPortValidate
 {
     NSString *text = @"x192.168.1.010:880d";
