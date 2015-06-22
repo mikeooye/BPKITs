@@ -205,3 +205,14 @@
     return returnValue;
 }
 @end
+
+@implementation NSString (Version)
+
+- (NSString *)stringByRemoveLastpath
+{
+    NSMutableArray *comp = [[self componentsSeparatedByString:@"."] mutableCopy];
+    [comp removeLastObject];
+    return [comp componentsJoinedByString:@"."];
+}
+
+@end

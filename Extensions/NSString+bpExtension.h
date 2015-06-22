@@ -31,3 +31,8 @@
 
 - (BOOL)removeEmoji;
 @end
+
+@interface NSString (Version)
+
+- (NSString *)stringByRemoveLastpath;
+@end
