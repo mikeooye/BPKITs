@@ -32,9 +32,11 @@
 - (void)movieToImage
 {
     NSURL *url = [[NSBundle mainBundle] URLForResource:@"test" withExtension:@"MOV"];
+    NSInteger frame = 0;
+    CGSize size = self.imageView.frame.size;
     
     BPMovieImageGenerator *imgGener = [[BPMovieImageGenerator alloc] init];
-    [imgGener generateImageForURL:url frame:0 size:self.imageView.bounds.size handler:^(UIImage *image, NSError *error) {
+    [imgGener generateImageForURL:url frame:frame size:size handler:^(UIImage *image, NSError *error) {
        
         dispatch_async(dispatch_get_main_queue(), ^{
            
