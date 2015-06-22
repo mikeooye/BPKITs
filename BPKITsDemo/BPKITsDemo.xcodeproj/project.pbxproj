@@ -66,6 +66,9 @@
 		28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D7C1AADDD4F002D63A7 /* BPBaseAnimation.m */; };
 		28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 28261D801AADDE37002D63A7 /* BPAlertAnimation.m */; };
 		2842086B1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m in Sources */ = {isa = PBXBuildFile; fileRef = 2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */; };
+		2848A6C81B37C52B00E694CB /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2848A6C71B37C52B00E694CB /* test.MOV */; };
+		2848A6CD1B37C61200E694CB /* VideoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848A6CC1B37C61200E694CB /* VideoImageViewController.m */; };
+		2848A6D01B37C9A000E694CB /* BPMovieImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848A6CF1B37C9A000E694CB /* BPMovieImageGenerator.m */; };
 		284CB8EA1ADA7D05009B33BD /* Util.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284CB8E91ADA7D05009B33BD /* Util.storyboard */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
 		285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */; };
@@ -303,6 +306,11 @@
 		28261D801AADDE37002D63A7 /* BPAlertAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAnimation.m; sourceTree = "<group>"; };
 		284208691A9C6B7300CD1EB0 /* BPLoadingMore2Control.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPLoadingMore2Control.h; sourceTree = "<group>"; };
 		2842086A1A9C6B7300CD1EB0 /* BPLoadingMore2Control.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPLoadingMore2Control.m; sourceTree = "<group>"; };
+		2848A6C71B37C52B00E694CB /* test.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = test.MOV; sourceTree = "<group>"; };
+		2848A6CB1B37C61200E694CB /* VideoImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoImageViewController.h; sourceTree = "<group>"; };
+		2848A6CC1B37C61200E694CB /* VideoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoImageViewController.m; sourceTree = "<group>"; };
+		2848A6CE1B37C9A000E694CB /* BPMovieImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMovieImageGenerator.h; sourceTree = "<group>"; };
+		2848A6CF1B37C9A000E694CB /* BPMovieImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPMovieImageGenerator.m; sourceTree = "<group>"; };
 		284CB8E91ADA7D05009B33BD /* Util.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Util.storyboard; sourceTree = "<group>"; };
 		285F87D81AAB673100297EE6 /* BPAlertMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertMessage.h; sourceTree = "<group>"; };
 		285F87D91AAB673100297EE6 /* BPAlertMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertMessage.m; sourceTree = "<group>"; };
@@ -702,6 +710,8 @@
 				289F618B1AF2848F00C8CD93 /* BPTableHeaderStillObject.m */,
 				F6E93B7C1AF85FD4005FCC06 /* BPAppHelper.h */,
 				F6E93B7D1AF85FD4005FCC06 /* BPAppHelper.m */,
+				2848A6CE1B37C9A000E694CB /* BPMovieImageGenerator.h */,
+				2848A6CF1B37C9A000E694CB /* BPMovieImageGenerator.m */,
 			);
 			name = Helpers;
 			path = ../../Helpers;
@@ -804,6 +814,15 @@
 			path = ../../Views;
 			sourceTree = "<group>";
 		};
+		2848A6CA1B37C5E700E694CB /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				2848A6CB1B37C61200E694CB /* VideoImageViewController.h */,
+				2848A6CC1B37C61200E694CB /* VideoImageViewController.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
 		284CB8DF1ADA791C009B33BD /* Framework */ = {
 			isa = PBXGroup;
 			children = (
@@ -823,6 +842,7 @@
 		284CB8E61ADA7C88009B33BD /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				2848A6CA1B37C5E700E694CB /* Video */,
 				FD5C99D11ADE6D2B00BE35E9 /* Device */,
 				FD9E21801ADCBDB800E5078E /* Location */,
 				2802F9431ADA8279001E229D /* QRCode */,
@@ -948,6 +968,7 @@
 		FD4AE2E41AD376D100C81117 /* Resouces */ = {
 			isa = PBXGroup;
 			children = (
+				2848A6C71B37C52B00E694CB /* test.MOV */,
 				2802F94C1ADA963D001E229D /* qrcode_found.wav */,
 				2802F94A1ADA84B9001E229D /* beep.mp3 */,
 				FD4AE2E61AD3770700C81117 /* Images.xcassets */,
@@ -1400,6 +1421,7 @@
 				FD4AE3391AD3C67200C81117 /* photo2t.jpg in Resources */,
 				FD4AE33E1AD3C67200C81117 /* photo5.jpg in Resources */,
 				FD4AE3381AD3C67200C81117 /* photo2.jpg in Resources */,
+				2848A6C81B37C52B00E694CB /* test.MOV in Resources */,
 				FD4AE3431AD3C67200C81117 /* photo7t.jpg in Resources */,
 				042C82E31A90A23D00A94ECC /* SecureAlertImages.xcassets in Resources */,
 				042C82E01A9081BC00A94ECC /* BPSecureAlertView.xib in Resources */,
@@ -1457,7 +1479,9 @@
 				28261D7D1AADDD4F002D63A7 /* BPBaseAnimation.m in Sources */,
 				2812F10A1A3F2E7100375631 /* RootViewController.m in Sources */,
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
+				2848A6D01B37C9A000E694CB /* BPMovieImageGenerator.m in Sources */,
 				2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */,
+				2848A6CD1B37C61200E694CB /* VideoImageViewController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
 				FD9E21C11ADCE85200E5078E /* UIButton+AFNetworking.m in Sources */,
 				FD8B92131ACE2EAB00E5A4FA /* NotificationRootViewController.m in Sources */,
