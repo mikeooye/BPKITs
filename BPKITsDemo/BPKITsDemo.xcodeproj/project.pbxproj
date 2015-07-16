@@ -69,9 +69,12 @@
 		2848A6C81B37C52B00E694CB /* test.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 2848A6C71B37C52B00E694CB /* test.MOV */; };
 		2848A6CD1B37C61200E694CB /* VideoImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848A6CC1B37C61200E694CB /* VideoImageViewController.m */; };
 		2848A6D01B37C9A000E694CB /* BPMovieImageGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848A6CF1B37C9A000E694CB /* BPMovieImageGenerator.m */; };
+		2848A6D81B37ED1000E694CB /* NSString+bpContains.m in Sources */ = {isa = PBXBuildFile; fileRef = 2848A6D71B37ED1000E694CB /* NSString+bpContains.m */; };
 		284CB8EA1ADA7D05009B33BD /* Util.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 284CB8E91ADA7D05009B33BD /* Util.storyboard */; };
+		285DA1B41B563A7D00BAB951 /* NSMutableData+ByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 285DA1B31B563A7D00BAB951 /* NSMutableData+ByteBuffer.m */; };
 		285F87DA1AAB673100297EE6 /* BPAlertMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87D91AAB673100297EE6 /* BPAlertMessage.m */; };
 		285F87DE1AAB6A6F00297EE6 /* BPAlertAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */; };
+		28602F8E1B3D745F00E84817 /* NSURL+AssetsLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 28602F8D1B3D745F00E84817 /* NSURL+AssetsLibrary.m */; };
 		289E18CF1AAC2EC20000AAAB /* BPPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */; };
 		289E18D11AAC2F6B0000AAAB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */; };
 		289E18D31AAC2F700000AAAB /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 289E18D21AAC2F700000AAAB /* AVKit.framework */; };
@@ -311,12 +314,18 @@
 		2848A6CC1B37C61200E694CB /* VideoImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoImageViewController.m; sourceTree = "<group>"; };
 		2848A6CE1B37C9A000E694CB /* BPMovieImageGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPMovieImageGenerator.h; sourceTree = "<group>"; };
 		2848A6CF1B37C9A000E694CB /* BPMovieImageGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPMovieImageGenerator.m; sourceTree = "<group>"; };
+		2848A6D61B37ED1000E694CB /* NSString+bpContains.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+bpContains.h"; sourceTree = "<group>"; };
+		2848A6D71B37ED1000E694CB /* NSString+bpContains.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+bpContains.m"; sourceTree = "<group>"; };
 		284CB8E91ADA7D05009B33BD /* Util.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Util.storyboard; sourceTree = "<group>"; };
+		285DA1B21B563A7D00BAB951 /* NSMutableData+ByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableData+ByteBuffer.h"; sourceTree = "<group>"; };
+		285DA1B31B563A7D00BAB951 /* NSMutableData+ByteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableData+ByteBuffer.m"; sourceTree = "<group>"; };
 		285F87D81AAB673100297EE6 /* BPAlertMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertMessage.h; sourceTree = "<group>"; };
 		285F87D91AAB673100297EE6 /* BPAlertMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertMessage.m; sourceTree = "<group>"; };
 		285F87DC1AAB6A6F00297EE6 /* BPAlertAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPAlertAction.h; sourceTree = "<group>"; };
 		285F87DD1AAB6A6F00297EE6 /* BPAlertAction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPAlertAction.m; sourceTree = "<group>"; };
 		285F87DF1AAB6A9700297EE6 /* BPAlertDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BPAlertDefines.h; sourceTree = "<group>"; };
+		28602F8C1B3D745F00E84817 /* NSURL+AssetsLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+AssetsLibrary.h"; sourceTree = "<group>"; };
+		28602F8D1B3D745F00E84817 /* NSURL+AssetsLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+AssetsLibrary.m"; sourceTree = "<group>"; };
 		289E18CD1AAC2EC20000AAAB /* BPPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BPPlayerViewController.h; sourceTree = "<group>"; };
 		289E18CE1AAC2EC20000AAAB /* BPPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BPPlayerViewController.m; sourceTree = "<group>"; };
 		289E18D01AAC2F6B0000AAAB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
@@ -646,6 +655,10 @@
 		2812F0871A3F2E0200375631 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2848A6D61B37ED1000E694CB /* NSString+bpContains.h */,
+				2848A6D71B37ED1000E694CB /* NSString+bpContains.m */,
+				28602F8C1B3D745F00E84817 /* NSURL+AssetsLibrary.h */,
+				28602F8D1B3D745F00E84817 /* NSURL+AssetsLibrary.m */,
 				F606DA2A1AF0857D003D3AF7 /* UIView+bpUIViewController.h */,
 				F606DA2B1AF0857D003D3AF7 /* UIView+bpUIViewController.m */,
 				2812F0881A3F2E0200375631 /* bpExtension.h */,
@@ -681,6 +694,8 @@
 				F6DD03261AEE489200AB4F4E /* NSString+bpSize.m */,
 				F67CC3571AF9E2E700A82C42 /* NSString+bpRegex.h */,
 				F67CC3581AF9E2E700A82C42 /* NSString+bpRegex.m */,
+				285DA1B21B563A7D00BAB951 /* NSMutableData+ByteBuffer.h */,
+				285DA1B31B563A7D00BAB951 /* NSMutableData+ByteBuffer.m */,
 			);
 			name = Extensions;
 			path = ../../Extensions;
@@ -1481,6 +1496,7 @@
 				2812F1121A3F320300375631 /* BPDatePickerViewController.m in Sources */,
 				2848A6D01B37C9A000E694CB /* BPMovieImageGenerator.m in Sources */,
 				2820F0CC1AAC5D3C00E3FFD5 /* BPPlayerControl.m in Sources */,
+				285DA1B41B563A7D00BAB951 /* NSMutableData+ByteBuffer.m in Sources */,
 				2848A6CD1B37C61200E694CB /* VideoImageViewController.m in Sources */,
 				28CC78351A177FAC0025B9E8 /* main.m in Sources */,
 				FD9E21C11ADCE85200E5078E /* UIButton+AFNetworking.m in Sources */,
@@ -1506,6 +1522,7 @@
 				28C6D3F31AAAF7C700A5DE5A /* BPAlertController.m in Sources */,
 				2812F0E31A3F2E0200375631 /* BPAnimationCreater.m in Sources */,
 				FD9E218D1ADCE5B900E5078E /* RFLocationConvertor.m in Sources */,
+				28602F8E1B3D745F00E84817 /* NSURL+AssetsLibrary.m in Sources */,
 				FD6533C01AD53A65006BE0AF /* BPRectangle.m in Sources */,
 				FD4AE3331AD3C67200C81117 /* BPCollectionViewCell.m in Sources */,
 				FD9E21C01ADCE85200E5078E /* UIAlertView+AFNetworking.m in Sources */,
@@ -1550,6 +1567,7 @@
 				2812F0EB1A3F2E0200375631 /* UIImage+Resize.m in Sources */,
 				2812F0ED1A3F2E0200375631 /* UIViewController+bpExtension.m in Sources */,
 				28C6D3E01AAAC4B100A5DE5A /* UIImage+bpExtension.m in Sources */,
+				2848A6D81B37ED1000E694CB /* NSString+bpContains.m in Sources */,
 				FD9E21B61ADCE85200E5078E /* AFHTTPRequestOperationManager.m in Sources */,
 				28261D811AADDE37002D63A7 /* BPAlertAnimation.m in Sources */,
 				FD4AE30D1AD3C52B00C81117 /* BPChangedViewController.m in Sources */,

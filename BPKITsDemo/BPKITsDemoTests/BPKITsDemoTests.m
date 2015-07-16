@@ -11,6 +11,9 @@
 #import "BPDateFormatter.h"
 #import "NSString+bpExtension.h"
 #import "NSString+bpRegex.h"
+#import "NSURL+AssetsLibrary.h"
+#import "NSString+bpContains.h"
+#import "NSMutableData+ByteBuffer.h"
 
 @interface BPKITsDemoTests : XCTestCase
 
@@ -78,6 +81,24 @@
     
 }
 
+- (void)testAsset
+{
+    NSURL *url = [NSURL URLWithString:@"assets-library://asset/asset.MOV?id=D7FE8874-5114-4616-8004-89D6925F2A16&ext=MOV"];
+    NSString *pattern = @"(?<=id=).*(?=&ext)";
+    NSString *text = url.absoluteString;
+    text = [text matchWithRegexPattern:pattern];
+    NSLog(@"%@", text);
+    NSLog(@"%@.%@", [url nameValue], [url extValue]);
+    
+}
+
+#define kExportURL(name) [NSURL fileURLWithPath:[NSTemporaryDirectory() stringByAppendingPathComponent:@"name.mp4"]]
+
+- (void)testDirectoryPath
+{
+    NSLog(@"%@", kExportURL(@"abc"));
+}
+
 - (void)testHostPortValidate
 {
     NSString *text = @"x192.168.1.010:880d";
@@ -88,6 +109,47 @@
     NSLog(@"test3 ip: %@", [text3 validHostPort]);
     NSString *text4 = @"x192.168.1.010:880";
     NSLog(@"test4 ip: %@", [text4 validHostPort]);
+}
+
+- (void)testBytes
+{
+    NSMutableData *mutableData = [NSMutableData data];
+    [mutableData appendBytes:19 length:4];
+    
+    for (int times = 0; times < 5; times++) {
+        
+        [mutableData appendInt:8+times];                 //state [1]
+        [mutableData appendDouble:121.397449+times];      //lat [8]
+        [mutableData appendDouble:31.140893+times];       //lng [8]
+        [mutableData appendDouble:7.14+times];            //speed   [8]
+        [mutableData appendDouble:1.78+times];  //bearing   [8]
+        [mutableData appendDouble:47.12+times];           //altitude
+        [mutableData appendDouble:1.79+times];  //accuracy
+        [mutableData appendDouble:31.140893+times];       //left_x
+        [mutableData appendDouble:31.140893+times];       //after_y
+        [mutableData appendDouble:31.140893+times];       //vertical_z
+        [mutableData appendDouble:-1.01+times];           //angle_x
+        [mutableData appendDouble:-50.01+times];          //angle_y
+        [mutableData appendDouble:40.06+times];           //angle_z
+        
+        NSTimeInterval time = [[NSDate date] timeIntervalSince1970];
+        [mutableData appendDouble:time];          //time
+    }
+    
+    NSString *path = [NSHomeDirectory() stringByAppendingPathComponent:@"test_bytes.txt"];
+    BOOL writeResult = [mutableData writeToFile:path atomically:YES];
+    if (writeResult == YES) {
+        NSLog(@"Write success, file path: %@!", path);
+    }else{
+        NSLog(@"Write fialed..");
+    }
+    
+//    char state;
+//    [mutableData getBytes:&state length:1];
+//    double lat,lng;
+//    [mutableData getBytes:&lat range:NSMakeRange(0, 8)];
+//    [mutableData getBytes:&lng range:NSMakeRange(8, 8)];
+    
 }
 
 - (void)testPerformanceExample {
